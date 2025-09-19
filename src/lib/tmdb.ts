@@ -67,9 +67,85 @@ export async function getTrendingMovies(): Promise<TmdbTrendingMovie[]> {
     }
     
     const data = await response.json();
-    return data.results.slice(0, 5); // Prendre les 5 premiers
+    return data.results; // Retourner tous les résultats pour les carrousels
   } catch (error) {
     console.error('Erreur lors de la récupération des films tendance:', error);
+    return [];
+  }
+}
+
+// Fonction pour récupérer les films populaires
+export async function getPopularMovies(): Promise<TmdbTrendingMovie[]> {
+  try {
+    const response = await fetch(
+      `${TMDB_BASE_URL}/movie/popular?api_key=${TMDB_API_KEY}&language=fr-FR&page=1`
+    );
+    
+    if (!response.ok) {
+      throw new Error(`Erreur API TMDb: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    return data.results;
+  } catch (error) {
+    console.error('Erreur lors de la récupération des films populaires:', error);
+    return [];
+  }
+}
+
+// Fonction pour récupérer les films actuellement en salles
+export async function getNowPlayingMovies(): Promise<TmdbTrendingMovie[]> {
+  try {
+    const response = await fetch(
+      `${TMDB_BASE_URL}/movie/now_playing?api_key=${TMDB_API_KEY}&language=fr-FR&page=1`
+    );
+    
+    if (!response.ok) {
+      throw new Error(`Erreur API TMDb: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    return data.results;
+  } catch (error) {
+    console.error('Erreur lors de la récupération des films en salles:', error);
+    return [];
+  }
+}
+
+// Fonction pour récupérer les films à venir
+export async function getUpcomingMovies(): Promise<TmdbTrendingMovie[]> {
+  try {
+    const response = await fetch(
+      `${TMDB_BASE_URL}/movie/upcoming?api_key=${TMDB_API_KEY}&language=fr-FR&page=1`
+    );
+    
+    if (!response.ok) {
+      throw new Error(`Erreur API TMDb: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    return data.results;
+  } catch (error) {
+    console.error('Erreur lors de la récupération des films à venir:', error);
+    return [];
+  }
+}
+
+// Fonction pour récupérer les films par genre
+export async function getMoviesByGenre(genreId: number): Promise<TmdbTrendingMovie[]> {
+  try {
+    const response = await fetch(
+      `${TMDB_BASE_URL}/discover/movie?api_key=${TMDB_API_KEY}&language=fr-FR&with_genres=${genreId}&page=1`
+    );
+    
+    if (!response.ok) {
+      throw new Error(`Erreur API TMDb: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    return data.results;
+  } catch (error) {
+    console.error(`Erreur lors de la récupération des films du genre ${genreId}:`, error);
     return [];
   }
 }

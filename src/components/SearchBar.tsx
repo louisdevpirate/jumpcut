@@ -61,7 +61,7 @@ export default function SearchBar() {
 
   return (
     <div className="relative">
-      <div className="hidden md:flex items-center bg-neutral-100 rounded-full px-3 py-1">
+      <div className="hidden md:flex items-center bg-gray-800/50 backdrop-blur-sm rounded-full px-4 py-2 border border-gray-700">
         <input
           type="text"
           placeholder="Rechercher un film..."
@@ -69,7 +69,7 @@ export default function SearchBar() {
           onChange={(e) => setQuery(e.target.value)}
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
-          className="bg-transparent outline-none text-sm text-neutral-700 w-40"
+          className="bg-transparent outline-none text-sm text-white w-48 placeholder-gray-400"
         />
         {isLoading && (
           <div className="ml-2 w-4 h-4 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
@@ -78,25 +78,25 @@ export default function SearchBar() {
 
       {/* Résultats de recherche */}
       {isOpen && results.length > 0 && (
-        <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-neutral-200 rounded-lg shadow-lg z-50 max-h-80 overflow-y-auto">
+        <div className="absolute top-full left-0 right-0 mt-2 bg-gray-900 border border-gray-700 rounded-lg shadow-xl z-50 max-h-80 overflow-y-auto">
           {results.map((movie) => (
             <div
               key={movie.id}
               onClick={() => handleResultClick(movie.id)}
-              className="flex items-center gap-3 p-3 hover:bg-neutral-50 cursor-pointer transition-colors"
+              className="flex items-center gap-3 p-3 hover:bg-gray-800 cursor-pointer transition-colors"
             >
               <div className="w-12 h-16 rounded overflow-hidden flex-shrink-0">
                 <img
-                  src={movie.poster_path ? `https://image.tmdb.org/t/p/w92${movie.poster_path}` : '/placeholder-poster.jpg'}
+                  src={movie.poster_path ? `https://image.tmdb.org/t/p/w92${movie.poster_path}` : '/placeholder-poster.svg'}
                   alt={movie.title}
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="font-medium text-neutral-900 truncate">
+                <div className="font-medium text-white truncate">
                   {movie.title}
                 </div>
-                <div className="text-sm text-neutral-500">
+                <div className="text-sm text-gray-400">
                   {new Date(movie.release_date).getFullYear()}
                 </div>
               </div>

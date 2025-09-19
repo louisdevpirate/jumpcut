@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --font-inter: 'Inter', sans-serif;
 }
 
@@ -64,14 +64,46 @@ body {
   animation: scaleIn 0.4s ease-out;
 }
 
-/* Styles pour les cartes de films */
+/* Styles pour les cartes de films Netflix */
 .film-card {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .film-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Carrousel horizontal */
+.carousel-container {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-content {
+  display: flex;
+  gap: 12px;
+  padding: 0 4px;
+}
+
+/* Styles pour les sections Netflix */
+.netflix-section {
+  margin-bottom: 48px;
+}
+
+.netflix-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
 }
 
 /* Styles pour les étoiles de notation */
