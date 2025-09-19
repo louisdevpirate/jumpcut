@@ -1,4 +1,10 @@
+'use client';
+
 import Image from "next/image";
+import { useState } from "react";
+import StarRating from "./StarRating";
+import WatchedButton from "./WatchedButton";
+import ReviewForm from "./ReviewForm";
 
 interface FilmDetailProps {
   film: {
@@ -19,9 +25,25 @@ interface FilmDetailProps {
     director?: string;
     cast?: Array<{ name: string }>;
   };
+  onToggleWatched?: (isWatched: boolean) => void;
+  onUpdateReview?: (reviewData: any) => void;
 }
 
-export default function FilmDetail({ film, tmdbData }: FilmDetailProps) {
+export default function FilmDetail({ film, tmdbData, onToggleWatched, onUpdateReview }: FilmDetailProps) {
+  const [isEditingReview, setIsEditingReview] = useState(false);
+
+  const handleToggleWatched = async (isWatched: boolean) => {
+    if (onToggleWatched) {
+      await onToggleWatched(isWatched);
+    }
+  };
+
+  const handleUpdateReview = async (reviewData: any) => {
+    if (onUpdateReview) {
+      await onUpdateReview(reviewData);
+      setIsEditingReview(false);
+    }
+  };
   return (
     <div className="max-w-6xl mx-auto px-6 py-8">
       {/* En-tête du film */}
@@ -42,14 +64,26 @@ export default function FilmDetail({ film, tmdbData }: FilmDetailProps) {
           <p className="text-xl text-neutral-600 mb-4">{film.year}</p>
           
           {/* Note personnelle */}
-          <div className="flex items-center gap-2 mb-6">
+          <div className="flex items-center gap-4 mb-6">
             <span className="text-sm font-medium text-neutral-700">Ma note :</span>
-            <div className="flex items-center gap-1 text-yellow-400">
-              {Array.from({ length: 10 }, (_, i) => (
-                <span key={i}>{i < film.myRating ? "★" : "☆"}</span>
-              ))}
-              <span className="ml-2 text-lg font-semibold text-neutral-900">{film.myRating}/10</span>
-            </div>
+            <StarRating 
+              rating={film.myRating} 
+              interactive={true}
+              size="lg"
+              onRatingChange={(rating) => {
+                // TODO: Implémenter la mise à jour de la note
+                console.log('Nouvelle note:', rating);
+              }}
+            />
+          </div>
+
+          {/* Bouton Vu */}
+          <div className="mb-6">
+            <WatchedButton 
+              isWatched={true} // Pour l'instant, considérons tous les films comme vus
+              onToggle={handleToggleWatched}
+              movieId={film.id}
+            />
           </div>
 
           {/* Informations TMDb */}
@@ -93,22 +127,52 @@ export default function FilmDetail({ film, tmdbData }: FilmDetailProps) {
       )}
 
       {/* Critique personnelle */}
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <div className="critique-positive rounded-lg p-6 animate-slide-in">
-          <h3 className="text-lg font-semibold text-green-800 mb-3">Points positifs</h3>
-          <p className="text-green-700">{film.positives}</p>
+      <div className="mb-8">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-2xl font-bold text-neutral-900">Ma critique</h2>
+          <button
+            onClick={() => setIsEditingReview(!isEditingReview)}
+            className="px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition"
+          >
+            {isEditingReview ? 'Annuler' : 'Modifier'}
+          </button>
         </div>
-        
-        <div className="critique-negative rounded-lg p-6 animate-slide-in" style={{ animationDelay: '0.1s' }}>
-          <h3 className="text-lg font-semibold text-red-800 mb-3">Points négatifs</h3>
-          <p className="text-red-700">{film.negatives}</p>
-        </div>
-      </div>
 
-      {/* Critique complète */}
-      <div className="bg-white border border-neutral-200 rounded-lg p-6">
-        <h3 className="text-lg font-semibold text-neutral-900 mb-3">Ma critique</h3>
-        <p className="text-neutral-700 leading-relaxed">{film.myReview}</p>
+        {isEditingReview ? (
+          <ReviewForm
+            initialData={{
+              rating: film.myRating,
+              positives: film.positives,
+              negatives: film.negatives,
+              review: film.myReview,
+              dateWatched: film.dateWatched
+            }}
+            onSubmit={handleUpdateReview}
+            onCancel={() => setIsEditingReview(false)}
+            isEditing={true}
+          />
+        ) : (
+          <div className="space-y-6">
+            {/* Points positifs et négatifs */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="critique-positive rounded-lg p-6 animate-slide-in">
+                <h3 className="text-lg font-semibold text-green-800 mb-3">Points positifs</h3>
+                <p className="text-green-700">{film.positives || 'Aucun point positif renseigné'}</p>
+              </div>
+              
+              <div className="critique-negative rounded-lg p-6 animate-slide-in" style={{ animationDelay: '0.1s' }}>
+                <h3 className="text-lg font-semibold text-red-800 mb-3">Points négatifs</h3>
+                <p className="text-red-700">{film.negatives || 'Aucun point négatif renseigné'}</p>
+              </div>
+            </div>
+
+            {/* Critique complète */}
+            <div className="bg-white border border-neutral-200 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-neutral-900 mb-3">Critique complète</h3>
+              <p className="text-neutral-700 leading-relaxed">{film.myReview || 'Aucune critique renseignée'}</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

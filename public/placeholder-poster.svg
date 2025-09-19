@@ -1,0 +1,8 @@
+<svg width="500" height="750" viewBox="0 0 500 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="750" fill="#f3f4f6"/>
+  <rect x="50" y="50" width="400" height="650" fill="#e5e7eb" stroke="#d1d5db" stroke-width="2"/>
+  <circle cx="250" cy="300" r="40" fill="#9ca3af"/>
+  <polygon points="240,280 240,320 280,300" fill="#6b7280"/>
+  <text x="250" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6b7280">Pas d'affiche</text>
+  <text x="250" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#9ca3af">disponible</text>
+</svg>

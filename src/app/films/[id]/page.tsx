@@ -55,7 +55,8 @@ interface FilmPageProps {
 }
 
 export default async function FilmPage({ params }: FilmPageProps) {
-  const filmId = parseInt(params.id);
+  const { id } = await params;
+  const filmId = parseInt(id);
   const film = await getFilm(filmId);
   
   if (!film) {

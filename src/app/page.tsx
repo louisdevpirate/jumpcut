@@ -53,7 +53,7 @@ export default async function Home() {
                 title={movie.title}
                 year={new Date(movie.release_date).getFullYear()}
                 poster={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                rating={Math.round(movie.vote_average)}
+                rating={Math.round(movie.vote_average / 2)} // Convertir de 10 à 5 étoiles
               />
             ))}
           </div>

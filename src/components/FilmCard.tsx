@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import StarRating from "./StarRating";
 
 interface FilmCardProps {
   id: number;
@@ -24,11 +25,8 @@ export default function FilmCard({ id, title, year, poster, rating }: FilmCardPr
         <div className="p-4">
           <h3 className="font-semibold text-lg text-neutral-900 truncate">{title}</h3>
           <p className="text-sm text-neutral-500">{year}</p>
-          <div className="mt-2 star-rating gap-1 text-yellow-400">
-            {Array.from({ length: 10 }, (_, i) => (
-              <span key={i} className="star">{i < rating ? "★" : "☆"}</span>
-            ))}
-            <span className="ml-2 text-sm text-neutral-600">{rating}/10</span>
+          <div className="mt-2">
+            <StarRating rating={rating} interactive={false} size="sm" />
           </div>
         </div>
       </div>

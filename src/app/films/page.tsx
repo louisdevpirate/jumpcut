@@ -1,13 +1,12 @@
-import FilmCard from "@/components/FilmCard";
-import { getMovieDetails } from "@/lib/tmdb";
+import FilmCardClient from "@/components/FilmCardClient";
 import fs from 'fs';
 import path from 'path';
 
 interface Film {
   id: number;
-  tmdbId: number;
+  tmdbId: number | null;
   title: string;
-  year: number;
+  year: number | null;
   myRating: number;
   positives: string;
   negatives: string;
@@ -23,17 +22,6 @@ async function getFilms(): Promise<Film[]> {
 
 export default async function FilmsPage() {
   const films = await getFilms();
-  
-  // Enrichir les films avec les données TMDb
-  const enrichedFilms = await Promise.all(
-    films.map(async (film) => {
-      const tmdbData = await getMovieDetails(film.tmdbId);
-      return {
-        ...film,
-        poster: tmdbData?.poster_path ? `https://image.tmdb.org/t/p/w500${tmdbData.poster_path}` : '/placeholder-poster.jpg'
-      };
-    })
-  );
 
   return (
     <div className="min-h-screen py-8">
@@ -56,35 +44,41 @@ export default async function FilmsPage() {
           </div>
           <div className="bg-white p-4 rounded-lg shadow-sm border border-neutral-200">
             <div className="text-2xl font-bold text-green-500">
-              {(films.reduce((acc, film) => acc + film.myRating, 0) / films.length).toFixed(1)}
+              {films.filter(f => f.myRating > 0).length > 0 
+                ? (films.filter(f => f.myRating > 0).reduce((acc, film) => acc + film.myRating, 0) / films.filter(f => f.myRating > 0).length).toFixed(1)
+                : '0.0'}
             </div>
             <div className="text-sm text-neutral-600">Note moyenne</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-sm border border-neutral-200">
             <div className="text-2xl font-bold text-purple-500">
-              {Math.max(...films.map(f => f.year))}
+              {films.filter(f => f.year).length > 0 
+                ? Math.max(...films.filter(f => f.year).map(f => f.year!))
+                : 'N/A'}
             </div>
             <div className="text-sm text-neutral-600">Plus récent</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow-sm border border-neutral-200">
             <div className="text-2xl font-bold text-orange-500">
-              {Math.min(...films.map(f => f.year))}
+              {films.filter(f => f.year).length > 0 
+                ? Math.min(...films.filter(f => f.year).map(f => f.year!))
+                : 'N/A'}
             </div>
             <div className="text-sm text-neutral-600">Plus ancien</div>
           </div>
         </div>
 
         {/* Liste des films */}
-        {enrichedFilms.length > 0 ? (
+        {films.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {enrichedFilms.map((film) => (
-              <FilmCard
+            {films.map((film) => (
+              <FilmCardClient
                 key={film.id}
                 id={film.id}
                 title={film.title}
                 year={film.year}
-                poster={film.poster}
-                rating={film.myRating}
+                tmdbId={film.tmdbId}
+                myRating={film.myRating}
               />
             ))}
           </div>

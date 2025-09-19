@@ -1,15 +1,64 @@
+'use client';
+
 import { getMovieDetails } from "@/lib/tmdb";
 import FilmCard from "@/components/FilmCard";
+import WatchedButton from "@/components/WatchedButton";
+import ReviewForm from "@/components/ReviewForm";
+import { useState, useEffect } from "react";
 
 interface SearchPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default async function SearchPage({ params }: SearchPageProps) {
-  const movieId = parseInt(params.id);
-  const movieDetails = await getMovieDetails(movieId);
+export default function SearchPage({ params }: SearchPageProps) {
+  const [movieDetails, setMovieDetails] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [showReviewForm, setShowReviewForm] = useState(false);
+  const [movieId, setMovieId] = useState<number | null>(null);
+
+  useEffect(() => {
+    const fetchParams = async () => {
+      const { id } = await params;
+      const idNum = parseInt(id);
+      setMovieId(idNum);
+      
+      try {
+        const details = await getMovieDetails(idNum);
+        setMovieDetails(details);
+      } catch (error) {
+        console.error('Erreur lors du chargement du film:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchParams();
+  }, [params]);
+
+  const handleAddToCollection = () => {
+    setShowReviewForm(true);
+  };
+
+  const handleSubmitReview = async (reviewData: any) => {
+    // TODO: Implémenter l'ajout à la collection
+    console.log('Ajout du film à la collection:', { movieId, ...reviewData });
+    setShowReviewForm(false);
+  };
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen py-8">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center py-16">
+            <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+            <p className="text-neutral-600">Chargement du film...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (!movieDetails) {
     return (
@@ -80,7 +129,10 @@ export default async function SearchPage({ params }: SearchPageProps) {
               )}
 
               <div className="flex gap-4">
-                <button className="btn-primary px-6 py-3 text-white font-medium rounded-lg">
+                <button 
+                  onClick={handleAddToCollection}
+                  className="btn-primary px-6 py-3 text-white font-medium rounded-lg"
+                >
                   Ajouter à ma collection
                 </button>
                 <button className="px-6 py-3 border border-neutral-300 text-neutral-700 font-medium rounded-lg hover:bg-neutral-50 transition">
@@ -91,15 +143,16 @@ export default async function SearchPage({ params }: SearchPageProps) {
           </div>
         </div>
 
-        {/* Films similaires (placeholder pour l'instant) */}
-        <div>
-          <h3 className="text-2xl font-bold text-neutral-900 mb-6">
-            Films similaires
-          </h3>
-          <div className="text-center py-8 text-neutral-600">
-            <p>Fonctionnalité à venir : films similaires basés sur les genres et les acteurs</p>
+        {/* Formulaire d'ajout à la collection */}
+        {showReviewForm && (
+          <div className="mt-8">
+            <ReviewForm
+              onSubmit={handleSubmitReview}
+              onCancel={() => setShowReviewForm(false)}
+              isEditing={false}
+            />
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
