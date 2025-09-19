@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* Dark mode automatique */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+  }
+}
+
 /* Import des fonts Satoshi */
 @font-face {
   font-family: 'Satoshi';

@@ -26,6 +26,12 @@ export default function Navbar() {
           <Link href="/personalities" className="hover:text-white transition">
             Personnalités
           </Link>
+          <Link href="/stats" className="hover:text-white transition">
+            Stats
+          </Link>
+          <Link href="/badges" className="hover:text-white transition">
+            Badges
+          </Link>
         </div>
         
         <SearchBar />

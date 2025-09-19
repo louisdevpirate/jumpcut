@@ -5,10 +5,10 @@ const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const movieId = params.id;
+    const { id: movieId } = await params;
 
     if (!TMDB_API_KEY) {
       return NextResponse.json({ error: 'Clé API TMDb manquante' }, { status: 500 });
