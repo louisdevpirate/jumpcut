@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import StarRating from "./StarRating";
+import StarRatingModern from "./StarRatingModern";
 import WatchedButton from "./WatchedButton";
 import ReviewForm from "./ReviewForm";
+import RecommendedMovies from "./RecommendedMovies";
+import EditFilmButton from "./EditFilmButton";
 
 interface FilmDetailProps {
   film: {
@@ -66,10 +68,11 @@ export default function FilmDetail({ film, tmdbData, onToggleWatched, onUpdateRe
           {/* Note personnelle */}
           <div className="flex items-center gap-4 mb-6">
             <span className="text-sm font-medium text-neutral-700">Ma note :</span>
-            <StarRating 
-              rating={film.myRating} 
+            <StarRatingModern 
+              rating={film.myRating / 2} 
               interactive={true}
               size="lg"
+              showValue={true}
               onRatingChange={(rating) => {
                 // TODO: Implémenter la mise à jour de la note
                 console.log('Nouvelle note:', rating);
@@ -77,12 +80,20 @@ export default function FilmDetail({ film, tmdbData, onToggleWatched, onUpdateRe
             />
           </div>
 
-          {/* Bouton Vu */}
-          <div className="mb-6">
+          {/* Actions */}
+          <div className="flex gap-3 mb-6">
             <WatchedButton 
-              isWatched={true} // Pour l'instant, considérons tous les films comme vus
+              isWatched={true}
               onToggle={handleToggleWatched}
               movieId={film.id}
+            />
+            <EditFilmButton
+              film={film}
+              onSave={(data) => {
+                // TODO: Implémenter la sauvegarde
+                console.log('Sauvegarde:', data);
+              }}
+              variant="secondary"
             />
           </div>
 
@@ -174,6 +185,17 @@ export default function FilmDetail({ film, tmdbData, onToggleWatched, onUpdateRe
           </div>
         )}
       </div>
+
+      {/* Films recommandés */}
+      {film.tmdbId && (
+        <RecommendedMovies 
+          movieId={film.tmdbId}
+          onAddToCollection={async (data) => {
+            // TODO: Implémenter l'ajout à la collection
+            console.log('Ajout à la collection:', data);
+          }}
+        />
+      )}
     </div>
   );
 }

@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from 'react';
-
 interface WatchedButtonProps {
   isWatched: boolean;
   onToggle?: (isWatched: boolean) => void;
@@ -9,37 +7,34 @@ interface WatchedButtonProps {
 }
 
 export default function WatchedButton({ isWatched, onToggle, movieId }: WatchedButtonProps) {
-  const [isLoading, setIsLoading] = useState(false);
+  // Si le film est dans notre collection, il est automatiquement considéré comme vu
+  if (isWatched) {
+    return (
+      <div className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium bg-green-500 text-white">
+        <span className="text-lg">✓</span>
+        <span>Vu</span>
+      </div>
+    );
+  }
 
-  const handleToggle = async () => {
+  // Si le film n'est pas dans notre collection, on peut l'ajouter
+  const handleAddToCollection = async () => {
     if (!onToggle) return;
     
-    setIsLoading(true);
     try {
-      await onToggle(!isWatched);
+      await onToggle(true);
     } catch (error) {
-      console.error('Erreur lors du changement de statut:', error);
-    } finally {
-      setIsLoading(false);
+      console.error('Erreur lors de l\'ajout à la collection:', error);
     }
   };
 
   return (
     <button
-      onClick={handleToggle}
-      disabled={isLoading}
-      className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-        isWatched
-          ? 'bg-green-500 text-white hover:bg-green-600'
-          : 'bg-neutral-200 text-neutral-700 hover:bg-neutral-300'
-      } ${isLoading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+      onClick={handleAddToCollection}
+      className="flex items-center gap-2 px-4 py-2 rounded-lg font-medium bg-blue-500 text-white hover:bg-blue-600 transition-colors"
     >
-      {isLoading ? (
-        <div className="w-4 h-4 border-2 border-current border-t-transparent rounded-full animate-spin"></div>
-      ) : (
-        <span className="text-lg">{isWatched ? '✓' : '○'}</span>
-      )}
-      <span>{isWatched ? 'Vu' : 'Marquer comme vu'}</span>
+      <span className="text-lg">+</span>
+      <span>Ajouter à ma collection</span>
     </button>
   );
 }

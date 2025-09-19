@@ -20,11 +20,11 @@ export default function Navbar() {
           <Link href="/my-list" className="hover:text-white transition">
             Ma Liste
           </Link>
-          <Link href="/directors" className="hover:text-white transition">
-            Réalisateurs
+          <Link href="/wishlist" className="hover:text-white transition">
+            Wishlist
           </Link>
-          <Link href="/actors" className="hover:text-white transition">
-            Acteurs
+          <Link href="/personalities" className="hover:text-white transition">
+            Personnalités
           </Link>
         </div>
         

@@ -1,9 +1,8 @@
 'use client';
 
 import { getMovieDetails } from "@/lib/tmdb";
-import FilmCard from "@/components/FilmCard";
-import WatchedButton from "@/components/WatchedButton";
-import ReviewForm from "@/components/ReviewForm";
+import QuickReview from "@/components/QuickReview";
+import WishlistButton from "@/components/WishlistButton";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
@@ -69,11 +68,7 @@ export default function SearchPage({ params }: SearchPageProps) {
     }
   };
 
-  const handleAddToCollection = () => {
-    setShowReviewForm(true);
-  };
-
-  const handleSubmitReview = async (reviewData: any) => {
+  const handleAddToCollection = async (data: { rating: number; review: string }) => {
     try {
       // Appel à l'API pour ajouter le film à la collection
       const response = await fetch('/api/films', {
@@ -85,18 +80,14 @@ export default function SearchPage({ params }: SearchPageProps) {
           tmdbId: movieId,
           title: movieDetails.title,
           year: new Date(movieDetails.release_date).getFullYear(),
-          myRating: reviewData.rating * 2, // Convertir de 5 étoiles à 10
-          positives: reviewData.positives,
-          negatives: reviewData.negatives,
-          myReview: reviewData.review,
-          dateWatched: new Date().toISOString().split('T')[0]
+          rating: data.rating,
+          review: data.review
         }),
       });
 
       if (response.ok) {
         console.log('Film ajouté à la collection avec succès !');
         setShowReviewForm(false);
-        // Optionnel : afficher un message de succès
         alert('Film ajouté à votre collection !');
       } else {
         console.error('Erreur lors de l\'ajout du film');
@@ -190,20 +181,28 @@ export default function SearchPage({ params }: SearchPageProps) {
               )}
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <div className="flex flex-col sm:flex-row gap-2">
-                  <button 
-                    onClick={handleAddToCollection}
-                    className="btn-primary px-6 py-3 text-white font-medium rounded-lg"
-                  >
-                    ✨ J'ai vu ce film - Noter & Critiquer
-                  </button>
-                  <button 
-                    onClick={handleQuickAdd}
-                    className="px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition"
-                  >
-                    📝 Ajouter rapidement
-                  </button>
-                </div>
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <button 
+                      onClick={() => setShowReviewForm(true)}
+                      className="btn-primary px-6 py-3 text-white font-medium rounded-lg"
+                    >
+                      ✨ Critique rapide
+                    </button>
+                    <button 
+                      onClick={handleQuickAdd}
+                      className="px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition"
+                    >
+                      📝 Ajouter rapidement
+                    </button>
+                    <WishlistButton
+                      tmdbId={movieId!}
+                      title={movieDetails.title}
+                      year={new Date(movieDetails.release_date).getFullYear()}
+                      poster_path={movieDetails.poster_path}
+                      overview={movieDetails.overview}
+                      variant="secondary"
+                    />
+                  </div>
                 <button 
                   onClick={() => setShowMoreInfo(!showMoreInfo)}
                   className="px-6 py-3 border border-neutral-300 text-neutral-700 font-medium rounded-lg hover:bg-neutral-50 transition"
@@ -305,21 +304,13 @@ export default function SearchPage({ params }: SearchPageProps) {
           </div>
         )}
 
-        {/* Formulaire d'ajout à la collection */}
+        {/* Formulaire de critique rapide */}
         {showReviewForm && (
           <div className="mt-8">
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                🎬 Ajouter "{movieDetails?.title}" à votre collection
-              </h3>
-              <p className="text-blue-700 text-sm">
-                Partagez votre avis sur ce film en notant et en critiquant. Vous pourrez toujours modifier votre avis plus tard.
-              </p>
-            </div>
-            <ReviewForm
-              onSubmit={handleSubmitReview}
+            <QuickReview
+              onSubmit={handleAddToCollection}
               onCancel={() => setShowReviewForm(false)}
-              isEditing={false}
+              movieTitle={movieDetails?.title}
             />
           </div>
         )}
