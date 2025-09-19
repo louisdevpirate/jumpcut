@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { searchMovies } from '@/lib/tmdb';
+import { SearchIcon } from './Icons';
 
 interface SearchResult {
   id: number;
@@ -61,7 +62,7 @@ export default function SearchBar() {
 
   return (
     <div className="relative">
-      <div className="hidden md:flex items-center bg-gray-800/50 backdrop-blur-sm rounded-full px-4 py-2 border border-gray-700">
+      <div className="hidden md:flex items-center bg-gray-800/50 backdrop-blur-sm rounded-md px-4 py-2 border border-gray-700">
         <input
           type="text"
           placeholder="Rechercher un film..."
@@ -71,8 +72,10 @@ export default function SearchBar() {
           onBlur={handleInputBlur}
           className="bg-transparent outline-none text-sm text-white w-48 placeholder-gray-400"
         />
-        {isLoading && (
+        {isLoading ? (
           <div className="ml-2 w-4 h-4 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+        ) : (
+          <SearchIcon className="ml-2 w-4 h-4 text-gray-400" />
         )}
       </div>
 
@@ -115,7 +118,7 @@ export default function SearchBar() {
         </button>
         
         {isOpen && (
-          <div className="absolute top-full right-0 mt-2 bg-white border border-neutral-200 rounded-lg shadow-lg z-50 w-80">
+          <div className="absolute top-full right-0 mt-2 bg-white border border-neutral-200 rounded-lg shadow-lg z-50 w-96">
             <div className="p-3 border-b border-neutral-200">
               <input
                 type="text"

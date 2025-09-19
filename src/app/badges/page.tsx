@@ -231,7 +231,7 @@ export default function BadgesPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 text-white">
+    <div className="max-w-7xl mx-auto px-6 py-12 pt-48 text-white">
       <div className="mb-8">
         <h1 className="text-4xl font-bold mb-4 font-satoshi">🏆 Mes Badges</h1>
         <p className="text-gray-400">Débloquez des succès en explorant le cinéma</p>

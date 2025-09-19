@@ -1,9 +1,11 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaPlay, FaPlus, FaInfoCircle } from 'react-icons/fa';
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { FaPlus, FaInfoCircle, FaStar } from "react-icons/fa";
+import QuickReview from "./QuickReview";
+import WishlistButton from "./WishlistButton";
 
 interface HeroSectionProps {
   movie: {
@@ -17,12 +19,12 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ movie }: HeroSectionProps) {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [showQuickReview, setShowQuickReview] = useState(false);
 
   if (!movie) return null;
 
   return (
-    <div className="relative h-[70vh] overflow-hidden">
+    <div className="relative h-[80vh] overflow-hidden pt-38">
       {/* Image de fond */}
       <div className="absolute inset-0">
         <Image
@@ -31,7 +33,7 @@ export default function HeroSection({ movie }: HeroSectionProps) {
           fill
           className="object-cover"
           priority
-          sizes="100vw"
+          sizes="80vw"
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
         />
@@ -41,13 +43,16 @@ export default function HeroSection({ movie }: HeroSectionProps) {
 
       {/* Contenu */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl md:pl-28 pl-6">
+          <div className="flex items-center gap-4 text-white px-4 py-1 text-sm border rounded-full mb-2 w-fit border-white">
+            À la une
+          </div>
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight font-satoshi">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight font-satoshi">
               {movie.title}
             </h1>
-            
-            <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed">
+
+            <p className="text-lg md:text-md text-gray-200 mb-6 leading-relaxed">
               {movie.overview}
             </p>
 
@@ -63,26 +68,43 @@ export default function HeroSection({ movie }: HeroSectionProps) {
             {/* Boutons d'action */}
             <div className="flex items-center gap-4">
               <button
-                onClick={() => setIsPlaying(!isPlaying)}
-                className="flex items-center gap-2 px-8 py-3 bg-white text-black font-semibold rounded-md hover:bg-gray-200 transition"
+                onClick={() => setShowQuickReview(true)}
+                className="flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black font-semibold rounded-md hover:bg-yellow-400 transition"
               >
-                <FaPlay className="text-sm" />
-                {isPlaying ? 'Pause' : 'Lecture'}
+                <FaStar className="text-sm" />
+                Critiquer
               </button>
               
-              <button className="flex items-center gap-2 px-6 py-3 bg-gray-600/80 text-white font-semibold rounded-md hover:bg-gray-600 transition">
-                <FaPlus className="text-sm" />
-                Ma Liste
-              </button>
+              <WishlistButton movieId={movie.id} movieTitle={movie.title} variant="hero" />
               
-              <button className="flex items-center gap-2 px-6 py-3 bg-gray-600/80 text-white font-semibold rounded-md hover:bg-gray-600 transition">
-                <FaInfoCircle className="text-sm" />
-                Plus d'infos
-              </button>
+              <Link href={`/films/${movie.id}`}>
+                <button className="flex items-center gap-2 px-6 py-3 bg-gray-600/80 text-white font-semibold rounded-md hover:bg-gray-600 transition">
+                  <FaInfoCircle className="text-sm" />
+                  Plus d'infos
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      
+      {/* Modal de critique rapide */}
+      {showQuickReview && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <QuickReview
+              onSubmit={async (data) => {
+                // Logique pour sauvegarder la critique
+                console.log('Critique soumise:', data);
+                setShowQuickReview(false);
+              }}
+              onCancel={() => setShowQuickReview(false)}
+              movieTitle={movie.title}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+

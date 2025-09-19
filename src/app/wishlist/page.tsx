@@ -106,7 +106,7 @@ export default function WishlistPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 text-white">
+    <div className="max-w-7xl mx-auto px-6 py-12 text-white pt-48">
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-4xl font-bold font-satoshi">🎯 Wishlist</h1>
         <div className="text-sm text-gray-400">

@@ -3,7 +3,9 @@
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaPlay, FaPlus, FaInfoCircle } from 'react-icons/fa';
+import { FaStar, FaInfoCircle } from 'react-icons/fa';
+import WishlistButton from './WishlistButton';
+import QuickReviewButton from './QuickReviewButton';
 
 interface FilmCarouselProps {
   movies: Array<{
@@ -82,12 +84,16 @@ export default function FilmCarousel({ movies }: FilmCarouselProps) {
               {hoveredMovie === movie.id && (
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex gap-2">
-                    <button className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition">
-                      <FaPlay className="text-white text-sm" />
-                    </button>
-                    <button className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition">
-                      <FaPlus className="text-white text-sm" />
-                    </button>
+                    <QuickReviewButton 
+                      movieId={movie.id} 
+                      movieTitle={movie.title}
+                      variant="carousel"
+                    />
+                    <WishlistButton 
+                      movieId={movie.id} 
+                      movieTitle={movie.title}
+                      variant="carousel"
+                    />
                     <Link href={`/films/${movie.id}`}>
                       <button className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition">
                         <FaInfoCircle className="text-white text-sm" />

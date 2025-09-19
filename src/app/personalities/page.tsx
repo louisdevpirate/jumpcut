@@ -149,7 +149,7 @@ export default function PersonalitiesPage() {
   const filteredAndSortedPersons = useMemo(() => {
     let filtered = persons.filter(person => {
       const matchesSearch = person.name.toLowerCase().includes(searchQuery.toLowerCase());
-      const matchesFilter = filterType === 'all' || person.type === filterType;
+      const matchesFilter = filterType === 'all' || person.type === filterType.slice(0, -1);
       return matchesSearch && matchesFilter;
     });
 
@@ -179,10 +179,10 @@ export default function PersonalitiesPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen py-8">
+      <div className="min-h-screen py-8 pt-48">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-8">
-            <h1 className="text-4xl font-bold text-neutral-900 mb-4 font-satoshi">🎭 Personnalités</h1>
+            <h1 className="text-4xl font-bold text-white mb-4 font-satoshi">🎭 Personnalités</h1>
             <p className="text-neutral-600">Chargement des personnalités...</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -207,7 +207,7 @@ export default function PersonalitiesPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center py-16">
             <div className="text-6xl mb-4">⚠️</div>
-            <h3 className="text-xl font-semibold text-neutral-900 mb-2">
+            <h3 className="text-xl font-semibold text-white mb-2">
               Erreur de chargement
             </h3>
             <p className="text-neutral-600">
@@ -220,12 +220,12 @@ export default function PersonalitiesPage() {
   }
 
   return (
-    <div className="min-h-screen py-8">
+    <div className="min-h-screen py-8 pt-48">
       <div className="max-w-6xl mx-auto px-6">
         {/* En-tête */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-neutral-900 mb-4 font-satoshi">🎭 Personnalités</h1>
-          <p className="text-neutral-600">
+          <h1 className="text-4xl font-bold text-white mb-4 font-satoshi">🎭 Personnalités</h1>
+          <p className="text-neutral-200">
             Explorez les filmographies de vos acteurs et réalisateurs préférés ({persons.length} personnalités)
           </p>
         </div>
@@ -233,7 +233,7 @@ export default function PersonalitiesPage() {
         {/* Top personnalités */}
         {topPersons.length > 0 && (
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-neutral-900 mb-6">🏆 Top Personnalités</h2>
+            <h2 className="text-2xl font-bold text-white mb-6">🏆 Top Personnalités</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {topPersons.map((person) => (
                 <Link key={`${person.type}-${person.id}`} href={`/${person.type}s/${person.id}`}>

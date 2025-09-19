@@ -118,7 +118,7 @@ export default function StatsPage() {
       total: films.length,
       rated: ratedFilms.length,
       averageRating: ratedFilms.length > 0 
-        ? (ratedFilms.reduce((sum, f) => sum + f.myRating, 0) / ratedFilms.length / 2).toFixed(1)
+        ? Number((ratedFilms.reduce((sum, f) => sum + f.myRating, 0) / ratedFilms.length / 2).toFixed(1))
         : 0,
       latestYear: Math.max(...films.map(f => f.year || 0)),
       oldestYear: Math.min(...films.filter(f => f.year).map(f => f.year!)),
@@ -143,7 +143,7 @@ export default function StatsPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 text-white">
+    <div className="max-w-7xl mx-auto px-6 py-12 pt-48 text-white">
       <div className="mb-8">
         <h1 className="text-4xl font-bold mb-4 font-satoshi">📊 Mes Statistiques</h1>
         <p className="text-gray-400">Découvrez votre profil de cinéphile en chiffres</p>

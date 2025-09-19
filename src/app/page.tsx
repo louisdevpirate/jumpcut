@@ -9,7 +9,9 @@ async function MoviesSection({ title, fetchFunction, genreId }: { title: string;
   const movies = await fetchFunction();
   return (
     <div className="netflix-section">
-      <h2 className="netflix-section-title">{title}</h2>
+      <div className="pl-12 mb-4">
+        <h2 className="netflix-section-title">{title}</h2>
+      </div>
       <FilmCarousel movies={movies} />
     </div>
   );
@@ -24,8 +26,8 @@ export default async function FilmsPage() {
       {/* Section Hero avec film en vedette */}
       <HeroSection movie={trendingMovies[0]} />
       
-      <div className="relative z-10 -mt-32">
-        <div className="max-w-7xl mx-auto px-6 pb-12">
+      <div className="relative z-10 pt-10">
+        <div className="pb-12 pl-12 overflow-x-hidden">
           
           {/* Films populaires - Chargement prioritaire */}
           <Suspense fallback={<LoadingSkeleton title="Populaires" />}>

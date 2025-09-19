@@ -48,7 +48,9 @@ export interface TmdbMovie {
 export interface TmdbTrendingMovie {
   id: number;
   title: string;
+  overview: string;
   poster_path: string;
+  backdrop_path: string;
   release_date: string;
   vote_average: number;
 }
@@ -89,6 +91,19 @@ export async function getTrendingMovies(): Promise<TmdbTrendingMovie[]> {
     
     const data = await response.json();
     const results = data.results;
+    
+    // Récupérer les détails complets du premier film pour le Hero
+    if (results.length > 0) {
+      const firstMovieDetails = await getMovieDetails(results[0].id);
+      if (firstMovieDetails) {
+        results[0] = {
+          ...results[0],
+          overview: firstMovieDetails.overview,
+          backdrop_path: firstMovieDetails.backdrop_path
+        };
+      }
+    }
+    
     setCachedData(cacheKey, results);
     return results;
   } catch (error) {
