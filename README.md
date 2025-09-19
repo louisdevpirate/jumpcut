@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Ma Cinémathèque
 
-## Getting Started
+Une application moderne de gestion de collection de films développée avec Next.js et Tailwind CSS.
 
-First, run the development server:
+## ✨ Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Collection personnelle** : Ajoutez vos films vus avec notes et critiques
+- **Intégration TMDb** : Données enrichies automatiquement (affiches, synopsis, acteurs, réalisateurs)
+- **Navigation intuitive** : Parcours par films, réalisateurs et acteurs
+- **Barres de progression** : Suivez votre avancement dans les filmographies
+- **Section "À la une"** : Découvrez les films tendance du moment
+- **Design moderne** : Interface élégante avec animations fluides
+
+## 🚀 Installation
+
+1. **Cloner le projet**
+   ```bash
+   git clone <votre-repo>
+   cd jumpcut
+   ```
+
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
+
+3. **Configuration de l'API TMDb**
+   - Créez un compte sur [TMDb](https://www.themoviedb.org/)
+   - Obtenez votre clé API gratuite dans Settings > API
+   - Créez un fichier `.env.local` :
+     ```env
+     TMDB_API_KEY=votre-clé-api-ici
+     ```
+
+4. **Lancer le serveur de développement**
+   ```bash
+   npm run dev
+   ```
+
+5. **Ouvrir dans le navigateur**
+   ```
+   http://localhost:3000
+   ```
+
+## 📁 Structure du projet
+
+```
+src/
+├── app/                    # Pages Next.js
+│   ├── films/             # Pages des films
+│   ├── actors/            # Pages des acteurs
+│   ├── directors/         # Pages des réalisateurs
+│   └── layout.tsx         # Layout principal
+├── components/            # Composants réutilisables
+│   ├── Navbar.tsx         # Navigation
+│   ├── FilmCard.tsx       # Carte de film
+│   ├── FilmDetail.tsx     # Détail d'un film
+│   ├── ProgressBar.tsx    # Barre de progression
+│   └── AccentButton.tsx   # Bouton d'accent
+├── lib/                   # Utilitaires
+│   └── tmdb.ts           # API TMDb
+└── config/               # Configuration
+    └── tmdb.ts           # Config TMDb
+data/
+└── films.json            # Données des films
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Palette de couleurs
+- **Fond principal** : `bg-neutral-50`
+- **Texte principal** : `text-neutral-900`
+- **Texte secondaire** : `text-neutral-600`
+- **Accent** : `bg-blue-500`
+- **Positif** : `bg-green-50`
+- **Négatif** : `bg-red-50`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Animations
+- **Fade-in** : Apparition en fondu
+- **Slide-in** : Glissement depuis la gauche
+- **Scale-in** : Agrandissement progressif
+- **Hover effects** : Transformations au survol
 
-## Learn More
+## 📊 Structure des données
 
-To learn more about Next.js, take a look at the following resources:
+### Format JSON des films
+```json
+{
+  "id": 1,
+  "tmdbId": 27205,
+  "title": "Inception",
+  "year": 2010,
+  "myRating": 9,
+  "positives": "Points positifs...",
+  "negatives": "Points négatifs...",
+  "myReview": "Critique complète...",
+  "dateWatched": "2025-01-15"
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 API TMDb
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+L'application utilise l'API TMDb pour enrichir automatiquement les données :
 
-## Deploy on Vercel
+- **Films tendance** : `/trending/movie/week`
+- **Détails de film** : `/movie/{id}`
+- **Recherche** : `/search/movie`
+- **Informations acteur/réalisateur** : `/person/{id}`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Pages disponibles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **/** : Accueil avec films tendance et statistiques
+- **/films** : Liste de tous vos films
+- **/films/[id]** : Détail d'un film avec critique
+- **/actors** : Liste des acteurs avec filmographies
+- **/directors** : Liste des réalisateurs avec filmographies
+
+## 🚀 Déploiement
+
+### Vercel (recommandé)
+1. Connectez votre repo GitHub à Vercel
+2. Ajoutez la variable d'environnement `TMDB_API_KEY`
+3. Déployez automatiquement
+
+### Autres plateformes
+```bash
+npm run build
+npm start
+```
+
+## 🛠️ Technologies utilisées
+
+- **Next.js 15** : Framework React
+- **Tailwind CSS 4** : Framework CSS
+- **TypeScript** : Typage statique
+- **TMDb API** : Base de données cinématographique
+- **Inter Font** : Typographie moderne
+
+## 📝 Prochaines fonctionnalités
+
+- [ ] Mode sombre
+- [ ] Ajout de nouveaux films
+- [ ] Système de recherche avancée
+- [ ] Export/import de données
+- [ ] Statistiques avancées
+- [ ] Recommandations personnalisées
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à :
+- Signaler des bugs
+- Proposer des améliorations
+- Ajouter de nouvelles fonctionnalités
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+---
+
+Développé avec ❤️ pour les amateurs de cinéma

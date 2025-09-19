@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "tmdbId": 27205,
+    "title": "Inception",
+    "year": 2010,
+    "myRating": 9,
+    "positives": "Mise en scène magistrale, concept brillant, effets visuels époustouflants",
+    "negatives": "Légère froideur émotionnelle, complexité parfois excessive",
+    "myReview": "Un film vertigineux qui redéfinit la science-fiction moderne. Christopher Nolan nous plonge dans un univers onirique fascinant où la réalité se confond avec les rêves.",
+    "dateWatched": "2025-01-15"
+  },
+  {
+    "id": 2,
+    "tmdbId": 13,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "myRating": 10,
+    "positives": "Performance exceptionnelle de Tom Hanks, émotions profondes, musique mémorable",
+    "negatives": "Aucun point négatif notable",
+    "myReview": "Un chef-d'œuvre absolu qui traverse les décennies avec grâce. L'histoire de Forrest Gump est un voyage émotionnel inoubliable.",
+    "dateWatched": "2025-01-10"
+  },
+  {
+    "id": 3,
+    "tmdbId": 238,
+    "title": "Le Parrain",
+    "year": 1972,
+    "myRating": 10,
+    "positives": "Réalisation parfaite, interprétations magistrales, scénario impeccable",
+    "negatives": "Aucun",
+    "myReview": "Le film parfait. Chaque plan, chaque dialogue, chaque performance contribue à créer une œuvre d'art intemporelle.",
+    "dateWatched": "2025-01-05"
+  },
+  {
+    "id": 4,
+    "tmdbId": 155,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "myRating": 9,
+    "positives": "Heath Ledger exceptionnel, tension constante, réalisation brillante",
+    "negatives": "Durée un peu longue",
+    "myReview": "Un film de super-héros qui transcende le genre. La performance de Heath Ledger en Joker reste inégalée.",
+    "dateWatched": "2025-01-01"
+  },
+  {
+    "id": 5,
+    "tmdbId": 550,
+    "title": "Fight Club",
+    "year": 1999,
+    "myRating": 8,
+    "positives": "Réalisation audacieuse, twist mémorable, critique sociale pertinente",
+    "negatives": "Violence parfois excessive",
+    "myReview": "Un film culte qui déconstruit brillamment la société de consommation. Le twist final reste l'un des plus mémorables du cinéma.",
+    "dateWatched": "2024-12-28"
+  }
+]
