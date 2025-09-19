@@ -8,12 +8,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-bold text-white hover:text-blue-400 transition"
+          className="text-xl font-bold text-white hover:text-blue-400 transition font-satoshi"
         >
-          <Image src="/jumpcut.png" alt="JumpCut" width={120} height={40} />
+          <Image src="/images/jumpcut.png" alt="JumpCut" width={60} height={40} />
         </Link>
         
-        <div className="flex items-center gap-8 text-sm font-medium text-neutral-300">
+        <div className="flex items-center gap-8 text-sm font-medium text-neutral-300 font-satoshi">
           <Link href="/" className="hover:text-white transition">
             Films
           </Link>
@@ -25,9 +25,6 @@ export default function Navbar() {
           </Link>
           <Link href="/actors" className="hover:text-white transition">
             Acteurs
-          </Link>
-          <Link href="/trending" className="hover:text-white transition">
-            À la une
           </Link>
         </div>
         

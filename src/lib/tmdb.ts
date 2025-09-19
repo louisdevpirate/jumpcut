@@ -1,6 +1,22 @@
 // Utilitaires pour l'API TMDb
 import { TMDB_CONFIG } from '@/config/tmdb';
 
+// Cache simple pour éviter les appels API répétés
+const cache = new Map<string, { data: any; timestamp: number }>();
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
+function getCachedData(key: string) {
+  const cached = cache.get(key);
+  if (cached && Date.now() - cached.timestamp < CACHE_DURATION) {
+    return cached.data;
+  }
+  return null;
+}
+
+function setCachedData(key: string, data: any) {
+  cache.set(key, { data, timestamp: Date.now() });
+}
+
 const TMDB_API_KEY = TMDB_CONFIG.API_KEY;
 const TMDB_BASE_URL = TMDB_CONFIG.BASE_URL;
 
@@ -57,9 +73,14 @@ export async function getMovieDetails(tmdbId: number): Promise<TmdbMovie | null>
 
 // Fonction pour récupérer les films tendance
 export async function getTrendingMovies(): Promise<TmdbTrendingMovie[]> {
+  const cacheKey = 'trending-movies';
+  const cachedData = getCachedData(cacheKey);
+  if (cachedData) return cachedData;
+
   try {
     const response = await fetch(
-      `${TMDB_BASE_URL}/trending/movie/week?api_key=${TMDB_API_KEY}&language=fr-FR`
+      `${TMDB_BASE_URL}/trending/movie/week?api_key=${TMDB_API_KEY}&language=fr-FR`,
+      { next: { revalidate: 300 } } // Cache Next.js pendant 5 minutes
     );
     
     if (!response.ok) {
@@ -67,7 +88,9 @@ export async function getTrendingMovies(): Promise<TmdbTrendingMovie[]> {
     }
     
     const data = await response.json();
-    return data.results; // Retourner tous les résultats pour les carrousels
+    const results = data.results;
+    setCachedData(cacheKey, results);
+    return results;
   } catch (error) {
     console.error('Erreur lors de la récupération des films tendance:', error);
     return [];
@@ -76,9 +99,14 @@ export async function getTrendingMovies(): Promise<TmdbTrendingMovie[]> {
 
 // Fonction pour récupérer les films populaires
 export async function getPopularMovies(): Promise<TmdbTrendingMovie[]> {
+  const cacheKey = 'popular-movies';
+  const cachedData = getCachedData(cacheKey);
+  if (cachedData) return cachedData;
+
   try {
     const response = await fetch(
-      `${TMDB_BASE_URL}/movie/popular?api_key=${TMDB_API_KEY}&language=fr-FR&page=1`
+      `${TMDB_BASE_URL}/movie/popular?api_key=${TMDB_API_KEY}&language=fr-FR&page=1`,
+      { next: { revalidate: 300 } }
     );
     
     if (!response.ok) {
@@ -86,7 +114,9 @@ export async function getPopularMovies(): Promise<TmdbTrendingMovie[]> {
     }
     
     const data = await response.json();
-    return data.results;
+    const results = data.results;
+    setCachedData(cacheKey, results);
+    return results;
   } catch (error) {
     console.error('Erreur lors de la récupération des films populaires:', error);
     return [];

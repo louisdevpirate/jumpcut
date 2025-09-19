@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import StarRating from './StarRating';
 
-interface FilmCardProps {
+interface FilmCardClientProps {
   id: number;
   title: string;
   year: number | null;
@@ -13,58 +13,65 @@ interface FilmCardProps {
   myRating: number;
 }
 
-export default function FilmCard({ id, title, year, tmdbId, myRating }: FilmCardProps) {
-  const [poster, setPoster] = useState<string>('/placeholder-poster.svg');
-  const [isLoading, setIsLoading] = useState(true);
+export default function FilmCardClient({ id, title, year, tmdbId, myRating }: FilmCardClientProps) {
+  const [posterUrl, setPosterUrl] = useState('/placeholder-poster.svg');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadPoster = async () => {
-      if (!tmdbId) {
-        setIsLoading(false);
-        return;
-      }
-
-      try {
-        const response = await fetch(`/api/tmdb/movie/${tmdbId}`);
-        if (response.ok) {
-          const data = await response.json();
-          if (data.poster_path) {
-            setPoster(`https://image.tmdb.org/t/p/w500${data.poster_path}`);
+    async function fetchPoster() {
+      if (tmdbId) {
+        try {
+          const response = await fetch(`/api/tmdb/movie/${tmdbId}`);
+          if (response.ok) {
+            const data = await response.json();
+            if (data.poster_path) {
+              setPosterUrl(`https://image.tmdb.org/t/p/w300${data.poster_path}`);
+            }
           }
+        } catch (error) {
+          console.error(`Erreur lors du chargement de l'affiche pour ${title}:`, error);
         }
-      } catch (error) {
-        console.warn(`Erreur lors du chargement de l'affiche pour ${title}:`, error);
-      } finally {
-        setIsLoading(false);
       }
-    };
-
-    loadPoster();
+      setLoading(false);
+    }
+    
+    fetchPoster();
   }, [tmdbId, title]);
 
   return (
-    <Link href={`/films/${id}`} className="group block">
-      <div className="film-card rounded-xl overflow-hidden shadow-md bg-white hover:shadow-xl transition duration-300 animate-fade-in">
+    <Link href={`/films/${id}`}>
+      <div className="film-card bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-700 transition">
         <div className="relative aspect-[2/3]">
-          {isLoading ? (
-            <div className="w-full h-full bg-neutral-200 animate-pulse flex items-center justify-center">
+          {loading ? (
+            <div className="w-full h-full bg-gray-700 flex items-center justify-center">
               <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
             </div>
           ) : (
             <Image
-              src={poster}
+              src={posterUrl}
               alt={title}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              className="object-cover"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
             />
           )}
         </div>
-        <div className="p-4">
-          <h3 className="font-semibold text-lg text-neutral-900 truncate">{title}</h3>
-          <p className="text-sm text-neutral-500">{year || 'Année inconnue'}</p>
-          <div className="mt-2">
-            <StarRating rating={Math.round(myRating / 2)} interactive={false} size="sm" />
+        <div className="p-3">
+          <h3 className="font-semibold text-sm text-white truncate mb-1">
+            {title}
+          </h3>
+          <div className="flex items-center justify-between text-xs text-gray-400 mb-2">
+            <span>{year || 'N/A'}</span>
+            {myRating > 0 && (
+              <span>⭐ {myRating}/10</span>
+            )}
           </div>
+          {myRating > 0 && (
+            <StarRating rating={Math.round(myRating / 2)} interactive={false} size="sm" />
+          )}
         </div>
       </div>
     </Link>

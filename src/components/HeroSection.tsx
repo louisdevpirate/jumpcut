@@ -31,6 +31,9 @@ export default function HeroSection({ movie }: HeroSectionProps) {
           fill
           className="object-cover"
           priority
+          sizes="100vw"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
         />
         {/* Overlay dégradé */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
@@ -40,7 +43,7 @@ export default function HeroSection({ movie }: HeroSectionProps) {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight font-satoshi">
               {movie.title}
             </h1>
             

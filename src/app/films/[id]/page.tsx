@@ -67,7 +67,7 @@ export default async function FilmPage({ params }: FilmPageProps) {
 
   return (
     <div className="min-h-screen">
-      <FilmDetail film={film} tmdbData={tmdbData} />
+      <FilmDetail film={film} tmdbData={tmdbData || undefined} />
     </div>
   );
 }

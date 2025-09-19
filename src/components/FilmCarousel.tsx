@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaPlay, FaPlus, FaInfoCircle } from 'react-icons/fa';
@@ -17,6 +17,29 @@ interface FilmCarouselProps {
 
 export default function FilmCarousel({ movies }: FilmCarouselProps) {
   const [hoveredMovie, setHoveredMovie] = useState<number | null>(null);
+  const [visibleMovies, setVisibleMovies] = useState(8); // Afficher seulement 8 films initialement
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  // Observer pour le lazy loading
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Charger plus de films quand le carrousel devient visible
+            setVisibleMovies(prev => Math.min(prev + 4, movies.length));
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (carouselRef.current) {
+      observer.observe(carouselRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [movies.length]);
 
   if (!movies || movies.length === 0) {
     return (
@@ -30,10 +53,12 @@ export default function FilmCarousel({ movies }: FilmCarouselProps) {
     );
   }
 
+  const moviesToShow = movies.slice(0, visibleMovies);
+
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" ref={carouselRef}>
       <div className="carousel-content">
-        {movies.map((movie) => (
+        {moviesToShow.map((movie) => (
           <div
             key={movie.id}
             className="relative group cursor-pointer"
@@ -43,10 +68,14 @@ export default function FilmCarousel({ movies }: FilmCarouselProps) {
             {/* Carte du film */}
             <div className="film-card w-48 h-72 relative">
               <Image
-                src={movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : '/placeholder-poster.svg'}
+                src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : '/placeholder-poster.svg'}
                 alt={movie.title}
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
               />
               
               {/* Overlay au hover */}
@@ -82,6 +111,13 @@ export default function FilmCarousel({ movies }: FilmCarouselProps) {
             </div>
           </div>
         ))}
+        
+        {/* Indicateur de chargement pour plus de films */}
+        {visibleMovies < movies.length && (
+          <div className="flex items-center justify-center w-48 h-72">
+            <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        )}
       </div>
     </div>
   );

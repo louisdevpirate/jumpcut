@@ -1,21 +1,43 @@
 @import "tailwindcss";
 
+/* Import des fonts Satoshi */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('/font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.woff') format('woff'),
+       url('/font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+       url('/font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.woff') format('woff'),
+       url('/font/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-VariableItalic.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: italic;
+}
+
 :root {
-  --background: #0a0a0a;
+  --background: #10002a;
   --foreground: #ededed;
-  --font-inter: 'Inter', sans-serif;
+  --font-satoshi: 'Satoshi', system-ui, -apple-system, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-roboto);
+  --font-heading: var(--font-satoshi);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-roboto), system-ui, -apple-system, sans-serif;
 }
 
 /* Animations personnalisées */
@@ -94,16 +116,49 @@ body {
   padding: 0 4px;
 }
 
+/* Classes utilitaires pour les fonts */
+.font-satoshi {
+  font-family: var(--font-satoshi);
+}
+
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+
+/* Styles pour les titres avec Satoshi */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-satoshi);
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
 /* Styles pour les sections Netflix */
 .netflix-section {
   margin-bottom: 48px;
 }
 
 .netflix-section-title {
+  font-family: var(--font-satoshi);
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 16px;
   color: white;
+  letter-spacing: -0.025em;
 }
 
 /* Styles pour les étoiles de notation */

@@ -1,10 +1,11 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
-import { loadFilms } from '@/lib/films';
+import { getFilms } from '@/lib/films-client';
 import StarRating from '@/components/StarRating';
+import Pagination from '@/components/Pagination';
+import FilmCardClient from '@/components/FilmCardClient';
 import { FaSearch, FaSort } from 'react-icons/fa';
 
 interface Film {
@@ -31,7 +32,7 @@ export default function MyListPage() {
   useEffect(() => {
     const fetchFilms = async () => {
       try {
-        const data = await loadFilms();
+        const data = await getFilms();
         setFilms(data);
       } catch (error) {
         console.error('Erreur lors du chargement des films:', error);
@@ -79,7 +80,7 @@ export default function MyListPage() {
   const endIndex = startIndex + filmsPerPage;
   const currentFilms = filteredAndSortedFilms.slice(startIndex, endIndex);
 
-  // Statistiques
+  // Statistiques - Mémorisées pour éviter les recalculs
   const stats = useMemo(() => {
     const watchedFilms = films.filter(f => f.myRating > 0);
     return {
@@ -110,7 +111,7 @@ export default function MyListPage() {
         
         {/* En-tête */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-white mb-2">🎞️ Ma Liste</h1>
+          <h1 className="text-4xl font-bold text-white mb-2 font-satoshi">🎞️ Ma Liste</h1>
           <p className="text-gray-400">
             {stats.total} film{stats.total > 1 ? 's' : ''} dans votre collection
           </p>
@@ -171,32 +172,14 @@ export default function MyListPage() {
         {currentFilms.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
             {currentFilms.map((film) => (
-              <Link key={film.id} href={`/films/${film.id}`}>
-                <div className="film-card bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-700 transition">
-                  <div className="relative aspect-[2/3]">
-                    <Image
-                      src={film.tmdbId ? `https://image.tmdb.org/t/p/w500${film.tmdbId}` : '/placeholder-poster.svg'}
-                      alt={film.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-3">
-                    <h3 className="font-semibold text-sm text-white truncate mb-1">
-                      {film.title}
-                    </h3>
-                    <div className="flex items-center justify-between text-xs text-gray-400 mb-2">
-                      <span>{film.year || 'N/A'}</span>
-                      {film.myRating > 0 && (
-                        <span>⭐ {film.myRating}/10</span>
-                      )}
-                    </div>
-                    {film.myRating > 0 && (
-                      <StarRating rating={Math.round(film.myRating / 2)} interactive={false} size="sm" />
-                    )}
-                  </div>
-                </div>
-              </Link>
+              <FilmCardClient
+                key={film.id}
+                id={film.id}
+                title={film.title}
+                year={film.year}
+                tmdbId={film.tmdbId}
+                myRating={film.myRating}
+              />
             ))}
           </div>
         ) : (
@@ -218,50 +201,15 @@ export default function MyListPage() {
           </div>
         )}
 
-        {/* Pagination */}
-        {totalPages > 1 && (
-          <div className="flex justify-center mt-12 gap-2">
-            <button
-              onClick={() => setCurrentPage(1)}
-              disabled={currentPage === 1}
-              className="px-3 py-2 rounded bg-gray-800 text-white hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              «
-            </button>
-            
-            {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-              const page = Math.max(1, Math.min(totalPages - 4, currentPage - 2)) + i;
-              if (page > totalPages) return null;
-              
-              return (
-                <button
-                  key={page}
-                  onClick={() => setCurrentPage(page)}
-                  className={`px-3 py-2 rounded ${
-                    currentPage === page
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-gray-800 text-white hover:bg-gray-700'
-                  }`}
-                >
-                  {page}
-                </button>
-              );
-            })}
-            
-            <button
-              onClick={() => setCurrentPage(totalPages)}
-              disabled={currentPage === totalPages}
-              className="px-3 py-2 rounded bg-gray-800 text-white hover:bg-gray-700 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              »
-            </button>
-          </div>
-        )}
-
-        {/* Informations de pagination */}
-        <div className="text-center mt-6 text-gray-400 text-sm">
-          Affichage de {startIndex + 1} à {Math.min(endIndex, filteredAndSortedFilms.length)} sur {filteredAndSortedFilms.length} films
-        </div>
+        {/* Pagination moderne */}
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+          showResults={true}
+          totalResults={filteredAndSortedFilms.length}
+          resultsPerPage={filmsPerPage}
+        />
 
       </div>
     </div>

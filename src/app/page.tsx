@@ -1,28 +1,23 @@
+import { Suspense } from 'react';
 import { getTrendingMovies, getPopularMovies, getNowPlayingMovies, getUpcomingMovies, getMoviesByGenre } from '@/lib/tmdb';
 import FilmCarousel from '@/components/FilmCarousel';
 import HeroSection from '@/components/HeroSection';
+import LoadingSkeleton from '@/components/LoadingSkeleton';
+
+// Composant pour charger les sections de manière asynchrone
+async function MoviesSection({ title, fetchFunction, genreId }: { title: string; fetchFunction: () => Promise<any>; genreId?: number }) {
+  const movies = await fetchFunction();
+  return (
+    <div className="netflix-section">
+      <h2 className="netflix-section-title">{title}</h2>
+      <FilmCarousel movies={movies} />
+    </div>
+  );
+}
 
 export default async function FilmsPage() {
-  // Récupérer les données de différentes sections
-  const [
-    trendingMovies,
-    popularMovies,
-    nowPlayingMovies,
-    upcomingMovies,
-    actionMovies,
-    dramaMovies,
-    comedyMovies,
-    horrorMovies
-  ] = await Promise.all([
-    getTrendingMovies(),
-    getPopularMovies(),
-    getNowPlayingMovies(),
-    getUpcomingMovies(),
-    getMoviesByGenre(28), // Action
-    getMoviesByGenre(18), // Drame
-    getMoviesByGenre(35), // Comédie
-    getMoviesByGenre(27)  // Horreur
-  ]);
+  // Charger seulement les données critiques en premier
+  const trendingMovies = await getTrendingMovies();
 
   return (
     <div className="min-h-screen bg-black">
@@ -32,50 +27,42 @@ export default async function FilmsPage() {
       <div className="relative z-10 -mt-32">
         <div className="max-w-7xl mx-auto px-6 pb-12">
           
-          {/* Films populaires */}
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">Populaires</h2>
-            <FilmCarousel movies={popularMovies} />
-          </div>
+          {/* Films populaires - Chargement prioritaire */}
+          <Suspense fallback={<LoadingSkeleton title="Populaires" />}>
+            <MoviesSection title="Populaires" fetchFunction={getPopularMovies} />
+          </Suspense>
 
           {/* Actuellement en salles */}
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">Actuellement en salles</h2>
-            <FilmCarousel movies={nowPlayingMovies} />
-          </div>
+          <Suspense fallback={<LoadingSkeleton title="En salles" />}>
+            <MoviesSection title="Actuellement en salles" fetchFunction={getNowPlayingMovies} />
+          </Suspense>
 
           {/* Tendances */}
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">Tendances</h2>
-            <FilmCarousel movies={trendingMovies} />
-          </div>
+          <Suspense fallback={<LoadingSkeleton title="Tendances" />}>
+            <MoviesSection title="Tendances" fetchFunction={getTrendingMovies} />
+          </Suspense>
 
           {/* À venir */}
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">À venir</h2>
-            <FilmCarousel movies={upcomingMovies} />
-          </div>
+          <Suspense fallback={<LoadingSkeleton title="À venir" />}>
+            <MoviesSection title="À venir" fetchFunction={getUpcomingMovies} />
+          </Suspense>
 
-          {/* Par genre */}
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">Action</h2>
-            <FilmCarousel movies={actionMovies} />
-          </div>
+          {/* Par genre - Chargement différé */}
+          <Suspense fallback={<LoadingSkeleton title="Action" />}>
+            <MoviesSection title="Action" fetchFunction={() => getMoviesByGenre(28)} />
+          </Suspense>
 
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">Drame</h2>
-            <FilmCarousel movies={dramaMovies} />
-          </div>
+          <Suspense fallback={<LoadingSkeleton title="Drame" />}>
+            <MoviesSection title="Drame" fetchFunction={() => getMoviesByGenre(18)} />
+          </Suspense>
 
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">Comédie</h2>
-            <FilmCarousel movies={comedyMovies} />
-          </div>
+          <Suspense fallback={<LoadingSkeleton title="Comédie" />}>
+            <MoviesSection title="Comédie" fetchFunction={() => getMoviesByGenre(35)} />
+          </Suspense>
 
-          <div className="netflix-section">
-            <h2 className="netflix-section-title">Horreur</h2>
-            <FilmCarousel movies={horrorMovies} />
-          </div>
+          <Suspense fallback={<LoadingSkeleton title="Horreur" />}>
+            <MoviesSection title="Horreur" fetchFunction={() => getMoviesByGenre(27)} />
+          </Suspense>
 
         </div>
       </div>
