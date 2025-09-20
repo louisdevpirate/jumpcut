@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { HeartIcon } from './Icons';
 
 interface WishlistButtonProps {
@@ -36,7 +36,7 @@ export default function WishlistButton({
   const [isLoading, setIsLoading] = useState(false);
 
   // Vérifier si le film est déjà dans la wishlist
-  useState(() => {
+  useEffect(() => {
     try {
       const stored = localStorage.getItem('wishlist');
       if (stored) {
@@ -46,7 +46,7 @@ export default function WishlistButton({
     } catch (error) {
       console.error('Erreur lors de la vérification de la wishlist:', error);
     }
-  });
+  }, [finalTmdbId]);
 
   const toggleWishlist = async () => {
     setIsLoading(true);

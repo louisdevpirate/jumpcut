@@ -114,7 +114,7 @@ export default function SearchPage({ params }: SearchPageProps) {
 
   if (!movieDetails) {
     return (
-      <div className="min-h-screen py-8">
+      <div className="min-h-screen py-8 pt-48">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
@@ -131,14 +131,14 @@ export default function SearchPage({ params }: SearchPageProps) {
   }
 
   return (
-    <div className="min-h-screen py-8">
+    <div className="min-h-screen py-8 pt-48">
       <div className="max-w-6xl mx-auto px-6">
         {/* En-tête */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-neutral-900 mb-4">
+          <h1 className="text-4xl font-bold text-white mb-4">
             Résultat de recherche
           </h1>
-          <p className="text-neutral-600">
+          <p className="text-white">
             Film trouvé : {movieDetails.title}
           </p>
         </div>

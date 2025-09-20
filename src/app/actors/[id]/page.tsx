@@ -1,11 +1,12 @@
 import PersonDetailPage from '@/components/PersonDetailPage';
 
 interface ActorDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
-export default function ActorDetailPage({ params }: ActorDetailPageProps) {
-  return <PersonDetailPage params={params} personType="actors" />;
+export default async function ActorDetailPage({ params }: ActorDetailPageProps) {
+  const resolvedParams = await params;
+  return <PersonDetailPage params={resolvedParams} personType="actors" />;
 }

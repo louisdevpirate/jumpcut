@@ -63,48 +63,51 @@ export default function PersonDetailPage({
   const [sortBy, setSortBy] = useState<'year' | 'title' | 'popularity'>('year');
   const [currentPage, setCurrentPage] = useState(1);
 
+  // Validation de l'ID
+  if (isNaN(personId) || personId <= 0) {
+    return (
+      <div className="min-h-screen py-8 pt-48">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center py-16">
+            <div className="text-6xl mb-4">⚠️</div>
+            <h1 className="text-2xl font-bold text-white mb-4">
+              ID de personnalité invalide
+            </h1>
+            <p className="text-neutral-300 mb-6">
+              L'ID "{params.id}" n'est pas valide.
+            </p>
+            <Link 
+              href="/personalities"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+            >
+              <FaArrowLeft className="text-sm" />
+              Retour aux personnalités
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   useEffect(() => {
     async function fetchData() {
       try {
-        // Simulation de données pour tester sans API TMDb
-        const mockPerson: Person = {
-          id: personId,
-          name: personType === 'actors' ? 'Jean-Pierre Léaud' : 'François Truffaut',
-          profile_path: '/placeholder-person.jpg',
-          biography: 'Biographie de la personnalité...',
-          movie_credits: {
-            cast: [
-              {
-                id: 147,
-                title: 'Les 400 Coups',
-                release_date: '1959-05-04',
-                poster_path: '/placeholder-poster.jpg',
-                vote_average: 8.1
-              },
-              {
-                id: 9459,
-                title: 'Woodstock',
-                release_date: '1970-08-26',
-                poster_path: '/placeholder-poster.jpg',
-                vote_average: 7.8
-              }
-            ],
-            crew: [
-              {
-                id: 147,
-                title: 'Les 400 Coups',
-                release_date: '1959-05-04',
-                poster_path: '/placeholder-poster.jpg',
-                vote_average: 8.1,
-                job: 'Director'
-              }
-            ]
-          }
-        };
+        console.log('Chargement des détails pour personId:', personId, 'personType:', personType);
+        
+        // Utiliser l'ID réel de la personne
+        const response = await fetch(`/api/tmdb/person/${personId}`);
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+          const errorText = await response.text();
+          console.error('Erreur API:', response.status, errorText);
+          throw new Error(`Personne non trouvée (${response.status})`);
+        }
+        const personData = await response.json();
+        console.log('Données reçues:', personData.name);
+        setPerson(personData);
 
         const filmsData = await getFilms();
-        
-        setPerson(mockPerson);
         setUserFilms(filmsData);
       } catch (error) {
         console.error('Erreur lors du chargement des détails:', error);
@@ -146,6 +149,38 @@ export default function PersonDetailPage({
     }));
   }, [person, userFilms, personType]);
 
+  // Films les plus populaires (top 6)
+  const [topMovies, setTopMovies] = useState<any[]>([]);
+
+  useEffect(() => {
+    async function fetchPopularMovies() {
+      try {
+        const response = await fetch(`/api/tmdb/person/${personId}/popular-movies`);
+        if (response.ok) {
+          const movies = await response.json();
+          // Marquer les films vus et ajouter les données utilisateur
+          const moviesWithUserData = movies.map((movie: any) => ({
+            ...movie,
+            isWatched: userFilms.some(f => f.tmdbId === movie.id),
+            userRating: userFilms.find(f => f.tmdbId === movie.id)?.myRating || 0,
+            userReview: userFilms.find(f => f.tmdbId === movie.id)?.myReview || ''
+          }));
+          setTopMovies(moviesWithUserData.slice(0, 6));
+        }
+      } catch (error) {
+        console.error('Erreur lors du chargement des films populaires:', error);
+        // Fallback sur la filmographie locale
+        setTopMovies(filmography
+          .sort((a, b) => b.vote_average - a.vote_average)
+          .slice(0, 6));
+      }
+    }
+
+    if (personId && userFilms.length > 0) {
+      fetchPopularMovies();
+    }
+  }, [personId, userFilms, filmography]);
+
   // Filtrage et tri
   const filteredAndSortedMovies = useMemo(() => {
     let filtered = filmography.filter(movie =>
@@ -180,8 +215,12 @@ export default function PersonDetailPage({
     const watchedCount = watchedFilms.length;
     const completionPercentage = totalFilms > 0 ? (watchedCount / totalFilms) * 100 : 0;
     
-    const averageRating = watchedFilms.length > 0 
-      ? watchedFilms.reduce((sum, f) => sum + f.myRating, 0) / watchedFilms.length
+    const watchedUserFilms = watchedFilms.map(wf => 
+      userFilms.find(uf => uf.tmdbId === wf.id)
+    ).filter(Boolean);
+    
+    const averageRating = watchedUserFilms.length > 0 
+      ? watchedUserFilms.reduce((sum, f) => sum + f!.myRating, 0) / watchedUserFilms.length
       : 0;
 
     return {
@@ -190,7 +229,7 @@ export default function PersonDetailPage({
       completionPercentage,
       averageRating: averageRating / 2 // Convertir de 10 à 5 étoiles
     };
-  }, [filmography, watchedFilms]);
+  }, [filmography, watchedFilms, userFilms]);
 
   if (loading) {
     return (
@@ -207,15 +246,18 @@ export default function PersonDetailPage({
 
   if (error || !person) {
     return (
-      <div className="min-h-screen py-8">
+      <div className="min-h-screen py-8 pt-48">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center py-16">
             <div className="text-6xl mb-4">⚠️</div>
-            <h1 className="text-2xl font-bold text-neutral-900 mb-4">
+            <h1 className="text-2xl font-bold text-white mb-4">
               Personnalité non trouvée
             </h1>
-            <p className="text-neutral-600 mb-6">
+            <p className="text-neutral-300 mb-6">
               Cette personnalité n'existe pas ou n'est plus disponible.
+            </p>
+            <p className="text-neutral-400 mb-6 text-sm">
+              ID recherché: {personId} | Type: {personType}
             </p>
             <Link 
               href="/personalities"
@@ -231,7 +273,7 @@ export default function PersonDetailPage({
   }
 
   return (
-    <div className="min-h-screen py-8">
+    <div className="min-h-screen py-8 pt-48">
       <div className="max-w-6xl mx-auto px-6">
         {/* Bouton retour */}
         <div className="mb-6">
@@ -313,6 +355,75 @@ export default function PersonDetailPage({
             </div>
           </div>
         </div>
+
+        {/* Films les plus populaires */}
+        {topMovies.length > 0 && (
+          <div className="mb-8">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold text-neutral-900 font-satoshi">
+                🎬 Films les plus populaires
+              </h2>
+              <div className="flex items-center gap-2 text-sm text-neutral-500">
+                <span>Triés par note TMDb</span>
+                <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {topMovies.map((movie, index) => (
+                <Link key={movie.id} href={`/films/${movie.id}`}>
+                  <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden hover:shadow-lg transition relative group">
+                    <div className="relative aspect-[2/3]">
+                      <Image
+                        src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : '/placeholder-poster.svg'}
+                        alt={movie.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
+                      {movie.isWatched && (
+                        <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded font-medium">
+                          ✅ Vu
+                        </span>
+                      )}
+                      {/* Badge de classement */}
+                      <div className="absolute top-2 right-2 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black text-xs px-2 py-1 rounded font-bold shadow-sm">
+                        #{index + 1}
+                      </div>
+                      {/* Note TMDb */}
+                      <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+                        ⭐ {movie.vote_average?.toFixed(1)}
+                      </div>
+                    </div>
+                    <div className="p-3">
+                      <h3 className="font-semibold text-sm truncate mb-1">{movie.title}</h3>
+                      <p className="text-xs text-neutral-500 mb-2">
+                        {movie.release_date ? new Date(movie.release_date).getFullYear() : 'N/A'}
+                      </p>
+                      
+                      {/* Note personnelle si disponible */}
+                      {movie.isWatched && movie.userRating > 0 && (
+                        <div className="mb-2">
+                          <StarRatingModern 
+                            rating={movie.userRating / 2} 
+                            interactive={false} 
+                            size="sm" 
+                          />
+                        </div>
+                      )}
+
+                      {/* Critique rapide si disponible */}
+                      {movie.isWatched && movie.userReview && (
+                        <p className="text-xs text-neutral-600 line-clamp-2">
+                          "{movie.userReview}"
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Outils de recherche et tri */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">

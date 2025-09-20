@@ -57,19 +57,22 @@ export default function PersonalitiesPage() {
         // Traiter seulement les films avec tmdbId
         const filmsWithTmdbId = films.filter(f => f.tmdbId);
         
-        // Traiter par batch de 10 pour éviter la surcharge
-        const batchSize = 10;
-        for (let i = 0; i < filmsWithTmdbId.length; i += batchSize) {
-          const batch = filmsWithTmdbId.slice(i, i + batchSize);
+        // Traiter seulement les 50 premiers films pour améliorer les performances
+        const filmsToProcess = filmsWithTmdbId.slice(0, 50);
+        
+        // Traiter par batch de 5 pour éviter la surcharge
+        const batchSize = 5;
+        for (let i = 0; i < filmsToProcess.length; i += batchSize) {
+          const batch = filmsToProcess.slice(i, i + batchSize);
           
           // Traitement parallèle du batch
           await Promise.all(batch.map(async (film) => {
             try {
               const tmdbData = await getMovieDetails(film.tmdbId!);
               
-              // Acteurs
+              // Acteurs (seulement les 2 premiers pour limiter)
               if (tmdbData?.credits?.cast) {
-                tmdbData.credits.cast.slice(0, 3).forEach(actor => {
+                tmdbData.credits.cast.slice(0, 2).forEach(actor => {
                   if (!personsMap.has(`actor-${actor.id}`)) {
                     personsMap.set(`actor-${actor.id}`, {
                       id: actor.id,
@@ -127,11 +130,14 @@ export default function PersonalitiesPage() {
             totalFilms: person.films.length, // Pour l'instant, on ne récupère que les films vus
             completionPercentage: 100 // Tous les films affichés sont vus
           }));
+          
+          // Debug: vérifier les IDs
+          console.log('Personnalités chargées:', currentPersons.map(p => ({ name: p.name, id: p.id, type: p.type })));
           setPersons(currentPersons);
           
           // Petite pause entre les batches
-          if (i + batchSize < filmsWithTmdbId.length) {
-            await new Promise(resolve => setTimeout(resolve, 100));
+          if (i + batchSize < filmsToProcess.length) {
+            await new Promise(resolve => setTimeout(resolve, 200));
           }
         }
       } catch (error) {
@@ -236,26 +242,29 @@ export default function PersonalitiesPage() {
             <h2 className="text-2xl font-bold text-white mb-6">🏆 Top Personnalités</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
               {topPersons.map((person) => (
-                <Link key={`${person.type}-${person.id}`} href={`/${person.type}s/${person.id}`}>
-                  <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden hover:shadow-lg transition">
-                    <div className="relative aspect-square">
-                      <Image
-                        src={person.profile_path ? `https://image.tmdb.org/t/p/w185${person.profile_path}` : '/placeholder-person.jpg'}
-                        alt={person.name}
-                        fill
-                        className="object-cover"
-                        loading="lazy"
-                      />
+                person.id && !isNaN(person.id) ? (
+                  <Link key={`${person.type}-${person.id}`} href={`/${person.type}s/${person.id}`}>
+                    <div className="bg-gray-800 rounded-xl shadow-lg border border-gray-700 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 group">
+                      <div className="relative aspect-square">
+                        <Image
+                          src={person.profile_path ? `https://image.tmdb.org/t/p/w185${person.profile_path}` : '/placeholder-person.jpg'}
+                          alt={person.name}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold text-sm truncate mb-1 text-white">{person.name}</h3>
+                        <p className="text-xs text-gray-400 mb-2">
+                          {person.watchedFilms} films vus
+                        </p>
+                        <ProgressBar value={person.watchedFilms} total={person.totalFilms} />
+                      </div>
                     </div>
-                    <div className="p-3">
-                      <h3 className="font-semibold text-sm truncate mb-1">{person.name}</h3>
-                      <p className="text-xs text-neutral-500 mb-2">
-                        {person.watchedFilms} films vus
-                      </p>
-                      <ProgressBar value={person.watchedFilms} total={person.totalFilms} />
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
+                ) : null
               ))}
             </div>
           </div>
@@ -329,26 +338,29 @@ export default function PersonalitiesPage() {
           <>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {currentPersons.map((person) => (
-                <Link key={`${person.type}-${person.id}`} href={`/${person.type}s/${person.id}`}>
-                  <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden hover:shadow-lg transition">
-                    <div className="relative aspect-square">
-                      <Image
-                        src={person.profile_path ? `https://image.tmdb.org/t/p/w185${person.profile_path}` : '/placeholder-person.jpg'}
-                        alt={person.name}
-                        fill
-                        className="object-cover"
-                        loading="lazy"
-                      />
+                person.id && !isNaN(person.id) ? (
+                  <Link key={`${person.type}-${person.id}`} href={`/${person.type}s/${person.id}`}>
+                    <div className="bg-gray-800 rounded-xl shadow-lg border border-gray-700 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 group">
+                      <div className="relative aspect-square">
+                        <Image
+                          src={person.profile_path ? `https://image.tmdb.org/t/p/w185${person.profile_path}` : '/placeholder-person.jpg'}
+                          alt={person.name}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-semibold text-sm truncate mb-1 text-white">{person.name}</h3>
+                        <p className="text-xs text-gray-400 mb-2">
+                          {person.watchedFilms} films vus
+                        </p>
+                        <ProgressBar value={person.watchedFilms} total={person.totalFilms} />
+                      </div>
                     </div>
-                    <div className="p-3">
-                      <h3 className="font-semibold text-sm truncate mb-1">{person.name}</h3>
-                      <p className="text-xs text-neutral-500 mb-2">
-                        {person.watchedFilms} films vus
-                      </p>
-                      <ProgressBar value={person.watchedFilms} total={person.totalFilms} />
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
+                ) : null
               ))}
             </div>
 

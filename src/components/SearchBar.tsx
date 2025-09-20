@@ -100,7 +100,7 @@ export default function SearchBar() {
                   {movie.title}
                 </div>
                 <div className="text-sm text-gray-400">
-                  {new Date(movie.release_date).getFullYear()}
+                  {movie.release_date ? new Date(movie.release_date).getFullYear() : 'N/A'}
                 </div>
               </div>
             </div>
