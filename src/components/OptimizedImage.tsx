@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 interface OptimizedImageProps {
-  src: string;
+  src: string | null | undefined;
   alt: string;
   width?: number;
   height?: number;
@@ -46,8 +46,11 @@ function getOptimalTMDBSize(width?: number, fill?: boolean): TMDBSize {
 }
 
 // Générer l'URL TMDb optimisée
-function getOptimizedTMDBUrl(src: string, size: TMDBSize): string {
-  if (!src) return '/placeholder-poster.svg';
+function getOptimizedTMDBUrl(src: string | null | undefined, size: TMDBSize): string {
+  if (!src || src === 'null' || src === 'undefined') {
+    console.log('OptimizedImage: src is null/undefined, using placeholder');
+    return '/placeholder-poster.svg';
+  }
   
   // Si c'est déjà une URL TMDb complète
   if (src.startsWith('https://image.tmdb.org/')) {
@@ -56,7 +59,9 @@ function getOptimizedTMDBUrl(src: string, size: TMDBSize): string {
   
   // Si c'est un chemin TMDb (commence par /)
   if (src.startsWith('/')) {
-    return `https://image.tmdb.org/t/p/${size}${src}`;
+    const url = `https://image.tmdb.org/t/p/${size}${src}`;
+    console.log('OptimizedImage: Generated URL:', url);
+    return url;
   }
   
   // Sinon, retourner tel quel (pour les images locales)
@@ -144,7 +149,7 @@ export default function OptimizedImage({
 }
 
 // Hook pour obtenir l'URL optimisée (utile pour les cas spéciaux)
-export function useOptimizedTMDBUrl(src: string, size: TMDBSize = 'w342'): string {
+export function useOptimizedTMDBUrl(src: string | null | undefined, size: TMDBSize = 'w342'): string {
   return getOptimizedTMDBUrl(src, size);
 }
 
