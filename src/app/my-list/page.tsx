@@ -200,7 +200,7 @@ export default function MyListPage() {
                     id: film.tmdbId,
                     title: film.title,
                     release_date: film.year.toString(),
-                    poster_path: film.posterUrl ? `https://image.tmdb.org/t/p/w300${film.posterUrl}` : '',
+                    poster_path: film.posterUrl || '',
                     vote_average: 0,
                     overview: film.quickReview140
                   }}
@@ -224,7 +224,7 @@ export default function MyListPage() {
                     id: film.tmdbId,
                     title: film.title,
                     release_date: film.year.toString(),
-                    poster_path: film.posterUrl ? `https://image.tmdb.org/t/p/w300${film.posterUrl}` : '',
+                    poster_path: film.posterUrl || '',
                     vote_average: 0,
                     overview: film.quickReview140
                   }}

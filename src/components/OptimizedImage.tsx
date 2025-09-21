@@ -48,7 +48,6 @@ function getOptimalTMDBSize(width?: number, fill?: boolean): TMDBSize {
 // Générer l'URL TMDb optimisée
 function getOptimizedTMDBUrl(src: string | null | undefined, size: TMDBSize): string {
   if (!src || src === 'null' || src === 'undefined') {
-    console.log('OptimizedImage: src is null/undefined, using placeholder');
     return '/placeholder-poster.svg';
   }
   
@@ -59,9 +58,7 @@ function getOptimizedTMDBUrl(src: string | null | undefined, size: TMDBSize): st
   
   // Si c'est un chemin TMDb (commence par /)
   if (src.startsWith('/')) {
-    const url = `https://image.tmdb.org/t/p/${size}${src}`;
-    console.log('OptimizedImage: Generated URL:', url);
-    return url;
+    return `https://image.tmdb.org/t/p/${size}${src}`;
   }
   
   // Sinon, retourner tel quel (pour les images locales)
