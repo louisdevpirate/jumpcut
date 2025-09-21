@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { searchMovies } from '@/lib/tmdb';
 import { SearchIcon } from './Icons';
+import { PosterImage } from './OptimizedImage';
 
 interface SearchResult {
   id: number;
@@ -95,9 +96,11 @@ export default function SearchBar({ onSearchClick }: SearchBarProps) {
               className="flex items-center gap-3 p-3 hover:bg-gray-800 cursor-pointer transition-colors"
             >
               <div className="w-12 h-16 rounded overflow-hidden flex-shrink-0">
-                <img
-                  src={movie.poster_path ? `https://image.tmdb.org/t/p/w92${movie.poster_path}` : '/placeholder-poster.svg'}
+                <PosterImage
+                  src={movie.poster_path}
                   alt={movie.title}
+                  width={48}
+                  height={64}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -143,9 +146,11 @@ export default function SearchBar({ onSearchClick }: SearchBarProps) {
                     className="flex items-center gap-3 p-3 hover:bg-neutral-50 cursor-pointer transition-colors"
                   >
                     <div className="w-12 h-16 rounded overflow-hidden flex-shrink-0">
-                      <img
-                        src={movie.poster_path ? `https://image.tmdb.org/t/p/w92${movie.poster_path}` : '/placeholder-poster.svg'}
+                      <PosterImage
+                        src={movie.poster_path}
                         alt={movie.title}
+                        width={48}
+                        height={64}
                         className="w-full h-full object-cover"
                       />
                     </div>
