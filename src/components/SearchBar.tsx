@@ -69,7 +69,7 @@ export default function SearchBar({ onSearchClick }: SearchBarProps) {
 
   return (
     <div className="relative">
-      <div className="hidden md:flex items-center bg-gray-800/50 backdrop-blur-sm rounded-md px-4 py-2 border border-gray-700">
+      <div className="hidden md:flex items-center bg-gray-800/50 backdrop-blur-sm rounded-md px-4 py-2">
         <input
           type="text"
           placeholder="Rechercher un film..."
