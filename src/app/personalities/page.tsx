@@ -9,6 +9,7 @@ import { getFilms } from '@/lib/films-client';
 import { getMovieDetails } from "@/lib/tmdb";
 import { FilmGridSkeleton } from '@/components/Skeletons';
 import { FaSearch, FaSortAlphaDown, FaFilter } from 'react-icons/fa';
+import { ProfileImage } from '@/components/OptimizedImage';
 
 interface Film {
   id: number;
@@ -237,12 +238,11 @@ export default function PersonalitiesPage() {
                   <Link key={`${person.type}-${person.id}`} href={`/${person.type}s/${person.id}`}>
                     <div className="bg-gray-800 rounded-xl shadow-lg border border-gray-700 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 group">
                       <div className="relative aspect-square">
-                        <Image
-                          src={person.profile_path ? `https://image.tmdb.org/t/p/w185${person.profile_path}` : '/placeholder-person.jpg'}
+                        <ProfileImage
+                          src={person.profile_path}
                           alt={person.name}
                           fill
                           className="object-cover group-hover:scale-110 transition-transform duration-300"
-                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </div>
@@ -333,12 +333,11 @@ export default function PersonalitiesPage() {
                   <Link key={`${person.type}-${person.id}`} href={`/${person.type}s/${person.id}`}>
                     <div className="bg-gray-800 rounded-xl shadow-lg border border-gray-700 overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 group">
                       <div className="relative aspect-square">
-                        <Image
-                          src={person.profile_path ? `https://image.tmdb.org/t/p/w185${person.profile_path}` : '/placeholder-person.jpg'}
+                        <ProfileImage
+                          src={person.profile_path}
                           alt={person.name}
                           fill
                           className="object-cover group-hover:scale-110 transition-transform duration-300"
-                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       </div>

@@ -7,7 +7,7 @@ import WatchedButton from "./WatchedButton";
 import ReviewForm from "./ReviewForm";
 import RecommendedMovies from "./RecommendedMovies";
 import EditFilmButton from "./EditFilmButton";
-import { PosterImage } from "./OptimizedImage";
+import OptimizedImage from "./OptimizedImage";
 
 interface FilmDetailProps {
   film: {
@@ -53,7 +53,7 @@ export default function FilmDetail({ film, tmdbData, onToggleWatched, onUpdateRe
       <div className="flex flex-col lg:flex-row gap-8 mb-8">
         <div className="flex-shrink-0">
           <div className="relative w-80 h-[480px] rounded-xl overflow-hidden shadow-lg">
-            <PosterImage
+            <OptimizedImage
               src={tmdbData?.poster_path}
               alt={film.title}
               fill

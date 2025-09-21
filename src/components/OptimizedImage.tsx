@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { useState } from 'react';
 
 interface OptimizedImageProps {
   src: string | null | undefined;
@@ -13,42 +12,12 @@ interface OptimizedImageProps {
   priority?: boolean;
   sizes?: string;
   quality?: number;
-  placeholder?: 'blur' | 'empty';
-  blurDataURL?: string;
-}
-
-// Tailles TMDb disponibles
-const TMDB_SIZES = {
-  w92: 92,
-  w154: 154,
-  w185: 185,
-  w342: 342,
-  w500: 500,
-  w780: 780,
-  original: 'original'
-} as const;
-
-type TMDBSize = keyof typeof TMDB_SIZES;
-
-// Déterminer la taille optimale basée sur la largeur demandée
-function getOptimalTMDBSize(width?: number, fill?: boolean): TMDBSize {
-  if (fill) return 'w500'; // Pour les images en fill, utiliser une taille moyenne
-  
-  if (!width) return 'w342'; // Par défaut
-  
-  if (width <= 92) return 'w92';
-  if (width <= 154) return 'w154';
-  if (width <= 185) return 'w185';
-  if (width <= 342) return 'w342';
-  if (width <= 500) return 'w500';
-  if (width <= 780) return 'w780';
-  return 'original';
 }
 
 // Générer l'URL TMDb optimisée
-function getOptimizedTMDBUrl(src: string | null | undefined, size: TMDBSize): string {
+function getOptimizedTMDBUrl(src: string | null | undefined, width?: number, fill?: boolean, isBackdrop?: boolean): string {
   if (!src || src === 'null' || src === 'undefined') {
-    return '/placeholder-poster.svg';
+    return '/placeholder-backdrop.svg';
   }
   
   // Si c'est déjà une URL TMDb complète
@@ -58,15 +27,29 @@ function getOptimizedTMDBUrl(src: string | null | undefined, size: TMDBSize): st
   
   // Si c'est un chemin TMDb (commence par /)
   if (src.startsWith('/')) {
+    // Choisir une taille appropriée
+    let size = 'w342'; // Par défaut
+    
+    if (isBackdrop) {
+      // Pour les images de fond (backdrop), utiliser une taille haute résolution
+      size = 'w1280'; // TMDb propose w1280 pour les backdrops HD
+    } else if (fill) {
+      size = 'w500';
+    } else if (width) {
+      if (width <= 92) size = 'w92';
+      else if (width <= 154) size = 'w154';
+      else if (width <= 185) size = 'w185';
+      else if (width <= 342) size = 'w342';
+      else if (width <= 500) size = 'w500';
+      else if (width <= 780) size = 'w780';
+      else size = 'original';
+    }
     return `https://image.tmdb.org/t/p/${size}${src}`;
   }
   
   // Sinon, retourner tel quel (pour les images locales)
   return src;
 }
-
-// Placeholder blur par défaut
-const DEFAULT_BLUR_DATA_URL = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k=';
 
 export default function OptimizedImage({
   src,
@@ -78,87 +61,38 @@ export default function OptimizedImage({
   priority = false,
   sizes,
   quality = 75,
-  placeholder = 'blur',
-  blurDataURL = DEFAULT_BLUR_DATA_URL,
-  ...props
 }: OptimizedImageProps) {
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
-
-  // Déterminer la taille optimale
-  const optimalSize = getOptimalTMDBSize(width, fill);
-  const optimizedSrc = getOptimizedTMDBUrl(src, optimalSize);
-
-  // Générer les sizes responsive si non fourni
-  const responsiveSizes = sizes || (fill ? '100vw' : `${width || 300}px`);
-
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
-
-  const handleError = () => {
-    setHasError(true);
-    setIsLoading(false);
-  };
-
-  // Si erreur, afficher le placeholder
-  if (hasError) {
-    return (
-      <div 
-        className={`bg-gray-800 flex items-center justify-center ${className}`}
-        style={fill ? {} : { width, height }}
-      >
-        <span className="text-gray-500 text-xs">Image non disponible</span>
-      </div>
-    );
-  }
+  const optimizedSrc = getOptimizedTMDBUrl(src, width, fill);
 
   return (
-    <div className={`relative ${className}`}>
-      <Image
-        src={optimizedSrc}
-        alt={alt}
-        width={fill ? undefined : width}
-        height={fill ? undefined : height}
-        fill={fill}
-        className={`transition-opacity duration-300 ${
-          isLoading ? 'opacity-0' : 'opacity-100'
-        }`}
-        priority={priority}
-        sizes={responsiveSizes}
-        quality={quality}
-        placeholder={placeholder}
-        blurDataURL={blurDataURL}
-        onLoad={handleLoad}
-        onError={handleError}
-        {...props}
-      />
-      
-      {/* Loading skeleton */}
-      {isLoading && (
-        <div 
-          className="absolute inset-0 bg-gray-800 animate-pulse"
-          style={fill ? {} : { width, height }}
-        />
-      )}
-    </div>
+    <Image
+      src={optimizedSrc}
+      alt={alt}
+      width={fill ? undefined : width}
+      height={fill ? undefined : height}
+      fill={fill}
+      className={className}
+      priority={priority}
+      sizes={sizes}
+      quality={quality}
+      onError={(e) => {
+        // Fallback vers placeholder en cas d'erreur
+        const target = e.target as HTMLImageElement;
+        target.src = '/placeholder-poster.svg';
+      }}
+    />
   );
 }
 
-// Hook pour obtenir l'URL optimisée (utile pour les cas spéciaux)
-export function useOptimizedTMDBUrl(src: string | null | undefined, size: TMDBSize = 'w342'): string {
-  return getOptimizedTMDBUrl(src, size);
-}
-
-// Composants spécialisés pour différents cas d'usage
+// Composants spécialisés simplifiés
 export function PosterImage({ 
   src, 
   alt, 
   width = 200, 
   height = 300,
   priority = false,
-  ...props 
-}: Omit<OptimizedImageProps, 'fill'>) {
+  className = '',
+}: OptimizedImageProps) {
   return (
     <OptimizedImage
       src={src}
@@ -166,8 +100,8 @@ export function PosterImage({
       width={width}
       height={height}
       priority={priority}
+      className={className}
       sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
-      {...props}
     />
   );
 }
@@ -178,8 +112,8 @@ export function ProfileImage({
   width = 150, 
   height = 150,
   priority = false,
-  ...props 
-}: Omit<OptimizedImageProps, 'fill'>) {
+  className = '',
+}: OptimizedImageProps) {
   return (
     <OptimizedImage
       src={src}
@@ -187,9 +121,8 @@ export function ProfileImage({
       width={width}
       height={height}
       priority={priority}
+      className={`rounded-full ${className}`}
       sizes="(max-width: 768px) 25vw, (max-width: 1200px) 20vw, 15vw"
-      className="rounded-full"
-      {...props}
     />
   );
 }
@@ -198,17 +131,25 @@ export function BackdropImage({
   src, 
   alt,
   priority = false,
-  ...props 
-}: Omit<OptimizedImageProps, 'width' | 'height'>) {
+  className = '',
+}: OptimizedImageProps) {
+  // Utiliser une qualité et une taille optimisées pour les images de fond
+  const optimizedSrc = getOptimizedTMDBUrl(src, undefined, true, true);
+  
   return (
-    <OptimizedImage
-      src={src}
+    <Image
+      src={optimizedSrc}
       alt={alt}
       fill
       priority={priority}
+      className={className}
       sizes="100vw"
-      quality={85}
-      {...props}
+      quality={95} // Qualité maximale pour les images de fond
+      onError={(e) => {
+        // Fallback vers placeholder en cas d'erreur
+        const target = e.target as HTMLImageElement;
+        target.src = '/placeholder-backdrop.svg';
+      }}
     />
   );
 }
