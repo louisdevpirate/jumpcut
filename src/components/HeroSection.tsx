@@ -77,7 +77,7 @@ export default function HeroSection({ movie }: HeroSectionProps) {
               
               <WishlistButton movieId={movie.id} movieTitle={movie.title} variant="hero" />
               
-              <Link href={`/films/${movie.id}`}>
+              <Link href={`/movie/${movie.id}`}>
                 <button className="flex items-center gap-2 px-6 py-3 bg-gray-600/80 text-white font-semibold rounded-md hover:bg-gray-600 transition">
                   <FaInfoCircle className="text-sm" />
                   Plus d'infos
@@ -88,9 +88,9 @@ export default function HeroSection({ movie }: HeroSectionProps) {
         </div>
       </div>
       
-      {/* Modal de critique rapide */}
+      {/* Modal de critique rapide - Portail vers le body */}
       {showQuickReview && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[9999] p-4">
           <div className="bg-white rounded-lg p-6 max-w-md w-full mx-4">
             <QuickReview
               onSubmit={async (data) => {

@@ -4,11 +4,16 @@
     "tmdbId": 147,
     "title": "Les 400 Coups",
     "year": 1959,
-    "myRating": 0,
+    "myRating": 10,
     "positives": "",
     "negatives": "",
-    "myReview": "",
-    "dateWatched": "2025-09-19"
+    "myReview": "Absolument parfait !",
+    "dateWatched": "2025-09-21T11:53:20.696Z",
+    "rating5": 5,
+    "quickReview140": "Absolument parfait !",
+    "updatedAt": "2025-09-21T11:57:14.842Z",
+    "overrides": {},
+    "posterUrl": "/nHZQrKd96pCytnuTCsFibhrRyIR.jpg"
   },
   {
     "id": 2,
@@ -19,7 +24,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cnfhelfQucSb4Y54yFgtnSNhsAT.jpg",
+    "updatedAt": "2025-09-21T11:57:14.903Z"
   },
   {
     "id": 3,
@@ -30,18 +37,22 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3XriEpTdnplQRzyphAC0cu3emns.jpg",
+    "updatedAt": "2025-09-21T11:57:14.917Z"
   },
   {
     "id": 4,
     "tmdbId": 555879,
     "title": "Matrix",
-    "year": 1998,
+    "year": 1999,
     "myRating": 0,
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    "updatedAt": "2025-09-21T12:01:30.648Z"
   },
   {
     "id": 5,
@@ -52,7 +63,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4ZVnFZUjahpLz7B42mkVjtEl9Wl.jpg",
+    "updatedAt": "2025-09-21T11:57:14.841Z"
   },
   {
     "id": 6,
@@ -63,7 +76,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xOCeckuZDzqydvt3vLlzftZkef1.jpg",
+    "updatedAt": "2025-09-21T11:57:15.303Z"
   },
   {
     "id": 7,
@@ -74,7 +89,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aKa7tck9DEiZsoPDvqa9gK0vqcq.jpg",
+    "updatedAt": "2025-09-21T11:57:15.378Z"
   },
   {
     "id": 8,
@@ -85,7 +102,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qfuO1yue5bQnocFiOUM07dwLdmo.jpg",
+    "updatedAt": "2025-09-21T11:57:15.232Z"
   },
   {
     "id": 9,
@@ -96,7 +115,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ikM7IfM2rQxv0gltOk4hllQTNvw.jpg",
+    "updatedAt": "2025-09-21T11:57:15.230Z"
   },
   {
     "id": 10,
@@ -107,7 +128,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4uI8C2zcfLWRhZDBgd0oTlZjV9j.jpg",
+    "updatedAt": "2025-09-21T11:57:15.333Z"
   },
   {
     "id": 11,
@@ -118,7 +141,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uxmGrcQyR4IFvb94vsMLmyu8vG8.jpg",
+    "updatedAt": "2025-09-21T11:57:15.688Z"
   },
   {
     "id": 12,
@@ -129,7 +154,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xHeuF5zzlx1YxkULiz0mx1TMBJ7.jpg",
+    "updatedAt": "2025-09-21T11:57:15.762Z"
   },
   {
     "id": 13,
@@ -140,7 +167,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zKcCaWewiEF2XGJDSureoXb2uoo.jpg",
+    "updatedAt": "2025-09-21T11:57:15.834Z"
   },
   {
     "id": 14,
@@ -151,7 +180,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/keHREQ9jRiHp7ja1SM8xmDCo6vI.jpg",
+    "updatedAt": "2025-09-21T11:57:15.688Z"
   },
   {
     "id": 15,
@@ -162,7 +193,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5KPGZANTmTj1U8esbC71typFVQH.jpg",
+    "updatedAt": "2025-09-21T11:57:15.761Z"
   },
   {
     "id": 16,
@@ -173,7 +206,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ttQKk3e82bVYdJfxBZouzrhBRKR.jpg",
+    "updatedAt": "2025-09-21T11:57:16.150Z"
   },
   {
     "id": 17,
@@ -184,7 +219,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/s27zqyyCJvSm72f3uThjxcgmX6M.jpg",
+    "updatedAt": "2025-09-21T11:57:16.292Z"
   },
   {
     "id": 18,
@@ -195,7 +232,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mRtFOHF93zW4kTp4JOYrH71vxBh.jpg",
+    "updatedAt": "2025-09-21T11:57:38.730Z"
   },
   {
     "id": 19,
@@ -206,7 +245,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bZQCNGb1II5eWASBhEgJBGxOPUM.jpg",
+    "updatedAt": "2025-09-21T11:57:16.222Z"
   },
   {
     "id": 20,
@@ -217,7 +258,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3KNkRd8vcwq1i55AzDA1gqN7tCO.jpg",
+    "updatedAt": "2025-09-21T11:57:16.221Z"
   },
   {
     "id": 21,
@@ -228,7 +271,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dGOwVbGN5eJlgAnFwGRaANnyZMF.jpg",
+    "updatedAt": "2025-09-21T11:57:16.615Z"
   },
   {
     "id": 22,
@@ -239,7 +284,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/W9xPACmHuhFC0xHwpyFvGbapUT.jpg",
+    "updatedAt": "2025-09-21T11:57:16.678Z"
   },
   {
     "id": 23,
@@ -250,7 +297,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cvUfwhoAReL4e5eegFCHM73rIda.jpg",
+    "updatedAt": "2025-09-21T11:57:16.679Z"
   },
   {
     "id": 24,
@@ -261,7 +310,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mMzaYBr3c1lA9LkyNqVfQFneoq6.jpg",
+    "updatedAt": "2025-09-21T11:57:16.614Z"
   },
   {
     "id": 25,
@@ -272,7 +323,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nZfaSGnDgjlLkMM5FwQIFUmCrqL.jpg",
+    "updatedAt": "2025-09-21T11:57:16.750Z"
   },
   {
     "id": 26,
@@ -283,7 +336,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pjWBLYLqQkCbzq3QruyOyLCrznW.jpg",
+    "updatedAt": "2025-09-21T11:57:42.041Z"
   },
   {
     "id": 27,
@@ -294,7 +349,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/vILGzpSB2czFYVqQUX8jI0qwrBr.jpg",
+    "updatedAt": "2025-09-21T11:57:17.133Z"
   },
   {
     "id": 28,
@@ -305,7 +362,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cfTIqWn8YLds4GqW37XggmySjT8.jpg",
+    "updatedAt": "2025-09-21T11:57:17.134Z"
   },
   {
     "id": 29,
@@ -316,7 +375,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zfUdn8lnUaVhlcBlXR30Ctq02uj.jpg",
+    "updatedAt": "2025-09-21T11:57:17.204Z"
   },
   {
     "id": 30,
@@ -327,7 +388,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/l8CES84JndFlNfBNMxdLRYaLvI6.jpg",
+    "updatedAt": "2025-09-21T11:57:17.064Z"
   },
   {
     "id": 31,
@@ -338,7 +401,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qx7f2KqIQHOGll5eb8aEU1Cx60I.jpg",
+    "updatedAt": "2025-09-21T11:57:17.534Z"
   },
   {
     "id": 32,
@@ -349,7 +414,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/UYbOQyJkfHWejmIq0k10hPb7w8.jpg",
+    "updatedAt": "2025-09-21T11:57:17.540Z"
   },
   {
     "id": 33,
@@ -360,7 +427,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1Yr1gZHvrijIM7cNhI0QFA3VkRZ.jpg",
+    "updatedAt": "2025-09-21T11:57:17.607Z"
   },
   {
     "id": 34,
@@ -371,7 +440,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2KVZtwU1gWdAKq7dqVUHIml69lj.jpg",
+    "updatedAt": "2025-09-21T11:57:17.540Z"
   },
   {
     "id": 35,
@@ -382,7 +453,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qTmjEVwpOJdAUk0xzasEIVqxTIs.jpg",
+    "updatedAt": "2025-09-21T11:57:17.606Z"
   },
   {
     "id": 36,
@@ -393,7 +466,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/kQ29Tp6L43o1hVbyXxdtxAtLtZ3.jpg",
+    "updatedAt": "2025-09-21T11:57:17.915Z"
   },
   {
     "id": 37,
@@ -404,7 +479,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hy2rqt5TezQUnca8k1HZalQzqHs.jpg",
+    "updatedAt": "2025-09-21T11:57:17.997Z"
   },
   {
     "id": 38,
@@ -415,7 +492,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/t30GjttOdb5At1sYy8b3TOwFgWV.jpg",
+    "updatedAt": "2025-09-21T11:57:54.409Z"
   },
   {
     "id": 39,
@@ -426,7 +505,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4fdLDGSggKaTkwWWaiX11I4Aoss.jpg",
+    "updatedAt": "2025-09-21T11:57:56.342Z"
   },
   {
     "id": 40,
@@ -437,7 +518,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/48GWpOhl1s5hUciV7pvVMHkJnvv.jpg",
+    "updatedAt": "2025-09-21T11:57:17.919Z"
   },
   {
     "id": 41,
@@ -448,7 +531,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/x3NX8v5t8a0yabCnlskpjXPkRKP.jpg",
+    "updatedAt": "2025-09-21T11:57:18.681Z"
   },
   {
     "id": 42,
@@ -459,7 +544,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8WzjAhgc4HvpN3Y6LLCc6AbpIhF.jpg",
+    "updatedAt": "2025-09-21T11:57:40.360Z"
   },
   {
     "id": 43,
@@ -470,7 +557,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5n1Lw3bWu2hTFzQZpFRr6SeaqyD.jpg",
+    "updatedAt": "2025-09-21T11:57:18.543Z"
   },
   {
     "id": 44,
@@ -481,7 +570,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zf9GBMbvU2KA8dDpZ2MaApUsFX8.jpg",
+    "updatedAt": "2025-09-21T11:57:18.456Z"
   },
   {
     "id": 45,
@@ -492,7 +583,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2hZDXLY7AGUCsJNti6TZae2LEsQ.jpg",
+    "updatedAt": "2025-09-21T11:57:18.611Z"
   },
   {
     "id": 46,
@@ -503,7 +596,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cL82vu7K2LWi9GgVi9dEFtYVMlW.jpg",
+    "updatedAt": "2025-09-21T11:57:18.997Z"
   },
   {
     "id": 47,
@@ -514,7 +609,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wBAj0sxPnl7mQLSPqsWIwASy773.jpg",
+    "updatedAt": "2025-09-21T11:57:19.066Z"
   },
   {
     "id": 48,
@@ -525,7 +622,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jZY8Thu4gDMPDPCRGcocYXAyw5L.jpg",
+    "updatedAt": "2025-09-21T11:57:19.067Z"
   },
   {
     "id": 49,
@@ -536,7 +635,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6Tt1TQeOI4TpXu1cBUgNGNGeznW.jpg",
+    "updatedAt": "2025-09-21T11:57:18.998Z"
   },
   {
     "id": 50,
@@ -547,7 +648,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7ngoRjEiVOuTdKOH5A6hWaO9r2Q.jpg",
+    "updatedAt": "2025-09-21T11:57:18.995Z"
   },
   {
     "id": 51,
@@ -558,7 +661,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eY97YUIyKfQNVugLa3MXVYX4nrw.jpg",
+    "updatedAt": "2025-09-21T11:57:19.381Z"
   },
   {
     "id": 52,
@@ -580,7 +685,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/encyBuX8ZdO2qijlROGAJPqsT0S.jpg",
+    "updatedAt": "2025-09-21T11:57:19.452Z"
   },
   {
     "id": 54,
@@ -591,7 +698,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zmb3PE0GEepF7wGHoCuazh4r90.jpg",
+    "updatedAt": "2025-09-21T11:57:44.270Z"
   },
   {
     "id": 55,
@@ -602,7 +711,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/i3x5Fck0BoAoLRbgPKzSESsrcOR.jpg",
+    "updatedAt": "2025-09-21T11:57:19.383Z"
   },
   {
     "id": 56,
@@ -613,7 +724,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/sSQDxwm4r28YpJSQVyVOtpYVs0E.jpg",
+    "updatedAt": "2025-09-21T11:57:19.770Z"
   },
   {
     "id": 57,
@@ -624,7 +737,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fxQ0LfPK9x42TPgu2Kj0wJa53aa.jpg",
+    "updatedAt": "2025-09-21T11:57:58.550Z"
   },
   {
     "id": 58,
@@ -635,7 +750,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7l3PEvgelhqGSvvnnO9kwCOh5pM.jpg",
+    "updatedAt": "2025-09-21T11:57:19.840Z"
   },
   {
     "id": 59,
@@ -646,7 +763,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5EPLeKxFSPaJnoiOlhW6mc0VDtJ.jpg",
+    "updatedAt": "2025-09-21T11:57:19.771Z"
   },
   {
     "id": 60,
@@ -657,7 +776,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nLGw5N5VLmQR8bPbRMt772FWzCz.jpg",
+    "updatedAt": "2025-09-21T11:57:19.771Z"
   },
   {
     "id": 61,
@@ -668,7 +789,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fz5NYI8PUmPplu3UA70AOqEDJL7.jpg",
+    "updatedAt": "2025-09-21T11:58:02.246Z"
   },
   {
     "id": 62,
@@ -679,7 +802,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uYc9RyQ5NH5gnS8VHuvfWSauas4.jpg",
+    "updatedAt": "2025-09-21T11:57:20.161Z"
   },
   {
     "id": 63,
@@ -690,7 +815,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/vJv1vcLZiTZSWChk88mP9sFM3SG.jpg",
+    "updatedAt": "2025-09-21T11:57:20.226Z"
   },
   {
     "id": 64,
@@ -701,7 +828,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wJwVt30WG1JxFmEYGzODt3Ne3tf.jpg",
+    "updatedAt": "2025-09-21T11:57:20.157Z"
   },
   {
     "id": 65,
@@ -712,7 +841,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1YFsL1Y7wkCTKUOP7ZdWAAutJT3.jpg",
+    "updatedAt": "2025-09-21T11:57:20.223Z"
   },
   {
     "id": 66,
@@ -723,7 +854,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qEr65B4yGlsmLQjcM0xjSUMfZS2.jpg",
+    "updatedAt": "2025-09-21T11:57:20.537Z"
   },
   {
     "id": 67,
@@ -734,7 +867,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4MmTHpn2Y8emqvBgvOjufImUmKZ.jpg",
+    "updatedAt": "2025-09-21T11:57:20.612Z"
   },
   {
     "id": 68,
@@ -745,7 +880,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fFXrCl7nBFFaQU3IgTlinvk6vTi.jpg",
+    "updatedAt": "2025-09-21T11:57:20.609Z"
   },
   {
     "id": 69,
@@ -756,7 +893,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tzMIFRvXLdjSMJbm6lQohWQE49Q.jpg",
+    "updatedAt": "2025-09-21T11:57:20.543Z"
   },
   {
     "id": 70,
@@ -767,7 +906,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xjXKy5b2M3fDelAQItIswcDNvwm.jpg",
+    "updatedAt": "2025-09-21T11:57:20.542Z"
   },
   {
     "id": 71,
@@ -778,7 +919,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3E1xlGyNSjakoqzb4ZBcL2uTR24.jpg",
+    "updatedAt": "2025-09-21T11:57:20.930Z"
   },
   {
     "id": 72,
@@ -789,7 +932,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7tTUs77uOWee6GIOMB6OhtLgslI.jpg",
+    "updatedAt": "2025-09-21T11:57:21.068Z"
   },
   {
     "id": 73,
@@ -800,7 +945,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/f6J8thFsSox0zunjyo4YnxRhbuE.jpg",
+    "updatedAt": "2025-09-21T11:57:21.001Z"
   },
   {
     "id": 74,
@@ -811,7 +958,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zw0JOpVE5IFE8IfAm8zRX0AkB3O.jpg",
+    "updatedAt": "2025-09-21T11:57:20.930Z"
   },
   {
     "id": 75,
@@ -822,7 +971,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yEWDfJWhFuR77jlntpFGKssKLeT.jpg",
+    "updatedAt": "2025-09-21T11:57:20.931Z"
   },
   {
     "id": 76,
@@ -833,7 +984,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yKtdS5oaHEtBUD1Gq4rdOezzWp6.jpg",
+    "updatedAt": "2025-09-21T11:57:21.383Z"
   },
   {
     "id": 77,
@@ -844,7 +997,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zhDkm8Bs10VDYlpDsq4dnbebzik.jpg",
+    "updatedAt": "2025-09-21T11:57:21.385Z"
   },
   {
     "id": 78,
@@ -855,7 +1010,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/euuPpXZhVBZzD0JLghTX7foFY70.jpg",
+    "updatedAt": "2025-09-21T11:57:21.450Z"
   },
   {
     "id": 79,
@@ -866,7 +1023,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hkhbbSQdsV3U0HtuPugHfx2wOi9.jpg",
+    "updatedAt": "2025-09-21T11:57:21.386Z"
   },
   {
     "id": 80,
@@ -877,7 +1036,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/45PVXJUYfH6yIINcQKelQ0SJPvh.jpg",
+    "updatedAt": "2025-09-21T11:57:59.322Z"
   },
   {
     "id": 81,
@@ -888,7 +1049,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4CntjBo7aRRnoi4ZwDDTQ0UD54s.jpg",
+    "updatedAt": "2025-09-21T11:57:21.821Z"
   },
   {
     "id": 82,
@@ -899,7 +1062,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/P3d0gN4N4rCuW5FdIKzzLfl96u.jpg",
+    "updatedAt": "2025-09-21T11:57:21.961Z"
   },
   {
     "id": 83,
@@ -910,7 +1075,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hNpDVRTXBVLUoSEjXdxxkHMHZqw.jpg",
+    "updatedAt": "2025-09-21T11:57:21.818Z"
   },
   {
     "id": 84,
@@ -921,7 +1088,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pTjuiITuZHIii9PSRZjWzTRNwoC.jpg",
+    "updatedAt": "2025-09-21T11:57:21.890Z"
   },
   {
     "id": 85,
@@ -932,7 +1101,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/laUmjb39U6glMrOKyaco4QPeGaC.jpg",
+    "updatedAt": "2025-09-21T11:57:21.821Z"
   },
   {
     "id": 86,
@@ -943,7 +1114,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jTKTh4wmxV47gSzAJo1EdylD3Af.jpg",
+    "updatedAt": "2025-09-21T11:57:22.276Z"
   },
   {
     "id": 87,
@@ -954,7 +1127,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hE9f8of8DyRq5TsituuIfF0T8bZ.jpg",
+    "updatedAt": "2025-09-21T11:57:22.348Z"
   },
   {
     "id": 88,
@@ -965,7 +1140,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qKXxPnsnVbtxFSwhxvKGZTUd5mm.jpg",
+    "updatedAt": "2025-09-21T11:57:22.348Z"
   },
   {
     "id": 89,
@@ -976,7 +1153,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5JjjjGg24IGRXIQtaZkPU59acjV.jpg",
+    "updatedAt": "2025-09-21T11:57:22.278Z"
   },
   {
     "id": 90,
@@ -987,7 +1166,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/278ngJ0y8tsgsEMoksAVSOHuJ3r.jpg",
+    "updatedAt": "2025-09-21T11:57:22.279Z"
   },
   {
     "id": 91,
@@ -998,7 +1179,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aZHDeGBqaPXdKagnmecqqY08vum.jpg",
+    "updatedAt": "2025-09-21T11:57:22.663Z"
   },
   {
     "id": 92,
@@ -1020,7 +1203,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2lC9lzozlzVxCsSgPjRz5AWcz00.jpg",
+    "updatedAt": "2025-09-21T11:57:22.733Z"
   },
   {
     "id": 94,
@@ -1031,7 +1216,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1nOVVjbf8ucbeLmIlK5D2kCQQST.jpg",
+    "updatedAt": "2025-09-21T11:57:22.804Z"
   },
   {
     "id": 95,
@@ -1042,7 +1229,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/AjgQQsO9e1R9fU0wepy6OASuaVt.jpg",
+    "updatedAt": "2025-09-21T11:57:22.664Z"
   },
   {
     "id": 96,
@@ -1053,7 +1242,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5AiRhqfO5m9Z7eyElZZ3thWgxIr.jpg",
+    "updatedAt": "2025-09-21T11:57:23.119Z"
   },
   {
     "id": 97,
@@ -1064,7 +1255,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/scaiAT7I2KZ2GAeMvoU6Ro1515J.jpg",
+    "updatedAt": "2025-09-21T11:57:41.199Z"
   },
   {
     "id": 98,
@@ -1075,7 +1268,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fp0D25MiuYoJmpl2ZTi9ahoaiZQ.jpg",
+    "updatedAt": "2025-09-21T11:57:23.120Z"
   },
   {
     "id": 99,
@@ -1086,7 +1281,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/p9nB7LRpdVmZS3XapJdV8PvIwQL.jpg",
+    "updatedAt": "2025-09-21T11:57:23.132Z"
   },
   {
     "id": 100,
@@ -1097,7 +1294,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wQTls3fikx8ezE2ue93wK1P7YuM.jpg",
+    "updatedAt": "2025-09-21T11:57:23.189Z"
   },
   {
     "id": 101,
@@ -1119,7 +1318,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/89GnRTK1CjJSUelKKHLIPXsVam9.jpg",
+    "updatedAt": "2025-09-21T11:57:23.665Z"
   },
   {
     "id": 103,
@@ -1130,7 +1331,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cteCb7HgeNmx8aeu5drpTb7N8fB.jpg",
+    "updatedAt": "2025-09-21T11:57:23.580Z"
   },
   {
     "id": 104,
@@ -1141,7 +1344,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pvpLgOyk9SllaHv5N2Lokhdz2Me.jpg",
+    "updatedAt": "2025-09-21T11:57:23.580Z"
   },
   {
     "id": 105,
@@ -1152,7 +1357,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/iG5gwY7GVpb8KMQSzkJi8sheeXP.jpg",
+    "updatedAt": "2025-09-21T11:57:23.509Z"
   },
   {
     "id": 106,
@@ -1163,7 +1370,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yx4cp1ljJMDSFeEex0Zjv45b55E.jpg",
+    "updatedAt": "2025-09-21T11:57:23.979Z"
   },
   {
     "id": 107,
@@ -1174,7 +1383,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "",
+    "updatedAt": "2025-09-21T11:57:24.060Z"
   },
   {
     "id": 108,
@@ -1185,7 +1396,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aYhdHsehuLqCqZjd2iHvKZToJKL.jpg",
+    "updatedAt": "2025-09-21T11:57:24.060Z"
   },
   {
     "id": 109,
@@ -1196,7 +1409,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8uQnh0tDVI5jpZiM1qc0Vpp2SrL.jpg",
+    "updatedAt": "2025-09-21T11:58:00.615Z"
   },
   {
     "id": 110,
@@ -1207,7 +1422,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tgbrVVrJpgHbHTjkQvBr5KAattI.jpg",
+    "updatedAt": "2025-09-21T11:57:23.985Z"
   },
   {
     "id": 111,
@@ -1218,7 +1435,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tRsP6Bc5zt6HvRzE9Eb8KXFLTRI.jpg",
+    "updatedAt": "2025-09-21T11:57:24.579Z"
   },
   {
     "id": 112,
@@ -1229,7 +1448,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hcjJmAITjMjNxZWfXfgAOWrYIwM.jpg",
+    "updatedAt": "2025-09-21T11:57:24.514Z"
   },
   {
     "id": 113,
@@ -1240,7 +1461,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8ATPSsMG6lFk5UinmK2rWeMMpw7.jpg",
+    "updatedAt": "2025-09-21T11:57:24.447Z"
   },
   {
     "id": 114,
@@ -1251,7 +1474,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pyA3UeWvzDAilWSIBds8YoVhGRe.jpg",
+    "updatedAt": "2025-09-21T11:57:57.709Z"
   },
   {
     "id": 115,
@@ -1262,7 +1487,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yHIAt0xdPis7UwoJuM2AwORsLAM.jpg",
+    "updatedAt": "2025-09-21T11:57:24.442Z"
   },
   {
     "id": 116,
@@ -1273,7 +1500,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/p61wwD0jWfgbhg9Ja9uoDZdS8YE.jpg",
+    "updatedAt": "2025-09-21T11:57:24.897Z"
   },
   {
     "id": 117,
@@ -1284,7 +1513,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/x56yV1MunQDBZp6Rs4Fks3KdeD0.jpg",
+    "updatedAt": "2025-09-21T11:57:24.966Z"
   },
   {
     "id": 118,
@@ -1295,7 +1526,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/AhR3xtAVFsKhml8DhhljrPfKgIx.jpg",
+    "updatedAt": "2025-09-21T11:57:25.035Z"
   },
   {
     "id": 119,
@@ -1306,7 +1539,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zvABa9EuAK9XeqBojYyb3Yaahcf.jpg",
+    "updatedAt": "2025-09-21T11:57:24.897Z"
   },
   {
     "id": 120,
@@ -1317,7 +1552,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dXiqFbsmDePtyyILxy4GWu9lLqn.jpg",
+    "updatedAt": "2025-09-21T11:57:24.967Z"
   },
   {
     "id": 121,
@@ -1328,7 +1565,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/lfxs2YnuuLR037Ad4wesW5O9oUW.jpg",
+    "updatedAt": "2025-09-21T11:57:25.349Z"
   },
   {
     "id": 122,
@@ -1339,7 +1578,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7BuprdxivypSnQPj0hKFp86a23h.jpg",
+    "updatedAt": "2025-09-21T11:57:25.357Z"
   },
   {
     "id": 123,
@@ -1350,7 +1591,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/staVcGtuX8JwXpP1AK2MT72SBr2.jpg",
+    "updatedAt": "2025-09-21T11:57:25.492Z"
   },
   {
     "id": 124,
@@ -1361,7 +1604,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jEXGkKEIuyc6012BFpFJpaGOW5a.jpg",
+    "updatedAt": "2025-09-21T11:57:25.350Z"
   },
   {
     "id": 125,
@@ -1372,7 +1617,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/665n9PNqQ5wv2YbCwTsmETqRwWp.jpg",
+    "updatedAt": "2025-09-21T11:57:25.418Z"
   },
   {
     "id": 126,
@@ -1383,7 +1630,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dei0MF0dWPOLRGWNXa0LTJG8mtv.jpg",
+    "updatedAt": "2025-09-21T11:57:26.021Z"
   },
   {
     "id": 127,
@@ -1394,7 +1643,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gAw5nJGNDI2hyw2ghBLoD6rSk3Y.jpg",
+    "updatedAt": "2025-09-21T11:57:25.951Z"
   },
   {
     "id": 128,
@@ -1405,7 +1656,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eKkUlrk2en6HejYrTOg0BjzwXa6.jpg",
+    "updatedAt": "2025-09-21T11:57:25.878Z"
   },
   {
     "id": 129,
@@ -1416,7 +1669,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/17pvY55Zr60niVovNvgt72mwvES.jpg",
+    "updatedAt": "2025-09-21T11:57:25.805Z"
   },
   {
     "id": 130,
@@ -1427,7 +1682,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3JjceHUzbtgJ4fJs6x2ow4ckH89.jpg",
+    "updatedAt": "2025-09-21T11:57:25.809Z"
   },
   {
     "id": 131,
@@ -1449,7 +1706,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/huKIbQiz2s1X1CWeXNkBj9wkElu.jpg",
+    "updatedAt": "2025-09-21T11:57:26.336Z"
   },
   {
     "id": 133,
@@ -1460,7 +1719,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3jTmuoIQOP07l4d1RebMfM8qiY4.jpg",
+    "updatedAt": "2025-09-21T11:57:26.401Z"
   },
   {
     "id": 134,
@@ -1471,7 +1732,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nStv0fXQmYdEqFQqEYHlVhd4lGj.jpg",
+    "updatedAt": "2025-09-21T11:57:26.336Z"
   },
   {
     "id": 135,
@@ -1482,7 +1745,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/72SOtZnFhCumLRZhoXlX8g2IkgF.jpg",
+    "updatedAt": "2025-09-21T11:57:26.337Z"
   },
   {
     "id": 136,
@@ -1493,7 +1758,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tdXtLG6L1QMwrv0MNdW6B9IwC8B.jpg",
+    "updatedAt": "2025-09-21T11:57:26.786Z"
   },
   {
     "id": 137,
@@ -1504,7 +1771,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/lbDYnFZ0ZN2zQP3IjrmKZBGsSpp.jpg",
+    "updatedAt": "2025-09-21T11:57:26.717Z"
   },
   {
     "id": 138,
@@ -1515,7 +1784,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xoWIjlVNfi4etacJkt7z8x201Uv.jpg",
+    "updatedAt": "2025-09-21T11:57:26.860Z"
   },
   {
     "id": 139,
@@ -1526,7 +1797,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/vsjxwIGaA8GP79pgtv6dqRhRsPu.jpg",
+    "updatedAt": "2025-09-21T11:57:26.718Z"
   },
   {
     "id": 140,
@@ -1537,7 +1810,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mcofV1tsen5sA3BBelqPc9OLAeR.jpg",
+    "updatedAt": "2025-09-21T11:57:26.716Z"
   },
   {
     "id": 141,
@@ -1548,7 +1823,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ru7XGZEDmFY1GNAhUOprEBHbTIN.jpg",
+    "updatedAt": "2025-09-21T11:57:27.170Z"
   },
   {
     "id": 142,
@@ -1559,7 +1836,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "",
+    "updatedAt": "2025-09-21T11:57:27.250Z"
   },
   {
     "id": 143,
@@ -1570,7 +1849,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mCQWl3R4E0e5LJ0I4yRUiZi5exT.jpg",
+    "updatedAt": "2025-09-21T11:57:27.243Z"
   },
   {
     "id": 144,
@@ -1581,7 +1862,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/k2DmASLrduINi2S477xWP9fZKce.jpg",
+    "updatedAt": "2025-09-21T11:57:27.172Z"
   },
   {
     "id": 145,
@@ -1592,7 +1875,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hahFicGQgNGeN7wZ3GpWkQ9L2tN.jpg",
+    "updatedAt": "2025-09-21T11:57:27.314Z"
   },
   {
     "id": 146,
@@ -1603,7 +1888,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uuV2eEMrAp4Sc0m9juknxUAf9rA.jpg",
+    "updatedAt": "2025-09-21T11:57:27.633Z"
   },
   {
     "id": 147,
@@ -1614,7 +1901,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oNOXntnRY7dFrgu1x6bQQmWBVdu.jpg",
+    "updatedAt": "2025-09-21T11:57:27.633Z"
   },
   {
     "id": 148,
@@ -1625,7 +1914,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8fCn7TwTe0Z4fTugIiLssX6UcHe.jpg",
+    "updatedAt": "2025-09-21T11:57:27.696Z"
   },
   {
     "id": 149,
@@ -1636,7 +1927,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/o3bSVtZwbQpXFpl7WzSF5EAFSzq.jpg",
+    "updatedAt": "2025-09-21T11:57:27.634Z"
   },
   {
     "id": 150,
@@ -1647,7 +1940,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aRAStBP5zaGkTYYJDuh3V6QDZh7.jpg",
+    "updatedAt": "2025-09-21T11:57:27.742Z"
   },
   {
     "id": 151,
@@ -1658,7 +1953,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/x12w9DwDO1qNLvpx0llASLWj5dS.jpg",
+    "updatedAt": "2025-09-21T11:57:28.058Z"
   },
   {
     "id": 152,
@@ -1680,7 +1977,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ruzbg5sct32VVAtpyUzK4nTiLVb.jpg",
+    "updatedAt": "2025-09-21T11:57:28.058Z"
   },
   {
     "id": 154,
@@ -1691,7 +1990,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uK8fRkPfQH3nLLOX5WVEA5E2HK.jpg",
+    "updatedAt": "2025-09-21T11:57:28.125Z"
   },
   {
     "id": 155,
@@ -1713,7 +2014,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/515phfKCjq7zBEY2UoslEAoNgnW.jpg",
+    "updatedAt": "2025-09-21T11:57:28.442Z"
   },
   {
     "id": 157,
@@ -1724,7 +2027,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/v5Y8pVwJK68SKQQ1GRbIB1hkPDy.jpg",
+    "updatedAt": "2025-09-21T11:57:28.448Z"
   },
   {
     "id": 158,
@@ -1735,7 +2040,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xEx4dHi2IrTB0vkVPccrGrMcZQW.jpg",
+    "updatedAt": "2025-09-21T11:57:28.447Z"
   },
   {
     "id": 159,
@@ -1757,7 +2064,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/odl4b3sFAxiC9NxxDjDSeHZG4Z6.jpg",
+    "updatedAt": "2025-09-21T11:57:28.511Z"
   },
   {
     "id": 161,
@@ -1768,7 +2077,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rbYoFUzstYpGw1A2UYDSh7SqQOn.jpg",
+    "updatedAt": "2025-09-21T11:57:28.824Z"
   },
   {
     "id": 162,
@@ -1779,7 +2090,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bjC1ZY1q78JdZiqupTXezCSAC9F.jpg",
+    "updatedAt": "2025-09-21T11:57:39.118Z"
   },
   {
     "id": 163,
@@ -1790,7 +2103,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3q6cyzKxutOmZVbomgVlFEqG8Md.jpg",
+    "updatedAt": "2025-09-21T11:57:59.706Z"
   },
   {
     "id": 164,
@@ -1801,7 +2116,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fJ1wJ9avrGj9VViC94CcRKL8N7w.jpg",
+    "updatedAt": "2025-09-21T11:57:28.824Z"
   },
   {
     "id": 165,
@@ -1812,7 +2129,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/x02VMg4z7frtezt7bGSAw37mHqg.jpg",
+    "updatedAt": "2025-09-21T11:57:28.965Z"
   },
   {
     "id": 166,
@@ -1823,7 +2142,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rLi9cokiFU20mLUPvQ0IRok3ELY.jpg",
+    "updatedAt": "2025-09-21T11:57:29.349Z"
   },
   {
     "id": 167,
@@ -1834,7 +2155,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8DmFxgQOPJ0QnAG1pB1PvjySI9b.jpg",
+    "updatedAt": "2025-09-21T11:57:29.416Z"
   },
   {
     "id": 168,
@@ -1845,7 +2168,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tEQlCGiiWvMvfD7Sz8d99Pouy39.jpg",
+    "updatedAt": "2025-09-21T11:57:29.277Z"
   },
   {
     "id": 169,
@@ -1856,7 +2181,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/piXVw2Rs7qqxs3XdZOy2jV0vmD9.jpg",
+    "updatedAt": "2025-09-21T11:57:29.278Z"
   },
   {
     "id": 170,
@@ -1867,7 +2194,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8zR2vXoXfdlknEYjfHvCbb1rJbI.jpg",
+    "updatedAt": "2025-09-21T11:57:29.348Z"
   },
   {
     "id": 171,
@@ -1878,7 +2207,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rkTlmmIwwNQtC789SrhGsZ2i1cd.jpg",
+    "updatedAt": "2025-09-21T11:57:29.750Z"
   },
   {
     "id": 172,
@@ -1889,7 +2220,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/kV6ogsiIYzV2qZ43bLuDKuEAIR.jpg",
+    "updatedAt": "2025-09-21T11:57:29.882Z"
   },
   {
     "id": 173,
@@ -1900,7 +2233,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/iPatk3OM3bZk69jvTEB9JoC10b1.jpg",
+    "updatedAt": "2025-09-21T11:57:29.750Z"
   },
   {
     "id": 174,
@@ -1911,7 +2246,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/c6Q7te0PPyL4rzlGkDByVeTKFYg.jpg",
+    "updatedAt": "2025-09-21T11:57:29.814Z"
   },
   {
     "id": 175,
@@ -1933,7 +2270,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7VjOjZt1meZefSiw9kfkoQIG5rn.jpg",
+    "updatedAt": "2025-09-21T11:57:44.728Z"
   },
   {
     "id": 177,
@@ -1944,7 +2283,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rehBWOx9AIkZRKVuiemWvAMH40.jpg",
+    "updatedAt": "2025-09-21T11:57:30.411Z"
   },
   {
     "id": 178,
@@ -1955,7 +2296,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dXVv2gHTQO2GHacHzhwCyX6tSX7.jpg",
+    "updatedAt": "2025-09-21T11:57:30.197Z"
   },
   {
     "id": 179,
@@ -1966,7 +2309,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4gvUftBY7aGT9RJemjOfqua1V9D.jpg",
+    "updatedAt": "2025-09-21T11:57:30.344Z"
   },
   {
     "id": 180,
@@ -1977,7 +2322,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/sZqcEV3KhDITHlUBmyj1a3RRvT9.jpg",
+    "updatedAt": "2025-09-21T11:57:30.265Z"
   },
   {
     "id": 181,
@@ -1988,7 +2335,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nXLqMjDY1gvKN6H31MQOMzPVFdY.jpg",
+    "updatedAt": "2025-09-21T11:57:52.722Z"
   },
   {
     "id": 182,
@@ -1999,7 +2348,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yr9vkWlXuysDeb5A7i82E6sPaab.jpg",
+    "updatedAt": "2025-09-21T11:57:30.727Z"
   },
   {
     "id": 183,
@@ -2010,7 +2361,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cun70cV5n1xIiggw93atunTFJOs.jpg",
+    "updatedAt": "2025-09-21T11:57:30.794Z"
   },
   {
     "id": 184,
@@ -2021,7 +2374,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dQIQZbJXn1pflQw3nwvXLJX0dHa.jpg",
+    "updatedAt": "2025-09-21T11:57:30.726Z"
   },
   {
     "id": 185,
@@ -2032,7 +2387,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zdVxpaoQdpheQqWWd6b82eY9Pid.jpg",
+    "updatedAt": "2025-09-21T11:57:30.868Z"
   },
   {
     "id": 186,
@@ -2043,7 +2400,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eOEh3vqt2wBLiWNffgbj5fhhGST.jpg",
+    "updatedAt": "2025-09-21T11:57:31.179Z"
   },
   {
     "id": 187,
@@ -2054,7 +2413,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hy0A5ZAHpQIbhL4CsGHbInTDdkI.jpg",
+    "updatedAt": "2025-09-21T11:57:31.252Z"
   },
   {
     "id": 188,
@@ -2065,7 +2426,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mMp80A2GMlHBCvescywvrJqGcF6.jpg",
+    "updatedAt": "2025-09-21T11:57:31.325Z"
   },
   {
     "id": 189,
@@ -2076,7 +2439,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1uiuoWE0XUqCZpwWKMQwoFpqjkp.jpg",
+    "updatedAt": "2025-09-21T11:57:31.196Z"
   },
   {
     "id": 190,
@@ -2087,7 +2452,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/j96GoxH1gvJi0XFgj8W6PTYoftC.jpg",
+    "updatedAt": "2025-09-21T11:57:31.185Z"
   },
   {
     "id": 191,
@@ -2098,7 +2465,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/r1ME6ZFxmZ6vFYqt9PHepiIb1t.jpg",
+    "updatedAt": "2025-09-21T11:57:51.954Z"
   },
   {
     "id": 192,
@@ -2109,7 +2478,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eGctboDIdxBSxZIcF8iLc8gebd5.jpg",
+    "updatedAt": "2025-09-21T11:57:55.575Z"
   },
   {
     "id": 193,
@@ -2120,7 +2491,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1pnigkWWy8W032o9TKDneBa3eVK.jpg",
+    "updatedAt": "2025-09-21T11:57:31.684Z"
   },
   {
     "id": 194,
@@ -2131,7 +2504,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/x4ZLWoqsXFrkwA1m1T3OQg4P5Z7.jpg",
+    "updatedAt": "2025-09-21T11:57:31.716Z"
   },
   {
     "id": 195,
@@ -2142,7 +2517,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qiiOjxiXBGuuvMtYP8ozs9H6ZsO.jpg",
+    "updatedAt": "2025-09-21T11:57:31.648Z"
   },
   {
     "id": 196,
@@ -2153,7 +2530,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5QUOzpMapKcRxcx7U7pBdHtIADx.jpg",
+    "updatedAt": "2025-09-21T11:57:32.095Z"
   },
   {
     "id": 197,
@@ -2164,7 +2543,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nue6D8dqxP9exjoJPiv24rC5MDv.jpg",
+    "updatedAt": "2025-09-21T11:57:36.648Z"
   },
   {
     "id": 198,
@@ -2175,7 +2556,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8YtLJ9xcEHDpE1vsB5fy6PINERZ.jpg",
+    "updatedAt": "2025-09-21T11:57:32.238Z"
   },
   {
     "id": 199,
@@ -2186,7 +2569,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/832ngDVXhOVp6HBnuMMeeWTrGXN.jpg",
+    "updatedAt": "2025-09-21T11:57:32.165Z"
   },
   {
     "id": 200,
@@ -2197,7 +2582,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1zSCVOFFkT7JtOoBInPmGQGJAfE.jpg",
+    "updatedAt": "2025-09-21T11:57:32.095Z"
   },
   {
     "id": 201,
@@ -2208,7 +2595,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qpyaW4xUPeIiYA5ckg5zAZFHvsb.jpg",
+    "updatedAt": "2025-09-21T11:57:32.550Z"
   },
   {
     "id": 202,
@@ -2219,7 +2608,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aEziUcFrC8m50RLj6FtdYIglGdA.jpg",
+    "updatedAt": "2025-09-21T11:57:32.552Z"
   },
   {
     "id": 203,
@@ -2230,7 +2621,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nkWXW5blXGmOEoDejRgy83sSb6T.jpg",
+    "updatedAt": "2025-09-21T11:57:32.634Z"
   },
   {
     "id": 204,
@@ -2241,7 +2634,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gXUnFIZdLsGnZp2AxKjQIVm5jEM.jpg",
+    "updatedAt": "2025-09-21T11:57:32.555Z"
   },
   {
     "id": 205,
@@ -2252,7 +2647,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3CeLDFEGXfOQJeGyNafhC0jas5g.jpg",
+    "updatedAt": "2025-09-21T11:57:32.635Z"
   },
   {
     "id": 206,
@@ -2263,7 +2660,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/f4RuGi7MO7GcEtnEpQO4wqaBBUk.jpg",
+    "updatedAt": "2025-09-21T11:57:32.954Z"
   },
   {
     "id": 207,
@@ -2274,7 +2673,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/l4JFOXslwb90opz8xozfIhPke8z.jpg",
+    "updatedAt": "2025-09-21T11:57:32.954Z"
   },
   {
     "id": 208,
@@ -2285,7 +2686,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pYfOQXtOeSC1czPA2GLxjYllOVQ.jpg",
+    "updatedAt": "2025-09-21T11:57:33.175Z"
   },
   {
     "id": 209,
@@ -2296,7 +2699,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/x6OIJWkwe6Kj4pQXTkhhBb7gluA.jpg",
+    "updatedAt": "2025-09-21T11:57:33.092Z"
   },
   {
     "id": 210,
@@ -2307,7 +2712,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/z8dJePZeSNg9NTJ6E2REz8bvIGK.jpg",
+    "updatedAt": "2025-09-21T11:57:33.021Z"
   },
   {
     "id": 211,
@@ -2318,7 +2725,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5OPg6M0yHr21Ovs1fni2H1xpKuF.jpg",
+    "updatedAt": "2025-09-21T11:57:33.564Z"
   },
   {
     "id": 212,
@@ -2329,7 +2738,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mdy9mG31U7jSB8edfRELv53Yfjp.jpg",
+    "updatedAt": "2025-09-21T11:57:33.492Z"
   },
   {
     "id": 213,
@@ -2340,7 +2751,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/9JPVtscMdWGmOoWxNmc1hGdkxtM.jpg",
+    "updatedAt": "2025-09-21T11:57:33.632Z"
   },
   {
     "id": 214,
@@ -2351,7 +2764,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wyiyr21j2UXVaeqVLo8D9a4IdzQ.jpg",
+    "updatedAt": "2025-09-21T11:57:33.564Z"
   },
   {
     "id": 215,
@@ -2362,7 +2777,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jwfDFqzxBkXC5bERBZrCEfK9iii.jpg",
+    "updatedAt": "2025-09-21T11:57:33.498Z"
   },
   {
     "id": 216,
@@ -2373,7 +2790,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pUFoWtUNQLDHHDMm0rVX3uOhIeu.jpg",
+    "updatedAt": "2025-09-21T11:57:33.948Z"
   },
   {
     "id": 217,
@@ -2384,7 +2803,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/p6hR3crjzzfhRxryu9uHri27FYt.jpg",
+    "updatedAt": "2025-09-21T11:58:02.248Z"
   },
   {
     "id": 218,
@@ -2395,7 +2816,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/12TAqK0AUgdcYE9ZYZ9r7ASbH5Q.jpg",
+    "updatedAt": "2025-09-21T11:57:34.020Z"
   },
   {
     "id": 219,
@@ -2406,7 +2829,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6mefTrlGvMggyGta0512kEBztqD.jpg",
+    "updatedAt": "2025-09-21T11:57:33.978Z"
   },
   {
     "id": 220,
@@ -2417,7 +2842,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/720jSBm8CnT0FyaTSiCeXryIL1.jpg",
+    "updatedAt": "2025-09-21T11:57:33.949Z"
   },
   {
     "id": 221,
@@ -2428,7 +2855,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5gJOu3t2QrznuJqjCG7FQDMI76t.jpg",
+    "updatedAt": "2025-09-21T11:57:54.795Z"
   },
   {
     "id": 222,
@@ -2439,7 +2868,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uvfZtoos9bbSKaLDUnCE2O73kkZ.jpg",
+    "updatedAt": "2025-09-21T11:57:34.333Z"
   },
   {
     "id": 223,
@@ -2472,7 +2903,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gWiAJOItz3FszqQ11vFYft6aLXp.jpg",
+    "updatedAt": "2025-09-21T11:57:34.349Z"
   },
   {
     "id": 226,
@@ -2483,7 +2916,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/r2NnRp4mi4G3e0x9zINQIcnGNd8.jpg",
+    "updatedAt": "2025-09-21T11:57:34.720Z"
   },
   {
     "id": 227,
@@ -2494,7 +2929,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dfht1lGq2ALbrRkMj35dUrj5kHG.jpg",
+    "updatedAt": "2025-09-21T11:57:34.793Z"
   },
   {
     "id": 228,
@@ -2505,7 +2942,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/iTXZpOVfQv8lPmLixHx38hDUw8r.jpg",
+    "updatedAt": "2025-09-21T11:57:34.789Z"
   },
   {
     "id": 229,
@@ -2516,7 +2955,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/84tyCh0H9iG1NRRUtCSbKmADoye.jpg",
+    "updatedAt": "2025-09-21T11:57:34.719Z"
   },
   {
     "id": 230,
@@ -2527,7 +2968,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/RBsp4xVqAre5VpuF6tbWv8Duve.jpg",
+    "updatedAt": "2025-09-21T11:57:34.860Z"
   },
   {
     "id": 231,
@@ -2538,7 +2981,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aNBbenF2FXhBzJyFqtcToXuzoMg.jpg",
+    "updatedAt": "2025-09-21T11:57:35.178Z"
   },
   {
     "id": 232,
@@ -2549,7 +2994,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ljW8CVhjhoJNrMor6pIQLM3Mhqr.jpg",
+    "updatedAt": "2025-09-21T11:57:52.343Z"
   },
   {
     "id": 233,
@@ -2560,7 +3007,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wSjSdfnVjD6r8Fnn0K8FXz3JciM.jpg",
+    "updatedAt": "2025-09-21T11:57:35.184Z"
   },
   {
     "id": 234,
@@ -2571,7 +3020,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bAIyiUR0YmCcAFAeMyBshWRbAkh.jpg",
+    "updatedAt": "2025-09-21T11:57:35.254Z"
   },
   {
     "id": 235,
@@ -2582,7 +3033,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oB3Q1OyJ4EPZXcWEpzz6iaHU68v.jpg",
+    "updatedAt": "2025-09-21T11:57:35.186Z"
   },
   {
     "id": 236,
@@ -2593,7 +3046,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qwnXGJCAMYrJ4KZo5d5zgCeMEjc.jpg",
+    "updatedAt": "2025-09-21T11:58:00.159Z"
   },
   {
     "id": 237,
@@ -2604,7 +3059,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/y5hfz0pkJc31gPDIy3UKN6pq5gV.jpg",
+    "updatedAt": "2025-09-21T11:57:35.576Z"
   },
   {
     "id": 238,
@@ -2615,7 +3072,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rokzzDvXcWu882A63hpzzMrWEZg.jpg",
+    "updatedAt": "2025-09-21T11:57:35.576Z"
   },
   {
     "id": 239,
@@ -2626,7 +3085,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1FLKNiL41KPRgByj4uwlIqrpD6f.jpg",
+    "updatedAt": "2025-09-21T11:57:35.640Z"
   },
   {
     "id": 240,
@@ -2637,7 +3098,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/Apish2YD3QIAepzxZ96VLkqEZo3.jpg",
+    "updatedAt": "2025-09-21T11:57:51.185Z"
   },
   {
     "id": 241,
@@ -2648,7 +3111,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dyFoZ2c8J3VLoHxzDTwaTnG1YYE.jpg",
+    "updatedAt": "2025-09-21T11:57:35.967Z"
   },
   {
     "id": 242,
@@ -2659,7 +3124,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bJWi0taJmU9WyPdIUVhShxISCFA.jpg",
+    "updatedAt": "2025-09-21T11:57:35.965Z"
   },
   {
     "id": 243,
@@ -2670,18 +3137,25 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/sqsubXXKujK0iIlrXS0bqYG31Y2.jpg",
+    "updatedAt": "2025-09-21T11:57:35.964Z"
   },
   {
     "id": 244,
     "tmdbId": 550,
     "title": "Fight Club",
     "year": 1999,
-    "myRating": 0,
+    "myRating": 9,
     "positives": "",
     "negatives": "",
-    "myReview": "",
-    "dateWatched": "2025-09-19"
+    "myReview": "Un classique du thriller !",
+    "dateWatched": "2025-09-21T11:56:54.579Z",
+    "posterUrl": "/l5FwaNDvTOHLjS2RK4WcVI7AwgK.jpg",
+    "rating5": 4.5,
+    "quickReview140": "Un classique du thriller !",
+    "updatedAt": "2025-09-21T11:56:54.579Z",
+    "overrides": {}
   },
   {
     "id": 245,
@@ -2692,7 +3166,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tddbD3ETiKucVg15GKWkzveU7SI.jpg",
+    "updatedAt": "2025-09-21T11:57:36.035Z"
   },
   {
     "id": 246,
@@ -2703,7 +3179,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cYy6w1BGaNwKuXX1AUUQlLaP8oz.jpg",
+    "updatedAt": "2025-09-21T11:57:36.035Z"
   },
   {
     "id": 247,
@@ -2714,7 +3192,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4MPsj31FTnfXg1NO93lzr3PqNuE.jpg",
+    "updatedAt": "2025-09-21T11:57:36.357Z"
   },
   {
     "id": 248,
@@ -2725,7 +3205,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/p8xN71e8oKu8itypH1Q2KTlzFlF.jpg",
+    "updatedAt": "2025-09-21T11:57:36.352Z"
   },
   {
     "id": 249,
@@ -2736,7 +3218,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3c8y65VwyFp3pcNtOsrdOoWm8Um.jpg",
+    "updatedAt": "2025-09-21T11:57:36.420Z"
   },
   {
     "id": 250,
@@ -2747,7 +3231,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aMfHCU4Bb2QURqO0rVD06aFs7iq.jpg",
+    "updatedAt": "2025-09-21T11:57:36.420Z"
   },
   {
     "id": 251,
@@ -2758,7 +3244,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oWI4NovPYyAObZcKMUHCuaU8mhg.jpg",
+    "updatedAt": "2025-09-21T11:57:36.356Z"
   },
   {
     "id": 252,
@@ -2769,7 +3257,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2xqJYpTQHwAk9HYX9faguLUiKPi.jpg",
+    "updatedAt": "2025-09-21T11:57:36.741Z"
   },
   {
     "id": 253,
@@ -2780,7 +3270,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gzvSMS4MqBg2ThgGOS2YkNkoebf.jpg",
+    "updatedAt": "2025-09-21T11:57:36.740Z"
   },
   {
     "id": 254,
@@ -2791,7 +3283,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/9pPChh3QvKHZsbErbDlo0bbkvmB.jpg",
+    "updatedAt": "2025-09-21T11:57:36.741Z"
   },
   {
     "id": 255,
@@ -2802,7 +3296,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bpzGLrQC5nXvU3wrLtp1TDIKYX9.jpg",
+    "updatedAt": "2025-09-21T11:57:36.805Z"
   },
   {
     "id": 256,
@@ -2824,7 +3320,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zppHKKEkHg9ZGzOdzZwW8lZYYqy.jpg",
+    "updatedAt": "2025-09-21T11:57:37.118Z"
   },
   {
     "id": 258,
@@ -2835,7 +3333,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/sqKvTMHHbkH5ak4jPIPHCTQqb6W.jpg",
+    "updatedAt": "2025-09-21T11:57:37.185Z"
   },
   {
     "id": 259,
@@ -2846,7 +3346,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pPfoLDinZs5UNNsHzQPtHrZ2bvQ.jpg",
+    "updatedAt": "2025-09-21T11:57:37.209Z"
   },
   {
     "id": 260,
@@ -2857,7 +3359,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4bTShLVFnVKK31cowgjdAIZV84T.jpg",
+    "updatedAt": "2025-09-21T11:57:37.117Z"
   },
   {
     "id": 261,
@@ -2879,7 +3383,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zYl8GQi4a1vcsfNv9ReXPzE12JS.jpg",
+    "updatedAt": "2025-09-21T11:57:37.530Z"
   },
   {
     "id": 263,
@@ -2890,7 +3396,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cB46TSg3kGjq2eVy5kVUhlpUa1H.jpg",
+    "updatedAt": "2025-09-21T11:57:37.530Z"
   },
   {
     "id": 264,
@@ -2901,7 +3409,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nHg8x8eSkf802zzXTsAPNww2XZn.jpg",
+    "updatedAt": "2025-09-21T11:57:37.667Z"
   },
   {
     "id": 265,
@@ -2912,7 +3422,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mhL6H8td9dsT5LMS2koyTqcn94H.jpg",
+    "updatedAt": "2025-09-21T11:57:37.531Z"
   },
   {
     "id": 266,
@@ -2923,7 +3435,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6rglnNhFPDetSms0DAR2WcXKJvq.jpg",
+    "updatedAt": "2025-09-21T11:57:37.596Z"
   },
   {
     "id": 267,
@@ -2934,7 +3448,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aHUGeJfC7xJkliJK5ivjKrhKBZf.jpg",
+    "updatedAt": "2025-09-21T11:57:37.992Z"
   },
   {
     "id": 268,
@@ -2945,7 +3461,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rrS6R9Reqiev2BbyYWpGiZUpslk.jpg",
+    "updatedAt": "2025-09-21T11:57:38.093Z"
   },
   {
     "id": 269,
@@ -2956,7 +3474,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aiYbg2FPbz2mBxeAQxXFE3Aporl.jpg",
+    "updatedAt": "2025-09-21T11:57:37.992Z"
   },
   {
     "id": 270,
@@ -2967,7 +3487,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tt0MsiIYUOOR50u1ogyUDKQaGGV.jpg",
+    "updatedAt": "2025-09-21T11:58:02.246Z"
   },
   {
     "id": 271,
@@ -2978,7 +3500,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xfeqEnK7hExbmZfZHKnjTkbuxMa.jpg",
+    "updatedAt": "2025-09-21T11:57:37.992Z"
   },
   {
     "id": 272,
@@ -2989,7 +3513,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yx564Sa6KUgzKmgcv4wUCefzEzI.jpg",
+    "updatedAt": "2025-09-21T11:57:38.439Z"
   },
   {
     "id": 273,
@@ -3011,7 +3537,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/kXncN0io58NdvgOoxB6n42Uh7oP.jpg",
+    "updatedAt": "2025-09-21T11:57:38.438Z"
   },
   {
     "id": 275,
@@ -3022,7 +3550,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tPbdSWO4WK8W0fl8vMONlgUPsDQ.jpg",
+    "updatedAt": "2025-09-21T11:57:38.510Z"
   },
   {
     "id": 276,
@@ -3033,7 +3563,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/9fmikGwdV1OgJloxQPWTdCFR9sv.jpg",
+    "updatedAt": "2025-09-21T11:57:38.444Z"
   },
   {
     "id": 277,
@@ -3055,7 +3587,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7Xr68P8h2V7P9rwh7Eb6wwpSTUR.jpg",
+    "updatedAt": "2025-09-21T11:57:38.894Z"
   },
   {
     "id": 279,
@@ -3066,7 +3600,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oK83kjwZw3KwPBlJiGaAmlZbJ9L.jpg",
+    "updatedAt": "2025-09-21T11:57:38.819Z"
   },
   {
     "id": 280,
@@ -3077,7 +3613,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wPXxJSz36VjAkxa4MZ0C28uOdwA.jpg",
+    "updatedAt": "2025-09-21T11:57:38.891Z"
   },
   {
     "id": 281,
@@ -3088,7 +3626,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cRFWtZIyPing73YhMrsp3W1uBO4.jpg",
+    "updatedAt": "2025-09-21T11:57:38.823Z"
   },
   {
     "id": 282,
@@ -3099,7 +3639,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hlVmnRymQ4ki7G7EK7slETuezNf.jpg",
+    "updatedAt": "2025-09-21T11:57:39.209Z"
   },
   {
     "id": 283,
@@ -3121,7 +3663,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1rVNiPMAHOyxjkdwyTtqUQs0i61.jpg",
+    "updatedAt": "2025-09-21T11:57:39.277Z"
   },
   {
     "id": 285,
@@ -3132,7 +3676,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dAyd6g9C9LwsLvlCUlAeXtiLi2.jpg",
+    "updatedAt": "2025-09-21T11:57:39.349Z"
   },
   {
     "id": 286,
@@ -3143,7 +3689,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/a7dVwEBU3vupg3hZQMeyL6ksz0F.jpg",
+    "updatedAt": "2025-09-21T11:57:39.210Z"
   },
   {
     "id": 287,
@@ -3154,7 +3702,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yPszN5iNKr3MmFq0dMhAyvzW0kb.jpg",
+    "updatedAt": "2025-09-21T11:57:39.667Z"
   },
   {
     "id": 288,
@@ -3165,7 +3715,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/lyFMpoVktdpWRySPNXrRrJXdETY.jpg",
+    "updatedAt": "2025-09-21T11:57:39.735Z"
   },
   {
     "id": 289,
@@ -3176,7 +3728,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ad4x6wq7Mex6xHxbgoq1grqHUDX.jpg",
+    "updatedAt": "2025-09-21T11:57:39.668Z"
   },
   {
     "id": 290,
@@ -3187,7 +3741,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/73OQ7Qlkq6bpNJytnvQLpQs4boa.jpg",
+    "updatedAt": "2025-09-21T11:57:39.734Z"
   },
   {
     "id": 291,
@@ -3198,7 +3754,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/r7pEfRq2S2W8qWHKKKdcRmhvlBn.jpg",
+    "updatedAt": "2025-09-21T11:57:39.671Z"
   },
   {
     "id": 292,
@@ -3209,7 +3767,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cpLWhkh0FW1AXDuQv99sdzC1k2h.jpg",
+    "updatedAt": "2025-09-21T11:57:40.136Z"
   },
   {
     "id": 293,
@@ -3220,7 +3780,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rV3itKLEALozktTGOCd1EE9vjG6.jpg",
+    "updatedAt": "2025-09-21T11:57:40.063Z"
   },
   {
     "id": 294,
@@ -3231,7 +3793,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/kMyGODBQ7hURJmiA8VRvlD1rhwa.jpg",
+    "updatedAt": "2025-09-21T11:57:40.135Z"
   },
   {
     "id": 295,
@@ -3242,7 +3806,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bJ6HtIxYPUJh6vo0IbnmmPYLci2.jpg",
+    "updatedAt": "2025-09-21T11:57:40.063Z"
   },
   {
     "id": 296,
@@ -3253,7 +3819,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/r0qDNLurxpbxkNPMOYn3ZvWFsv0.jpg",
+    "updatedAt": "2025-09-21T11:57:40.098Z"
   },
   {
     "id": 297,
@@ -3264,7 +3832,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cShwwkz4gBBIRj8yFy8TP2tEWZ4.jpg",
+    "updatedAt": "2025-09-21T11:57:40.450Z"
   },
   {
     "id": 298,
@@ -3286,7 +3856,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2QHFZh7GHrkntKI9Nd6xWSFuwGP.jpg",
+    "updatedAt": "2025-09-21T11:57:44.728Z"
   },
   {
     "id": 300,
@@ -3297,7 +3869,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pkKBYrihVm5kuBgOH04KagSids0.jpg",
+    "updatedAt": "2025-09-21T11:57:40.523Z"
   },
   {
     "id": 301,
@@ -3308,7 +3882,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rpPa7dGWnuldRGyLtr4eT2n38jH.jpg",
+    "updatedAt": "2025-09-21T11:57:40.452Z"
   },
   {
     "id": 302,
@@ -3319,7 +3895,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/45jdSr5oJNiJuZwZ83CblnNY8uJ.jpg",
+    "updatedAt": "2025-09-21T11:57:40.842Z"
   },
   {
     "id": 303,
@@ -3330,7 +3908,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uJvMXO1DNEER2lZocNjJy2zXtYs.jpg",
+    "updatedAt": "2025-09-21T11:57:40.979Z"
   },
   {
     "id": 304,
@@ -3341,7 +3921,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/835Yw9f0gYyR8RSsDKL34VEgCjL.jpg",
+    "updatedAt": "2025-09-21T11:57:40.837Z"
   },
   {
     "id": 305,
@@ -3352,7 +3934,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/itaaGjeYL5ZzufV8BOxkTYQxx4K.jpg",
+    "updatedAt": "2025-09-21T11:57:55.574Z"
   },
   {
     "id": 306,
@@ -3363,7 +3947,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/t3qHHVYEPDpqQ6WXBaMvu76Su5d.jpg",
+    "updatedAt": "2025-09-21T11:57:40.910Z"
   },
   {
     "id": 307,
@@ -3374,7 +3960,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5bIqMhfO9HzvoEQeuBRsx7igYxI.jpg",
+    "updatedAt": "2025-09-21T11:57:41.292Z"
   },
   {
     "id": 308,
@@ -3385,7 +3973,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/A822lbDC7VkH6ZBR5wbVYl8C6K1.jpg",
+    "updatedAt": "2025-09-21T11:57:41.432Z"
   },
   {
     "id": 309,
@@ -3396,7 +3986,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5wjOdUboULg2b3jsk6moZKXDHrh.jpg",
+    "updatedAt": "2025-09-21T11:57:41.360Z"
   },
   {
     "id": 310,
@@ -3407,7 +3999,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/b1z84OMbtzmFWsiQWyonoPqWY2Z.jpg",
+    "updatedAt": "2025-09-21T11:57:51.571Z"
   },
   {
     "id": 311,
@@ -3429,7 +4023,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tmPhFQBUsxMuDUmGr0ysKTZAQEg.jpg",
+    "updatedAt": "2025-09-21T11:57:41.744Z"
   },
   {
     "id": 313,
@@ -3440,7 +4036,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bdnHKtpkB2csewlk6QWBKF85i1D.jpg",
+    "updatedAt": "2025-09-21T11:57:41.747Z"
   },
   {
     "id": 314,
@@ -3451,7 +4049,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2u5YyloGIJfiN70BfUVdY9C3xJ2.jpg",
+    "updatedAt": "2025-09-21T11:57:41.745Z"
   },
   {
     "id": 315,
@@ -3462,7 +4062,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/nSE3MHSJktdxUjWPUKaKREkPAzm.jpg",
+    "updatedAt": "2025-09-21T11:57:41.821Z"
   },
   {
     "id": 316,
@@ -3473,7 +4075,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zyxSZvaA7mU7mwnO1lR2cXUdQdV.jpg",
+    "updatedAt": "2025-09-21T11:57:41.816Z"
   },
   {
     "id": 317,
@@ -3495,7 +4099,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eSIMwtBfUg6i1mtXklAKeflm8uT.jpg",
+    "updatedAt": "2025-09-21T11:57:42.138Z"
   },
   {
     "id": 319,
@@ -3506,7 +4112,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rVOkh5EoWqshhglQWK4W2EhGSHa.jpg",
+    "updatedAt": "2025-09-21T11:57:42.138Z"
   },
   {
     "id": 320,
@@ -3517,7 +4125,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wSCUzU8hzhDzK6ojRBk14mZsq2F.jpg",
+    "updatedAt": "2025-09-21T11:57:42.207Z"
   },
   {
     "id": 321,
@@ -3528,7 +4138,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hodjybp8Ih4F9qk7isBW9sA3hJ4.jpg",
+    "updatedAt": "2025-09-21T11:57:42.204Z"
   },
   {
     "id": 322,
@@ -3539,7 +4151,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jCtcfF4kcZL6x915XBNhLz1wiIQ.jpg",
+    "updatedAt": "2025-09-21T11:57:42.523Z"
   },
   {
     "id": 323,
@@ -3550,7 +4164,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cggl3n9rFmYlrp28PaNcKE1bTzC.jpg",
+    "updatedAt": "2025-09-21T11:57:42.526Z"
   },
   {
     "id": 324,
@@ -3561,7 +4177,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/151H6katqUTrO5hrScVwELxdynv.jpg",
+    "updatedAt": "2025-09-21T11:57:42.594Z"
   },
   {
     "id": 325,
@@ -3572,7 +4190,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xsaafr6i1jAc9nv6lzhAVoHT6e0.jpg",
+    "updatedAt": "2025-09-21T11:57:42.595Z"
   },
   {
     "id": 326,
@@ -3583,7 +4203,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zaqBZyy5QeQ4YhiMurGb54TdvtU.jpg",
+    "updatedAt": "2025-09-21T11:57:42.525Z"
   },
   {
     "id": 327,
@@ -3594,7 +4216,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/60WZfOuQBEPItG6gU9ll8Gaxicw.jpg",
+    "updatedAt": "2025-09-21T11:57:42.911Z"
   },
   {
     "id": 328,
@@ -3605,7 +4229,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2l6PJ6ux9b7RqQuQOUg7eL29PLW.jpg",
+    "updatedAt": "2025-09-21T11:57:42.981Z"
   },
   {
     "id": 329,
@@ -3616,7 +4242,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hg5QpPLIvaFEon60Vyo2CK3LB1C.jpg",
+    "updatedAt": "2025-09-21T11:57:42.920Z"
   },
   {
     "id": 330,
@@ -3627,7 +4255,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qHy7BlA1I3iUEIGp7atsMjSNJSK.jpg",
+    "updatedAt": "2025-09-21T11:57:43.050Z"
   },
   {
     "id": 331,
@@ -3638,7 +4268,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bcgg5H3ORynoJmsnqoNdIPfJNWL.jpg",
+    "updatedAt": "2025-09-21T11:57:43.123Z"
   },
   {
     "id": 332,
@@ -3649,7 +4281,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/9DUYN04hWHVy1tAf8MhXK1vAZ.jpg",
+    "updatedAt": "2025-09-21T11:57:43.509Z"
   },
   {
     "id": 333,
@@ -3660,7 +4294,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aJpUwiws8nm130OUdBAgB0WrtqM.jpg",
+    "updatedAt": "2025-09-21T11:57:43.442Z"
   },
   {
     "id": 334,
@@ -3671,7 +4307,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wN8xR98OXsfMclbW68WwIFgLvkl.jpg",
+    "updatedAt": "2025-09-21T11:57:43.523Z"
   },
   {
     "id": 335,
@@ -3682,7 +4320,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3QjqzSGuH10u2vfvzuvX7e2xQ8L.jpg",
+    "updatedAt": "2025-09-21T11:57:43.442Z"
   },
   {
     "id": 336,
@@ -3693,7 +4333,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/620SWRrO32WWon1mhAjuAWBADju.jpg",
+    "updatedAt": "2025-09-21T11:57:43.442Z"
   },
   {
     "id": 337,
@@ -3704,7 +4346,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2H2tqlgeqeJglmhzpCOLKkTyGMA.jpg",
+    "updatedAt": "2025-09-21T11:57:43.840Z"
   },
   {
     "id": 338,
@@ -3715,7 +4359,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jZaug9eRUbYFT1PKWwD4CDRe8gO.jpg",
+    "updatedAt": "2025-09-21T11:57:43.910Z"
   },
   {
     "id": 339,
@@ -3726,7 +4372,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/bC34TLKRjg7OHhADXhUaSORaARf.jpg",
+    "updatedAt": "2025-09-21T11:57:43.840Z"
   },
   {
     "id": 340,
@@ -3737,7 +4385,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jDdybr7reoVABPthX9OSlazvncD.jpg",
+    "updatedAt": "2025-09-21T11:57:43.979Z"
   },
   {
     "id": 341,
@@ -3759,7 +4409,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1xXiKuQapT5g5xf1g0TaWlVDzfx.jpg",
+    "updatedAt": "2025-09-21T11:57:44.364Z"
   },
   {
     "id": 343,
@@ -3770,7 +4422,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/k2nCH7FrNM88CV0LsJ555WZhU55.jpg",
+    "updatedAt": "2025-09-21T11:57:44.501Z"
   },
   {
     "id": 344,
@@ -3781,7 +4435,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/vxlBfQANmzReZqtpE2tad9gokf.jpg",
+    "updatedAt": "2025-09-21T11:57:58.938Z"
   },
   {
     "id": 345,
@@ -3792,7 +4448,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gCph6Kdq6T7NX1aflsJpuHhfo9j.jpg",
+    "updatedAt": "2025-09-21T11:57:44.431Z"
   },
   {
     "id": 346,
@@ -3814,7 +4472,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tWjJ3ILjsbTwKgXxEv48QAbYZ19.jpg",
+    "updatedAt": "2025-09-21T11:57:44.818Z"
   },
   {
     "id": 348,
@@ -3825,7 +4485,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/9iciwUJTFBbjnmwfgkg6jmt8zHa.jpg",
+    "updatedAt": "2025-09-21T11:57:44.818Z"
   },
   {
     "id": 349,
@@ -3869,7 +4531,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xVKk2zEEeU5KOM7K9ZYRXncbaMn.jpg",
+    "updatedAt": "2025-09-21T11:57:45.132Z"
   },
   {
     "id": 353,
@@ -3880,7 +4544,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/euYzeIKQI06kwJkgyTNewvlgWbN.jpg",
+    "updatedAt": "2025-09-21T11:57:45.205Z"
   },
   {
     "id": 354,
@@ -3902,7 +4568,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4HNGWeWe1w0KT8A829cU5uVVeWK.jpg",
+    "updatedAt": "2025-09-21T11:57:45.200Z"
   },
   {
     "id": 356,
@@ -3913,7 +4581,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/lXoATMtTK3ZsICCvTtXygASHZd9.jpg",
+    "updatedAt": "2025-09-21T11:57:45.129Z"
   },
   {
     "id": 357,
@@ -3924,7 +4594,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eH4KkHYHA7CkWnHb0qoFbsOIV6V.jpg",
+    "updatedAt": "2025-09-21T11:57:45.592Z"
   },
   {
     "id": 358,
@@ -3935,7 +4607,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ztQDBakZ4eqAwf1jA0nyE5Ba3qr.jpg",
+    "updatedAt": "2025-09-21T11:57:45.519Z"
   },
   {
     "id": 359,
@@ -3946,7 +4620,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/n1YTIyhAqqqFyDGFTzV7WaU1JfK.jpg",
+    "updatedAt": "2025-09-21T11:57:45.533Z"
   },
   {
     "id": 360,
@@ -3957,7 +4633,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/kSdgmtOmxFxdiJqK1R3kfKBqRUo.jpg",
+    "updatedAt": "2025-09-21T11:57:45.661Z"
   },
   {
     "id": 361,
@@ -3968,7 +4646,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/arm7E7iinAikQauyGkc0BzYiwZP.jpg",
+    "updatedAt": "2025-09-21T11:57:45.520Z"
   },
   {
     "id": 362,
@@ -3979,7 +4659,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mSgYBWMybY9Ug4ZnCGsttPIjUx7.jpg",
+    "updatedAt": "2025-09-21T11:57:55.180Z"
   },
   {
     "id": 363,
@@ -3990,7 +4672,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jr6oUy9qsNRVC6ZQ716PB2VX22O.jpg",
+    "updatedAt": "2025-09-21T11:57:45.980Z"
   },
   {
     "id": 364,
@@ -4001,7 +4685,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pYOqsH9LEow7gAULZBmkWByHOIB.jpg",
+    "updatedAt": "2025-09-21T11:57:46.048Z"
   },
   {
     "id": 365,
@@ -4012,7 +4698,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wpnN9iRsVmkMe939G62oU3hlnip.jpg",
+    "updatedAt": "2025-09-21T11:57:45.981Z"
   },
   {
     "id": 366,
@@ -4023,7 +4711,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gaXB1huOHeRCR6z7S15K9yODcbl.jpg",
+    "updatedAt": "2025-09-21T11:57:45.981Z"
   },
   {
     "id": 367,
@@ -4034,7 +4724,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qRIB09pAqTTlKR2GMmTmkTOc4sG.jpg",
+    "updatedAt": "2025-09-21T11:57:46.498Z"
   },
   {
     "id": 368,
@@ -4045,7 +4737,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zgyVsJNBdFbUgUUPTWiYBenBTKq.jpg",
+    "updatedAt": "2025-09-21T11:57:46.614Z"
   },
   {
     "id": 369,
@@ -4056,7 +4750,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1cajesADv9jGJAMqC2peAnxh5ar.jpg",
+    "updatedAt": "2025-09-21T11:57:46.498Z"
   },
   {
     "id": 370,
@@ -4067,7 +4763,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/paxBmWVvdw1yiAnSxBxuYUyZKBA.jpg",
+    "updatedAt": "2025-09-21T11:57:46.431Z"
   },
   {
     "id": 371,
@@ -4078,7 +4776,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1z7IwJBQSKVY7BPLYOOS3ZNWM53.jpg",
+    "updatedAt": "2025-09-21T11:57:46.442Z"
   },
   {
     "id": 372,
@@ -4089,7 +4789,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6RKbtDCMUaPboo1WYBUCNoVxgA9.jpg",
+    "updatedAt": "2025-09-21T11:57:46.927Z"
   },
   {
     "id": 373,
@@ -4100,7 +4802,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3h7PYinvLGVL6tjUGzmmDycMEmm.jpg",
+    "updatedAt": "2025-09-21T11:57:46.928Z"
   },
   {
     "id": 374,
@@ -4111,7 +4815,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xkU5T0jes88ITi0tlvqkm8Mx4jV.jpg",
+    "updatedAt": "2025-09-21T11:57:46.993Z"
   },
   {
     "id": 375,
@@ -4122,7 +4828,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/95MpvehtRsx7sxTHTBDji9VUAVE.jpg",
+    "updatedAt": "2025-09-21T11:57:46.993Z"
   },
   {
     "id": 376,
@@ -4133,7 +4841,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/t1wmLY0vgOn9GBwYeDhbO8uQ1i1.jpg",
+    "updatedAt": "2025-09-21T11:57:46.928Z"
   },
   {
     "id": 377,
@@ -4144,7 +4854,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7jIkNQenhZdiGRcwMk8w9KhwFi6.jpg",
+    "updatedAt": "2025-09-21T11:57:47.450Z"
   },
   {
     "id": 378,
@@ -4155,7 +4867,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/grt48ThrPp5Eu96h5sX8zyoDRFD.jpg",
+    "updatedAt": "2025-09-21T11:57:47.381Z"
   },
   {
     "id": 379,
@@ -4166,7 +4880,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tOGbIGecNQtqgxSCDP8KhD0l3BJ.jpg",
+    "updatedAt": "2025-09-21T11:57:47.309Z"
   },
   {
     "id": 380,
@@ -4177,7 +4893,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aaGDsYYjltMxrwgs4qnHse4qlGX.jpg",
+    "updatedAt": "2025-09-21T11:57:47.308Z"
   },
   {
     "id": 381,
@@ -4188,7 +4906,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/A68sZNhCmEFOvAi0uembl7vfUek.jpg",
+    "updatedAt": "2025-09-21T11:57:47.382Z"
   },
   {
     "id": 382,
@@ -4199,7 +4919,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/kdYcB7ydyJdNfPbvsFponC0qb57.jpg",
+    "updatedAt": "2025-09-21T11:57:47.834Z"
   },
   {
     "id": 383,
@@ -4210,7 +4932,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zR15QwfJmC5nVczX95cXmnCl4x.jpg",
+    "updatedAt": "2025-09-21T11:57:47.917Z"
   },
   {
     "id": 384,
@@ -4221,7 +4945,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/df81BbHFHIrnZf5dWRFT4UAzh1C.jpg",
+    "updatedAt": "2025-09-21T11:57:47.767Z"
   },
   {
     "id": 385,
@@ -4232,7 +4958,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uIBamy7g3fnPKtEJxn2bavhaROk.jpg",
+    "updatedAt": "2025-09-21T11:57:47.979Z"
   },
   {
     "id": 386,
@@ -4243,7 +4971,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7uPGS5CgvIjDcFUhw9HB9qYeDXf.jpg",
+    "updatedAt": "2025-09-21T11:57:47.765Z"
   },
   {
     "id": 387,
@@ -4254,7 +4984,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/R8Q9qIl51SHtcX5oWSBbz4YhQV.jpg",
+    "updatedAt": "2025-09-21T11:57:48.288Z"
   },
   {
     "id": 388,
@@ -4265,7 +4997,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/dwRco8u0IrVfiWzSH8HLUjgRdNR.jpg",
+    "updatedAt": "2025-09-21T11:57:48.432Z"
   },
   {
     "id": 389,
@@ -4276,7 +5010,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7U5ytZz3eInnBJaJUMFTdIqyZjj.jpg",
+    "updatedAt": "2025-09-21T11:57:48.503Z"
   },
   {
     "id": 390,
@@ -4298,7 +5034,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ovxhfmzYjiPOYteOYfDhmUZSjYl.jpg",
+    "updatedAt": "2025-09-21T11:57:48.361Z"
   },
   {
     "id": 392,
@@ -4309,7 +5047,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rZ47R21ZGNTGr5ORxdMmxQWdcFn.jpg",
+    "updatedAt": "2025-09-21T11:57:48.819Z"
   },
   {
     "id": 393,
@@ -4320,7 +5060,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rJ5YrOLaq4mBDjSl4hzZJF7JfXi.jpg",
+    "updatedAt": "2025-09-21T11:57:48.820Z"
   },
   {
     "id": 394,
@@ -4353,7 +5095,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zHKWxyG4j404HVeSYHNH4niUpkW.jpg",
+    "updatedAt": "2025-09-21T11:57:48.891Z"
   },
   {
     "id": 397,
@@ -4364,7 +5108,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/boAUuJBeID7VNp4L7LNMQs8mfQS.jpg",
+    "updatedAt": "2025-09-21T11:57:49.201Z"
   },
   {
     "id": 398,
@@ -4375,7 +5121,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+    "updatedAt": "2025-09-21T11:57:49.276Z"
   },
   {
     "id": 399,
@@ -4386,7 +5134,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6keIr8ae1ntKtDARWroWC3LzZGA.jpg",
+    "updatedAt": "2025-09-21T11:57:49.208Z"
   },
   {
     "id": 400,
@@ -4397,7 +5147,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gTr2HfSlRpKf4KtJYyIQwNLADGm.jpg",
+    "updatedAt": "2025-09-21T11:57:49.204Z"
   },
   {
     "id": 401,
@@ -4419,7 +5171,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/b4tSty4svWbqH1tGM1WR1eIsz6s.jpg",
+    "updatedAt": "2025-09-21T11:57:49.594Z"
   },
   {
     "id": 403,
@@ -4430,7 +5184,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qFkRDGzibEqOzkT387FZGWplW12.jpg",
+    "updatedAt": "2025-09-21T11:57:58.553Z"
   },
   {
     "id": 404,
@@ -4452,7 +5208,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/prwtTDfRbwdNOzjURTabW3UYW0O.jpg",
+    "updatedAt": "2025-09-21T11:57:49.594Z"
   },
   {
     "id": 406,
@@ -4463,7 +5221,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/i3nKXWYOpC0dbIbAe4V92ocet64.jpg",
+    "updatedAt": "2025-09-21T11:57:49.663Z"
   },
   {
     "id": 407,
@@ -4474,7 +5234,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/96QWb164zRwt3devmmpwAMVGIw7.jpg",
+    "updatedAt": "2025-09-21T11:57:49.978Z"
   },
   {
     "id": 408,
@@ -4485,7 +5247,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8bvaeLXBZBnsLSal5bcFBrQlnO2.jpg",
+    "updatedAt": "2025-09-21T11:57:49.978Z"
   },
   {
     "id": 409,
@@ -4496,7 +5260,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oZ3Q2BBOtNYk1UR0gXeMgsUrGOx.jpg",
+    "updatedAt": "2025-09-21T11:57:50.047Z"
   },
   {
     "id": 410,
@@ -4507,7 +5273,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ogIPe792E5iTK9oe4X9X7mO4WHi.jpg",
+    "updatedAt": "2025-09-21T11:57:50.118Z"
   },
   {
     "id": 411,
@@ -4518,7 +5286,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cf4SpPyVRfE1lmlnVIXoii337s2.jpg",
+    "updatedAt": "2025-09-21T11:57:49.980Z"
   },
   {
     "id": 412,
@@ -4529,7 +5299,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rJAML5icaPEkj8CU4wLHjpL4RWd.jpg",
+    "updatedAt": "2025-09-21T11:57:50.435Z"
   },
   {
     "id": 413,
@@ -4540,7 +5312,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/roRjNH7cRVrZQYv1Ex8ownMu2ey.jpg",
+    "updatedAt": "2025-09-21T11:57:50.435Z"
   },
   {
     "id": 414,
@@ -4551,7 +5325,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/i2qLi8p1kIKhzLtYsrdmDMH2y1W.jpg",
+    "updatedAt": "2025-09-21T11:57:50.436Z"
   },
   {
     "id": 415,
@@ -4562,7 +5338,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oxPdfTJLfCZauJiUdhHe5lA4bhD.jpg",
+    "updatedAt": "2025-09-21T11:57:50.571Z"
   },
   {
     "id": 416,
@@ -4573,7 +5351,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pnIpqoDTgHvTHK1QZlySpUfFrEZ.jpg",
+    "updatedAt": "2025-09-21T11:57:50.502Z"
   },
   {
     "id": 417,
@@ -4584,7 +5364,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uCczfLC36tQRAo0HwfqVVLiXoxe.jpg",
+    "updatedAt": "2025-09-21T11:57:50.887Z"
   },
   {
     "id": 418,
@@ -4595,7 +5377,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/JEPbbxkFtRASU1WzeQGRvKqjuO.jpg",
+    "updatedAt": "2025-09-21T11:57:50.961Z"
   },
   {
     "id": 419,
@@ -4606,7 +5390,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/k3uIbYtiuK8pwbCcbma29nTqmgG.jpg",
+    "updatedAt": "2025-09-21T11:57:50.887Z"
   },
   {
     "id": 420,
@@ -4617,7 +5403,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fATmEcLwO3tTiisa8gYxhV3x4sS.jpg",
+    "updatedAt": "2025-09-21T11:57:50.961Z"
   },
   {
     "id": 421,
@@ -4628,7 +5416,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yYxmtj4qB3tRW1rCFfgZ5lJADRv.jpg",
+    "updatedAt": "2025-09-21T11:57:50.890Z"
   },
   {
     "id": 422,
@@ -4639,7 +5429,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wCVIoOlw1NG1dAriVLYRcoQyP6o.jpg",
+    "updatedAt": "2025-09-21T11:57:51.311Z"
   },
   {
     "id": 423,
@@ -4650,7 +5442,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hbxqFdWXHeLIJfagMMhVG5SV5tb.jpg",
+    "updatedAt": "2025-09-21T11:57:51.346Z"
   },
   {
     "id": 424,
@@ -4661,7 +5455,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oLy2V6AWSEfdPgKOtrSGnwB3Q2R.jpg",
+    "updatedAt": "2025-09-21T11:57:51.274Z"
   },
   {
     "id": 425,
@@ -4683,7 +5479,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ii5R76odySXCQjE8IIGMB0LQ5EL.jpg",
+    "updatedAt": "2025-09-21T11:57:51.347Z"
   },
   {
     "id": 427,
@@ -4694,7 +5492,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jh8bol1N8COAGSj4ksrcUNo8xxc.jpg",
+    "updatedAt": "2025-09-21T11:57:51.663Z"
   },
   {
     "id": 428,
@@ -4716,7 +5516,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7iLOmRGLPif6CaEzcqHwWbExncN.jpg",
+    "updatedAt": "2025-09-21T11:57:51.730Z"
   },
   {
     "id": 430,
@@ -4727,7 +5529,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jznNbJ80WvvlbLdGEjNsvwycDZC.jpg",
+    "updatedAt": "2025-09-21T11:57:51.664Z"
   },
   {
     "id": 431,
@@ -4738,7 +5542,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wuRf6gkX0JUJsu1MeECPubhMRdd.jpg",
+    "updatedAt": "2025-09-21T11:57:51.664Z"
   },
   {
     "id": 432,
@@ -4749,7 +5555,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "",
+    "updatedAt": "2025-09-21T11:57:52.045Z"
   },
   {
     "id": 433,
@@ -4760,7 +5568,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fW5eekLyNL7udqGP4O0DhPd3gNC.jpg",
+    "updatedAt": "2025-09-21T11:57:52.113Z"
   },
   {
     "id": 434,
@@ -4771,7 +5581,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/s9dt5dFeDe9czLk3yipqjQv89bv.jpg",
+    "updatedAt": "2025-09-21T11:57:52.116Z"
   },
   {
     "id": 435,
@@ -4793,7 +5605,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/r01JaOjD8imIKPYHw97dsLmrc7A.jpg",
+    "updatedAt": "2025-09-21T11:57:52.044Z"
   },
   {
     "id": 437,
@@ -4804,7 +5618,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/kIozDmkyRPFegD3aHDznd3j8jnx.jpg",
+    "updatedAt": "2025-09-21T11:57:52.430Z"
   },
   {
     "id": 438,
@@ -4815,7 +5631,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7EcRgdCjQriST92SzIenogw77kJ.jpg",
+    "updatedAt": "2025-09-21T11:57:52.502Z"
   },
   {
     "id": 439,
@@ -4826,7 +5644,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/t51ReMWxWcAOqKrGKw29OK2WhNz.jpg",
+    "updatedAt": "2025-09-21T11:57:52.432Z"
   },
   {
     "id": 440,
@@ -4848,7 +5668,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cLHVGuK1iXeJzNKtHUibfnNeUIH.jpg",
+    "updatedAt": "2025-09-21T11:57:52.502Z"
   },
   {
     "id": 442,
@@ -4859,7 +5681,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8aiyjm0UEHzpY2HPFQRNfbKWZuy.jpg",
+    "updatedAt": "2025-09-21T11:57:52.815Z"
   },
   {
     "id": 443,
@@ -4892,7 +5716,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yJw1f2xD1evLDzvVO2jnYdSRzWt.jpg",
+    "updatedAt": "2025-09-21T11:57:52.813Z"
   },
   {
     "id": 446,
@@ -4903,7 +5729,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5eEp3sPiCfy46BKuaMXDB2djSbd.jpg",
+    "updatedAt": "2025-09-21T11:57:52.885Z"
   },
   {
     "id": 447,
@@ -4914,7 +5742,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/py8Js6LEl10XhUjkoOj6UGRrSFp.jpg",
+    "updatedAt": "2025-09-21T11:57:53.274Z"
   },
   {
     "id": 448,
@@ -4925,7 +5755,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hSfuKPtyEryeFzapZ8UgZd4aESu.jpg",
+    "updatedAt": "2025-09-21T11:57:53.203Z"
   },
   {
     "id": 449,
@@ -4936,7 +5768,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/wF7jv3x51hXgkl7t5KHePuRjXc8.jpg",
+    "updatedAt": "2025-09-21T11:57:53.274Z"
   },
   {
     "id": 450,
@@ -4947,7 +5781,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xmQhx28FeJdPauZc5bgne9EPtgr.jpg",
+    "updatedAt": "2025-09-21T11:57:53.199Z"
   },
   {
     "id": 451,
@@ -4958,7 +5794,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eI1aNqQel2i1MeebzbRThlG4dAn.jpg",
+    "updatedAt": "2025-09-21T11:57:53.201Z"
   },
   {
     "id": 452,
@@ -4969,7 +5807,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tx6UlWCONmgKIt51dHPWspF4Mgh.jpg",
+    "updatedAt": "2025-09-21T11:57:53.587Z"
   },
   {
     "id": 453,
@@ -4991,7 +5831,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4a0I37pYcdFY6HeutalHQTGs0sl.jpg",
+    "updatedAt": "2025-09-21T11:57:53.659Z"
   },
   {
     "id": 455,
@@ -5002,7 +5844,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zyiImxVLdVdyayvm6ap3nZBTSFu.jpg",
+    "updatedAt": "2025-09-21T11:57:53.584Z"
   },
   {
     "id": 456,
@@ -5013,7 +5857,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gW7H7GPIWSEG7Ma7KKRCx9BfJQm.jpg",
+    "updatedAt": "2025-09-21T11:57:53.728Z"
   },
   {
     "id": 457,
@@ -5024,7 +5870,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/e5B8YvuUrFTtaBOcPbFGBqTgWsx.jpg",
+    "updatedAt": "2025-09-21T11:57:54.184Z"
   },
   {
     "id": 458,
@@ -5035,7 +5883,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/w1bnhSkcT4pa2KQZzRoq0BHBn8T.jpg",
+    "updatedAt": "2025-09-21T11:57:54.045Z"
   },
   {
     "id": 459,
@@ -5046,7 +5896,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tuITw3t3WMOEKtL1sUYts1ZAnoa.jpg",
+    "updatedAt": "2025-09-21T11:57:54.046Z"
   },
   {
     "id": 460,
@@ -5057,7 +5909,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/iGbEqeFC9tffYb4MkiaEP7uheU5.jpg",
+    "updatedAt": "2025-09-21T11:57:54.116Z"
   },
   {
     "id": 461,
@@ -5068,7 +5922,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uZCC0b2AfnLivW5D5RMYf1SROLf.jpg",
+    "updatedAt": "2025-09-21T11:57:54.115Z"
   },
   {
     "id": 462,
@@ -5079,7 +5935,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ueffCcq485jkEQMY30yCDmGEksQ.jpg",
+    "updatedAt": "2025-09-21T11:57:54.497Z"
   },
   {
     "id": 463,
@@ -5090,7 +5948,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/37Fr7lY4QBHsuxlLJIfTNxW6nGW.jpg",
+    "updatedAt": "2025-09-21T11:57:54.498Z"
   },
   {
     "id": 464,
@@ -5101,7 +5961,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/9LfX3IBeByGdFkmkmNztKBr4nYv.jpg",
+    "updatedAt": "2025-09-21T11:57:54.571Z"
   },
   {
     "id": 465,
@@ -5112,7 +5974,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xLJun7oJ00Fh6mYzjy6GNTIhU1u.jpg",
+    "updatedAt": "2025-09-21T11:57:54.570Z"
   },
   {
     "id": 466,
@@ -5134,7 +5998,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6akNNv4KyrguZUiG4uemfV6toVq.jpg",
+    "updatedAt": "2025-09-21T11:57:54.887Z"
   },
   {
     "id": 468,
@@ -5145,7 +6011,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5Jfj6LqxOludXg454Vxef8dCJln.jpg",
+    "updatedAt": "2025-09-21T11:57:54.952Z"
   },
   {
     "id": 469,
@@ -5156,7 +6024,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4LzjVMUit99buiiuhqW4pe0OhmA.jpg",
+    "updatedAt": "2025-09-21T11:57:54.955Z"
   },
   {
     "id": 470,
@@ -5167,7 +6037,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pbJqnZccb9g6DCrX40Y4eUzRbap.jpg",
+    "updatedAt": "2025-09-21T11:57:54.888Z"
   },
   {
     "id": 471,
@@ -5200,7 +6072,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/atLMzzA7pOB0BdfM89V7BbdtLN6.jpg",
+    "updatedAt": "2025-09-21T11:57:55.339Z"
   },
   {
     "id": 474,
@@ -5211,7 +6085,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/iDfjUWJ0w8XmEgaL4n1m7GI86BE.jpg",
+    "updatedAt": "2025-09-21T11:57:55.270Z"
   },
   {
     "id": 475,
@@ -5222,7 +6098,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/g9d0PK7PgaoNs6kSBKnjeYmPBfF.jpg",
+    "updatedAt": "2025-09-21T11:57:55.273Z"
   },
   {
     "id": 476,
@@ -5233,7 +6111,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/x9Sqqfo41qz8C30BHCQSnox0339.jpg",
+    "updatedAt": "2025-09-21T11:57:55.270Z"
   },
   {
     "id": 477,
@@ -5244,7 +6124,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/zJdxg4gTw0JKw8yNLHObuq4LdY0.jpg",
+    "updatedAt": "2025-09-21T11:57:55.654Z"
   },
   {
     "id": 478,
@@ -5255,7 +6137,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ne54bsaNECEP1nriosctoGWI3WN.jpg",
+    "updatedAt": "2025-09-21T11:57:55.654Z"
   },
   {
     "id": 479,
@@ -5277,7 +6161,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/p3B5dRNXnpBNGR16r0zdLiMuvMb.jpg",
+    "updatedAt": "2025-09-21T11:57:55.726Z"
   },
   {
     "id": 481,
@@ -5321,7 +6207,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xwdbIBR6cKCCFomATCOhxikUaRM.jpg",
+    "updatedAt": "2025-09-21T11:57:56.044Z"
   },
   {
     "id": 485,
@@ -5332,7 +6220,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oPlGvJFhDRYC5XrX2oqiwxTOoE8.jpg",
+    "updatedAt": "2025-09-21T11:57:56.043Z"
   },
   {
     "id": 486,
@@ -5343,7 +6233,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fuImIBldvqlh21mJNJzFKUdUU3u.jpg",
+    "updatedAt": "2025-09-21T11:57:56.115Z"
   },
   {
     "id": 487,
@@ -5354,7 +6246,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ntBV03zpD63GHXlU5YM5inmzsRu.jpg",
+    "updatedAt": "2025-09-21T11:57:56.550Z"
   },
   {
     "id": 488,
@@ -5365,7 +6259,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gCFDozeckKAWsaGWL5f190gZRnq.jpg",
+    "updatedAt": "2025-09-21T11:57:56.579Z"
   },
   {
     "id": 489,
@@ -5376,7 +6272,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pP1cyoXFc5Br1Sg21uORSN49yyu.jpg",
+    "updatedAt": "2025-09-21T11:57:56.439Z"
   },
   {
     "id": 490,
@@ -5398,7 +6296,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8nx8sttha1Zidt73SbNncVfSwqk.jpg",
+    "updatedAt": "2025-09-21T11:57:56.440Z"
   },
   {
     "id": 492,
@@ -5409,7 +6309,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/lyCRmHB4NlRUsFTXkCfDXhbBA4z.jpg",
+    "updatedAt": "2025-09-21T11:57:56.894Z"
   },
   {
     "id": 493,
@@ -5420,7 +6322,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cBwZIq1QFasmsC9Wi3HvyEljfYN.jpg",
+    "updatedAt": "2025-09-21T11:57:57.032Z"
   },
   {
     "id": 494,
@@ -5431,7 +6335,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/a9KIIpkR6sXGHLJiXse9A7p7l9k.jpg",
+    "updatedAt": "2025-09-21T11:57:56.894Z"
   },
   {
     "id": 495,
@@ -5442,7 +6348,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hb0cri8EVIWbiKbumXOkrl1ethM.jpg",
+    "updatedAt": "2025-09-21T11:57:56.961Z"
   },
   {
     "id": 496,
@@ -5453,7 +6361,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/4HFt1jyjZD3MssiyNPJLToqGd1v.jpg",
+    "updatedAt": "2025-09-21T11:57:56.896Z"
   },
   {
     "id": 497,
@@ -5464,7 +6374,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gnAfqiV7yO3Jq9IntTmwkcaICqc.jpg",
+    "updatedAt": "2025-09-21T11:57:57.414Z"
   },
   {
     "id": 498,
@@ -5475,7 +6387,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/qebfcMW8RDjoMTNLNeDFfMlVCGp.jpg",
+    "updatedAt": "2025-09-21T11:57:57.343Z"
   },
   {
     "id": 499,
@@ -5486,7 +6400,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jw5XxeZReM8kSvrkadV5XSmniyb.jpg",
+    "updatedAt": "2025-09-21T11:57:57.347Z"
   },
   {
     "id": 500,
@@ -5497,7 +6413,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/2QLqaQCb8K5LXavGr3iGs1ps5nk.jpg",
+    "updatedAt": "2025-09-21T11:57:57.420Z"
   },
   {
     "id": 501,
@@ -5508,7 +6426,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/l7SGiO7BLLAJyZJgWWRMcar5Rbe.jpg",
+    "updatedAt": "2025-09-21T11:57:57.485Z"
   },
   {
     "id": 502,
@@ -5530,7 +6450,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/tm29Vp31IG39iWL0BcA6EpQssEU.jpg",
+    "updatedAt": "2025-09-21T11:57:57.874Z"
   },
   {
     "id": 504,
@@ -5541,7 +6463,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hGZ9sDGcekhJUFmu3NnOhRT8uQS.jpg",
+    "updatedAt": "2025-09-21T11:57:57.800Z"
   },
   {
     "id": 505,
@@ -5552,7 +6476,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7sDhxpW7Z7tTsiZYgBBkIKhSs2L.jpg",
+    "updatedAt": "2025-09-21T11:57:57.801Z"
   },
   {
     "id": 506,
@@ -5563,7 +6489,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/53swr5MbRt8871pS2ugU4ZoC1gq.jpg",
+    "updatedAt": "2025-09-21T11:57:57.943Z"
   },
   {
     "id": 507,
@@ -5574,7 +6502,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5xR5OjvGQfaRZNL7GTuPAZy8tdr.jpg",
+    "updatedAt": "2025-09-21T11:57:58.260Z"
   },
   {
     "id": 508,
@@ -5585,7 +6515,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/76Fx5kjWnoxtHiKifs4wh52f8og.jpg",
+    "updatedAt": "2025-09-21T11:57:58.324Z"
   },
   {
     "id": 509,
@@ -5596,7 +6528,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/lwnkzrfBYXDK4JzQsTzSNjFNJVY.jpg",
+    "updatedAt": "2025-09-21T11:57:58.258Z"
   },
   {
     "id": 510,
@@ -5607,7 +6541,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/14PSgKwuXq1zP1UWF9GDQPbqYtB.jpg",
+    "updatedAt": "2025-09-21T11:57:58.258Z"
   },
   {
     "id": 511,
@@ -5618,7 +6554,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/hmc5k9HNKqudMAGrttCg4wbuUJd.jpg",
+    "updatedAt": "2025-09-21T11:57:58.327Z"
   },
   {
     "id": 512,
@@ -5629,7 +6567,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/9HO86wbLOmwkYd1SxUiJ2lPR5ag.jpg",
+    "updatedAt": "2025-09-21T11:57:58.711Z"
   },
   {
     "id": 513,
@@ -5640,7 +6580,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/5I66ZaHmUbZ9HgK34fFVeQPeAWP.jpg",
+    "updatedAt": "2025-09-21T11:57:58.643Z"
   },
   {
     "id": 514,
@@ -5662,7 +6604,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/y3wsuKDwLaxF7l7U8q5LYAjJzTI.jpg",
+    "updatedAt": "2025-09-21T11:57:58.647Z"
   },
   {
     "id": 516,
@@ -5684,7 +6628,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uNHxkEWfcKFFZO6QDMXyFi8JF08.jpg",
+    "updatedAt": "2025-09-21T11:57:59.025Z"
   },
   {
     "id": 518,
@@ -5695,7 +6641,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/yoOyDKXjJIDBdnzQUrUjP0EtcZo.jpg",
+    "updatedAt": "2025-09-21T11:57:59.028Z"
   },
   {
     "id": 519,
@@ -5706,7 +6654,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7p5MzMb4h0Y2WUn73r4MHKNeh3X.jpg",
+    "updatedAt": "2025-09-21T11:57:59.099Z"
   },
   {
     "id": 520,
@@ -5717,7 +6667,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/vO1uylGembTeJAX7BO5jgxcPgJq.jpg",
+    "updatedAt": "2025-09-21T11:57:59.099Z"
   },
   {
     "id": 521,
@@ -5739,7 +6691,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pUPR2pgiVfWMkHcE0SqaE4skDl9.jpg",
+    "updatedAt": "2025-09-21T11:57:59.411Z"
   },
   {
     "id": 523,
@@ -5761,7 +6715,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uwd79G32FPIL5B9UkRgSZvS0gbe.jpg",
+    "updatedAt": "2025-09-21T11:57:59.413Z"
   },
   {
     "id": 525,
@@ -5772,7 +6728,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/rPO3pzRgwaOFPGMqZoCcbXqYnx5.jpg",
+    "updatedAt": "2025-09-21T11:57:59.410Z"
   },
   {
     "id": 526,
@@ -5783,7 +6741,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/iEYuYk7Wn1RjQdbKKXxG3XN45tM.jpg",
+    "updatedAt": "2025-09-21T11:57:59.481Z"
   },
   {
     "id": 527,
@@ -5794,7 +6754,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/k55kMEPkxGej70udPcVNqhTiwBz.jpg",
+    "updatedAt": "2025-09-21T11:57:59.936Z"
   },
   {
     "id": 528,
@@ -5816,7 +6778,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/7fyU9OIvU1Z7dznrHa5l9qNXIkH.jpg",
+    "updatedAt": "2025-09-21T11:57:59.795Z"
   },
   {
     "id": 530,
@@ -5827,7 +6791,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/on60ASUpGg1xfiFucuMCv9wVqtq.jpg",
+    "updatedAt": "2025-09-21T11:57:59.864Z"
   },
   {
     "id": 531,
@@ -5838,7 +6804,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/ttQ4ooQ5mzFLhlAtDUqvBDBXyQ5.jpg",
+    "updatedAt": "2025-09-21T11:57:59.795Z"
   },
   {
     "id": 532,
@@ -5849,7 +6817,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/1gO4SWCdMW0ptIRLQ455Ia5emC.jpg",
+    "updatedAt": "2025-09-21T11:58:00.249Z"
   },
   {
     "id": 533,
@@ -5860,7 +6830,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/fxwVitOtjxw2M2lz9SRmAgJNQMz.jpg",
+    "updatedAt": "2025-09-21T11:58:00.392Z"
   },
   {
     "id": 534,
@@ -5871,7 +6843,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/mgnMrXZCH2z7EyOcCIO6Y239Ze0.jpg",
+    "updatedAt": "2025-09-21T11:58:00.247Z"
   },
   {
     "id": 535,
@@ -5882,7 +6856,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/aW3YxRYgWF806bTRz7WkpIze8Pd.jpg",
+    "updatedAt": "2025-09-21T11:58:00.321Z"
   },
   {
     "id": 536,
@@ -5904,7 +6880,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/cAxteOtjaeQN045qNNbSEwu78c4.jpg",
+    "updatedAt": "2025-09-21T11:58:00.712Z"
   },
   {
     "id": 538,
@@ -5915,7 +6893,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/sVmDIIFPzbyEz87dZYpLfetn4Lm.jpg",
+    "updatedAt": "2025-09-21T11:58:00.710Z"
   },
   {
     "id": 539,
@@ -5937,7 +6917,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/sdl2dt1rZaTXMaYzIAaajOI0VPB.jpg",
+    "updatedAt": "2025-09-21T11:58:00.796Z"
   },
   {
     "id": 541,
@@ -5948,7 +6930,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/jIr5xcxEVjgofOfS0096t9NHMxF.jpg",
+    "updatedAt": "2025-09-21T11:58:00.710Z"
   },
   {
     "id": 542,
@@ -5959,7 +6943,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/8DTJq8btlJHVELjasGCa1mLMXUj.jpg",
+    "updatedAt": "2025-09-21T11:58:01.112Z"
   },
   {
     "id": 543,
@@ -5970,7 +6956,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gfqbILnRNUVBGa7fLCgjDVK1J5D.jpg",
+    "updatedAt": "2025-09-21T11:58:01.180Z"
   },
   {
     "id": 544,
@@ -5981,7 +6969,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/AeoXonCArZda8vgBb7IbXiUJsdi.jpg",
+    "updatedAt": "2025-09-21T11:58:01.181Z"
   },
   {
     "id": 545,
@@ -5992,7 +6982,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/juUIOcOQ0ip9qw3ecH9IBEQklEp.jpg",
+    "updatedAt": "2025-09-21T11:58:01.113Z"
   },
   {
     "id": 546,
@@ -6003,7 +6995,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6Mk8xMqpZR73p196AQeKSk8RV9Y.jpg",
+    "updatedAt": "2025-09-21T11:58:01.112Z"
   },
   {
     "id": 547,
@@ -6014,7 +7008,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/6pzMOxWn9yo0Lwx27JgXqdF2MAt.jpg",
+    "updatedAt": "2025-09-21T11:58:01.498Z"
   },
   {
     "id": 548,
@@ -6025,7 +7021,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/uuA4ng9thWpFVFpHMR5FtlKaaTD.jpg",
+    "updatedAt": "2025-09-21T11:58:01.498Z"
   },
   {
     "id": 549,
@@ -6036,7 +7034,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/sqbYNe6ILOWGLE6CBmTVi11Zbz7.jpg",
+    "updatedAt": "2025-09-21T11:58:01.568Z"
   },
   {
     "id": 550,
@@ -6047,7 +7047,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/pDctIlugIuDZivzihCAEs7Ofymx.jpg",
+    "updatedAt": "2025-09-21T11:58:01.568Z"
   },
   {
     "id": 551,
@@ -6058,7 +7060,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/xb7L5jvBdUaQzUjBglutxzHZDQp.jpg",
+    "updatedAt": "2025-09-21T11:58:01.500Z"
   },
   {
     "id": 552,
@@ -6069,7 +7073,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/gucBPlIs9DpbpgRYBSEZB5Narc4.jpg",
+    "updatedAt": "2025-09-21T11:58:01.882Z"
   },
   {
     "id": 553,
@@ -6080,7 +7086,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/c5oKaVtfy5Y02oI2LdCo638rg6U.jpg",
+    "updatedAt": "2025-09-21T11:58:01.954Z"
   },
   {
     "id": 554,
@@ -6091,7 +7099,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/39pG6Qvmw4oOeCYL1Je1JzBoIOs.jpg",
+    "updatedAt": "2025-09-21T11:58:01.968Z"
   },
   {
     "id": 555,
@@ -6102,7 +7112,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/3Ba53oZxqM7qOj7ZCGGxkY9GDE4.jpg",
+    "updatedAt": "2025-09-21T11:58:02.022Z"
   },
   {
     "id": 556,
@@ -6113,7 +7125,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/oCJSanfnNimhbrI6KMZqEXbE9IA.jpg",
+    "updatedAt": "2025-09-21T11:58:01.883Z"
   },
   {
     "id": 557,
@@ -6157,7 +7171,9 @@
     "positives": "",
     "negatives": "",
     "myReview": "",
-    "dateWatched": "2025-09-19"
+    "dateWatched": "2025-09-19",
+    "posterUrl": "/eJ49J6QXrTJryC61p43NTAULms.jpg",
+    "updatedAt": "2025-09-21T11:58:02.342Z"
   },
   {
     "tmdbId": 255343,
@@ -6168,7 +7184,9 @@
     "negatives": "Personnages un peu stupides par moment, romance qui manque d'épaisseur, un film qui aurait gagné à être un peu plus développé peut-être, dans le genre du Dernier Roi d'Ecosse. Le piège se referme trop vite sur Nick, plus de lenteur aurait rajouté plus d'effroi.",
     "myReview": "Un bon film mais qui aurait gagné à être plus développé dans la longueur, à mieux développer ses personnages et leurs relations. Cependant, un super jeu d'acteur et des scènes de drames crues vraiment appréciées.",
     "dateWatched": "2025-09-19",
-    "id": 561
+    "id": 561,
+    "posterUrl": "/fGprqIWfKsxmA06eM1VuJfMGCXS.jpg",
+    "updatedAt": "2025-09-21T11:58:02.339Z"
   },
   {
     "tmdbId": 40177,
@@ -6179,6 +7197,8 @@
     "negatives": "",
     "myReview": "",
     "dateWatched": "2025-09-20",
-    "id": 562
+    "id": 562,
+    "posterUrl": "/3MgZNv5SHPPa4W7WCSCMBuk3nbh.jpg",
+    "updatedAt": "2025-09-21T11:58:02.655Z"
   }
 ]

@@ -17,6 +17,27 @@ async function MoviesSection({ title, fetchFunction, genreId }: { title: string;
   );
 }
 
+// ISR - Revalidation toutes les 6h pour les films populaires
+export const revalidate = 21600; // 6 heures
+
+// Métadonnées pour le SEO
+export const metadata = {
+  title: 'JumpCut - Ma Cinémathèque',
+  description: 'Découvrez les films populaires, tendances et à venir. Votre collection personnelle de films avec notes et critiques.',
+  openGraph: {
+    title: 'JumpCut - Ma Cinémathèque',
+    description: 'Découvrez les films populaires, tendances et à venir. Votre collection personnelle de films avec notes et critiques.',
+    images: [
+      {
+        url: '/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'JumpCut - Ma Cinémathèque',
+      }
+    ],
+  },
+};
+
 export default async function FilmsPage() {
   // Charger seulement les données critiques en premier
   const trendingMovies = await getTrendingMovies();

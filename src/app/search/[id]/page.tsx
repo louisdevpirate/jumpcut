@@ -13,7 +13,7 @@ interface SearchPageProps {
 }
 
 export default function SearchPage({ params }: SearchPageProps) {
-  const [movieDetails, setMovieDetails] = useState(null);
+  const [movieDetails, setMovieDetails] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [showReviewForm, setShowReviewForm] = useState(false);
   const [showMoreInfo, setShowMoreInfo] = useState(false);
@@ -149,7 +149,7 @@ export default function SearchPage({ params }: SearchPageProps) {
             <div className="flex-shrink-0">
               <div className="relative w-48 h-72 rounded-lg overflow-hidden">
                 <img
-                  src={movieDetails.poster_path ? `https://image.tmdb.org/t/p/w500${movieDetails.poster_path}` : '/placeholder-poster.jpg'}
+                  src={movieDetails.poster_path ? `https://image.tmdb.org/t/p/w500${movieDetails.poster_path}` : '/placeholder-poster.svg'}
                   alt={movieDetails.title}
                   className="w-full h-full object-cover"
                 />
@@ -168,7 +168,7 @@ export default function SearchPage({ params }: SearchPageProps) {
                 <div className="mb-4">
                   <span className="text-sm font-medium text-neutral-700">Genres : </span>
                   <span className="text-neutral-900">
-                    {movieDetails.genres.map(g => g.name).join(', ')}
+                     {movieDetails.genres.map((g: any) => g.name).join(', ')}
                   </span>
                 </div>
               )}
@@ -194,14 +194,16 @@ export default function SearchPage({ params }: SearchPageProps) {
                     >
                       📝 Ajouter rapidement
                     </button>
-                    <WishlistButton
-                      tmdbId={movieId!}
-                      title={movieDetails.title}
-                      year={new Date(movieDetails.release_date).getFullYear()}
-                      poster_path={movieDetails.poster_path}
-                      overview={movieDetails.overview}
-                      variant="secondary"
-                    />
+                     <WishlistButton
+                       movieId={movieId!}
+                       movieTitle={movieDetails.title}
+                       tmdbId={movieId!}
+                       title={movieDetails.title}
+                       year={new Date(movieDetails.release_date).getFullYear()}
+                       poster_path={movieDetails.poster_path}
+                       overview={movieDetails.overview}
+                       variant="secondary"
+                     />
                   </div>
                 <button 
                   onClick={() => setShowMoreInfo(!showMoreInfo)}
@@ -271,7 +273,7 @@ export default function SearchPage({ params }: SearchPageProps) {
                     <span className="text-neutral-600">Sociétés de production :</span>
                     <span className="text-neutral-900 font-medium">
                       {movieDetails.production_companies?.length > 0 
-                        ? movieDetails.production_companies.map(c => c.name).join(', ')
+                         ? movieDetails.production_companies.map((c: any) => c.name).join(', ')
                         : 'N/A'
                       }
                     </span>

@@ -1,11 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FaStar, FaInfoCircle } from 'react-icons/fa';
-import WishlistButton from './WishlistButton';
-import QuickReviewButton from './QuickReviewButton';
+import FilmCard from './FilmCard';
 
 interface FilmCarouselProps {
   movies: Array<{
@@ -14,11 +10,11 @@ interface FilmCarouselProps {
     poster_path: string;
     release_date: string;
     vote_average: number;
+    overview?: string;
   }>;
 }
 
 export default function FilmCarousel({ movies }: FilmCarouselProps) {
-  const [hoveredMovie, setHoveredMovie] = useState<number | null>(null);
   const [visibleMovies, setVisibleMovies] = useState(8); // Afficher seulement 8 films initialement
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -29,7 +25,9 @@ export default function FilmCarousel({ movies }: FilmCarouselProps) {
         entries.forEach((entry) => {
           if (entry.isIntersecting && visibleMovies < movies.length) {
             // Charger plus de films quand le carrousel devient visible
-            setVisibleMovies(prev => Math.min(prev + 4, movies.length));
+            setTimeout(() => {
+              setVisibleMovies(prev => Math.min(prev + 4, movies.length));
+            }, 100);
           }
         });
       },
@@ -61,63 +59,12 @@ export default function FilmCarousel({ movies }: FilmCarouselProps) {
     <div className="carousel-container" ref={carouselRef}>
       <div className="carousel-content">
         {moviesToShow.map((movie) => (
-          <div
+          <FilmCard
             key={movie.id}
-            className="relative group cursor-pointer"
-            onMouseEnter={() => setHoveredMovie(movie.id)}
-            onMouseLeave={() => setHoveredMovie(null)}
-          >
-            {/* Carte du film */}
-            <div className="film-card w-48 h-72 relative cursor-pointer">
-              <Link href={`/films/${movie.id}`}>
-                <Image
-                  src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : '/placeholder-poster.svg'}
-                  alt={movie.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
-                  loading="lazy"
-                  placeholder="blur"
-                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                />
-              </Link>
-              
-              {/* Overlay au hover */}
-              {hoveredMovie === movie.id && (
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="flex gap-2">
-                    <QuickReviewButton 
-                      movieId={movie.id} 
-                      movieTitle={movie.title}
-                      variant="carousel"
-                    />
-                    <WishlistButton 
-                      movieId={movie.id} 
-                      movieTitle={movie.title}
-                      variant="carousel"
-                    />
-                    <Link href={`/films/${movie.id}`}>
-                      <button className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition">
-                        <FaInfoCircle className="text-white text-sm" />
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* Informations du film */}
-            <div className="mt-2 px-1">
-              <h3 className="text-white text-sm font-medium truncate">
-                {movie.title}
-              </h3>
-              <div className="flex items-center gap-2 text-xs text-gray-400">
-                <span>{new Date(movie.release_date).getFullYear()}</span>
-                <span>•</span>
-                <span>⭐ {movie.vote_average.toFixed(1)}</span>
-              </div>
-            </div>
-          </div>
+            movie={movie}
+            variant="carousel"
+            showQuickReview={true}
+          />
         ))}
         
         {/* Indicateur de chargement pour plus de films */}

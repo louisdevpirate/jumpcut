@@ -63,7 +63,7 @@ export default function FilmCardClient({ id, title, year, tmdbId, myRating }: Fi
           <h3 className="font-semibold text-sm text-white truncate mb-1">
             {title}
           </h3>
-          <div className="flex items-center justify-between text-xs text-gray-400 mb-2">
+          <div className="flex items-center justify-between text-xs text-black mb-2">
             <span>{year || 'N/A'}</span>
             {myRating > 0 && (
               <span>⭐ {myRating}/10</span>

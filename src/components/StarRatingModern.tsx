@@ -50,23 +50,11 @@ export default function StarRatingModern({
     
     if (currentRating >= starValue) {
       return (
-        <div className="relative">
-          <FaStar 
-            className={`${sizeClasses[size]} text-yellow-400 ${interactive ? 'cursor-pointer hover:text-yellow-500' : ''}`}
-            onClick={() => handleStarClick(starValue)}
-            onMouseEnter={() => handleStarHover(starValue)}
-          />
-          {interactive && (
-            <div 
-              className="absolute inset-0 cursor-pointer"
-              onClick={(e) => {
-                e.stopPropagation();
-                handleStarClick(starValue - 0.5);
-              }}
-              onMouseEnter={() => handleStarHover(starValue - 0.5)}
-            />
-          )}
-        </div>
+        <FaStar 
+          className={`${sizeClasses[size]} text-yellow-400 ${interactive ? 'cursor-pointer hover:text-yellow-500' : ''}`}
+          onClick={() => handleStarClick(starValue)}
+          onMouseEnter={() => handleStarHover(starValue)}
+        />
       );
     } else if (currentRating >= starValue - 0.5) {
       return (
@@ -78,23 +66,11 @@ export default function StarRatingModern({
       );
     } else {
       return (
-        <div className="relative">
-          <FaStar 
-            className={`${sizeClasses[size]} text-gray-300 ${interactive ? 'cursor-pointer hover:text-yellow-400' : ''}`}
-            onClick={() => handleStarClick(starValue)}
-            onMouseEnter={() => handleStarHover(starValue)}
-          />
-          {interactive && (
-            <div 
-              className="absolute inset-0 cursor-pointer"
-              onClick={(e) => {
-                e.stopPropagation();
-                handleStarClick(starValue - 0.5);
-              }}
-              onMouseEnter={() => handleStarHover(starValue - 0.5)}
-            />
-          )}
-        </div>
+        <FaStar 
+          className={`${sizeClasses[size]} text-gray-300 ${interactive ? 'cursor-pointer hover:text-yellow-400' : ''}`}
+          onClick={() => handleStarClick(starValue)}
+          onMouseEnter={() => handleStarHover(starValue)}
+        />
       );
     }
   };

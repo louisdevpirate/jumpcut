@@ -100,7 +100,7 @@ export default function SearchBar() {
                   {movie.title}
                 </div>
                 <div className="text-sm text-gray-400">
-                  {movie.release_date ? new Date(movie.release_date).getFullYear() : 'N/A'}
+                  {movie.release_date && movie.release_date.length > 0 ? new Date(movie.release_date).getFullYear() : 'N/A'}
                 </div>
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function SearchBar() {
                   >
                     <div className="w-12 h-16 rounded overflow-hidden flex-shrink-0">
                       <img
-                        src={movie.poster_path ? `https://image.tmdb.org/t/p/w92${movie.poster_path}` : '/placeholder-poster.jpg'}
+                        src={movie.poster_path ? `https://image.tmdb.org/t/p/w92${movie.poster_path}` : '/placeholder-poster.svg'}
                         alt={movie.title}
                         className="w-full h-full object-cover"
                       />
@@ -148,7 +148,7 @@ export default function SearchBar() {
                         {movie.title}
                       </div>
                       <div className="text-sm text-neutral-500">
-                        {new Date(movie.release_date).getFullYear()}
+                        {movie.release_date && movie.release_date.length > 0 ? new Date(movie.release_date).getFullYear() : 'N/A'}
                       </div>
                     </div>
                   </div>

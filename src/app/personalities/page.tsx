@@ -7,6 +7,7 @@ import ProgressBar from "@/components/ProgressBar";
 import Pagination from "@/components/Pagination";
 import { getFilms } from '@/lib/films-client';
 import { getMovieDetails } from "@/lib/tmdb";
+import { FilmGridSkeleton } from '@/components/Skeletons';
 import { FaSearch, FaSortAlphaDown, FaFilter } from 'react-icons/fa';
 
 interface Film {
@@ -191,17 +192,7 @@ export default function PersonalitiesPage() {
             <h1 className="text-4xl font-bold text-white mb-4 font-satoshi">🎭 Personnalités</h1>
             <p className="text-neutral-600">Chargement des personnalités...</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {Array.from({ length: 12 }, (_, i) => (
-              <div key={i} className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden">
-                <div className="w-full aspect-square bg-gray-200 animate-pulse"></div>
-                <div className="p-3">
-                  <div className="h-4 bg-gray-200 rounded animate-pulse mb-2"></div>
-                  <div className="h-3 bg-gray-200 rounded animate-pulse w-2/3"></div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <FilmGridSkeleton count={12} />
         </div>
       </div>
     );

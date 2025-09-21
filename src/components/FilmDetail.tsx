@@ -47,13 +47,13 @@ export default function FilmDetail({ film, tmdbData, onToggleWatched, onUpdateRe
     }
   };
   return (
-    <div className="max-w-6xl mx-auto px-6 py-8">
+    <div className="max-w-6xl mx-auto px-6 py-8 pt-48">
       {/* En-tête du film */}
       <div className="flex flex-col lg:flex-row gap-8 mb-8">
         <div className="flex-shrink-0">
           <div className="relative w-80 h-[480px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src={tmdbData?.poster_path ? `https://image.tmdb.org/t/p/w500${tmdbData.poster_path}` : '/placeholder-poster.jpg'}
+              src={tmdbData?.poster_path ? `https://image.tmdb.org/t/p/w500${tmdbData.poster_path}` : '/placeholder-poster.svg'}
               alt={film.title}
               fill
               className="object-cover"
@@ -89,10 +89,10 @@ export default function FilmDetail({ film, tmdbData, onToggleWatched, onUpdateRe
             />
             <EditFilmButton
               film={film}
-              onSave={(data) => {
-                // TODO: Implémenter la sauvegarde
-                console.log('Sauvegarde:', data);
-              }}
+               onSave={async (data) => {
+                 // TODO: Implémenter la sauvegarde
+                 console.log('Sauvegarde:', data);
+               }}
               variant="secondary"
             />
           </div>
