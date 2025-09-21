@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { FaPlus, FaInfoCircle, FaStar } from "react-icons/fa";
 import QuickReview from "./QuickReview";
 import WishlistButton from "./WishlistButton";
+import { BackdropImage } from "./OptimizedImage";
 
 interface HeroSectionProps {
   movie: {
@@ -27,15 +27,11 @@ export default function HeroSection({ movie }: HeroSectionProps) {
     <div className="relative h-[80vh] overflow-hidden pt-38">
       {/* Image de fond */}
       <div className="absolute inset-0">
-        <Image
-          src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
+        <BackdropImage
+          src={movie.backdrop_path}
           alt={movie.title}
-          fill
-          className="object-cover"
           priority
-          sizes="80vw"
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+          className="object-cover"
         />
         {/* Overlay dégradé */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />

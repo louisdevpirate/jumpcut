@@ -2,12 +2,12 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import ProgressBar from "@/components/ProgressBar";
 import Pagination from "@/components/Pagination";
 import StarRatingModern from "@/components/StarRatingModern";
 import { getFilms } from '@/lib/films-client';
 import { FaSearch, FaSortAlphaDown, FaCalendarAlt, FaStar, FaArrowLeft } from 'react-icons/fa';
+import { ProfileImage, PosterImage } from './OptimizedImage';
 
 interface Film {
   id: number;
@@ -291,15 +291,13 @@ export default function PersonDetailPage({
           <div className="flex flex-col md:flex-row gap-8">
             {/* Photo */}
             <div className="flex-shrink-0">
-              <div className="relative w-48 h-48 rounded-xl overflow-hidden">
-                <Image
-                  src={person.profile_path ? `https://image.tmdb.org/t/p/w500${person.profile_path}` : '/placeholder-person.jpg'}
-                  alt={person.name}
-                  fill
-                  className="object-cover"
-                  loading="lazy"
-                />
-              </div>
+              <ProfileImage
+                src={person.profile_path}
+                alt={person.name}
+                width={192}
+                height={192}
+                className="rounded-xl"
+              />
             </div>
             
             {/* Informations */}
@@ -373,12 +371,12 @@ export default function PersonDetailPage({
                 <Link key={movie.id} href={`/films/${movie.id}`}>
                   <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden hover:shadow-lg transition relative group">
                     <div className="relative aspect-[2/3]">
-                      <Image
-                        src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : '/placeholder-poster.svg'}
+                      <PosterImage
+                        src={movie.poster_path}
                         alt={movie.title}
-                        fill
+                        width={200}
+                        height={300}
                         className="object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
                       />
                       {movie.isWatched && (
                         <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded font-medium">
@@ -465,12 +463,12 @@ export default function PersonDetailPage({
                   <Link key={movie.id} href={`/films/${movie.id}`}>
                     <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden hover:shadow-lg transition relative">
                       <div className="relative aspect-[2/3]">
-                        <Image
-                          src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : '/placeholder-poster.svg'}
+                        <PosterImage
+                          src={movie.poster_path}
                           alt={movie.title}
-                          fill
+                          width={200}
+                          height={300}
                           className="object-cover"
-                          loading="lazy"
                         />
                         {movie.isWatched && (
                           <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded font-medium">

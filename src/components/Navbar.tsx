@@ -3,10 +3,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import SearchBar from "./SearchBar";
+import SearchModal from "./SearchModal";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,8 +54,14 @@ export default function Navbar() {
           </Link>
         </div>
         
-        <SearchBar />
+        <SearchBar onSearchClick={() => setIsSearchModalOpen(true)} />
       </div>
+      
+      {/* Modale de recherche */}
+      <SearchModal 
+        isOpen={isSearchModalOpen} 
+        onClose={() => setIsSearchModalOpen(false)} 
+      />
     </nav>
   );
 }

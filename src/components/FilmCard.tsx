@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaStar, FaPlus, FaHeart, FaEdit } from 'react-icons/fa';
 import Rating, { Rating5 } from './Rating';
@@ -9,6 +8,7 @@ import WishlistButton from './WishlistButton';
 import { useQuickReview } from '@/hooks/useFilms';
 import QuickReview from './QuickReview';
 import FilmCorrection from './FilmCorrection';
+import OptimizedImage, { PosterImage } from './OptimizedImage';
 
 interface FilmCardProps {
   movie: {
@@ -130,12 +130,11 @@ export default function FilmCard({
         <div className={cardClasses[variant]}>
           <div className="flex gap-4">
             <div className={imageClasses[variant]}>
-              <Image
-                src={movie.poster_path ? `https://image.tmdb.org/t/p/w200${movie.poster_path}` : '/placeholder-poster.svg'}
+              <OptimizedImage
+                src={movie.poster_path}
                 alt={movie.title}
                 fill
                 className="object-cover"
-                loading="lazy"
               />
               {isWatched && (
                 <span className="absolute top-1 left-1 bg-green-500 text-white text-xs px-1.5 py-0.5 rounded font-medium">
@@ -220,12 +219,12 @@ export default function FilmCard({
     <>
       <div className={cardClasses[variant]}>
         <div className={imageClasses[variant]}>
-          <Image
-            src={movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : '/placeholder-poster.svg'}
+          <OptimizedImage
+            src={movie.poster_path}
             alt={movie.title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
-            loading="lazy"
+            priority={variant === 'default'}
           />
           {isWatched && (
             <span className="absolute top-2 left-2 bg-green-500 text-white text-xs px-2 py-1 rounded font-medium">

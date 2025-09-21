@@ -12,7 +12,11 @@ interface SearchResult {
   poster_path: string;
 }
 
-export default function SearchBar() {
+interface SearchBarProps {
+  onSearchClick?: () => void;
+}
+
+export default function SearchBar({ onSearchClick }: SearchBarProps) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +54,9 @@ export default function SearchBar() {
   };
 
   const handleInputFocus = () => {
-    if (results.length > 0) {
+    if (onSearchClick) {
+      onSearchClick();
+    } else if (results.length > 0) {
       setIsOpen(true);
     }
   };
